@@ -219,12 +219,11 @@
 					$listing = new WP_query($args);
 
 					// create output
-					if ($listing->have_posts()) :
-						while ($listing->have_posts()) : $listing->the_post();
-						?>
+					if ($listing->have_posts()):
+						while ($listing->have_posts()) : $listing->the_post(); ?>
 							<td width="200" align="center" style="border-collapse:collapse;text-align:left" valign="top" >
 								<a href="http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/&amp;source=gmail&amp;ust=1573673889422000&amp;usg=AFQjCNGKz8we5bjzJDLP2oorRRZNT3y6Lw">
-								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260" >
+								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;padding-right:10px!important;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;text-align:center;padding:3px 0">
 									- entretenimiento -</p>
 								<h1 style="color:black;line-height:100%;padding-right:10px!important;font-family:Times New Roman;font-size:20px;font-weight:200;text-align:center;margin:2px 0;line-height:1.2">
@@ -249,26 +248,41 @@
         </tr>
         
         <tr>
-          <td width="200" align="center" style="border-collapse:collapse;text-align:left">
-            <a href="http://localhost:8080/wordpress/magazino/agendas/galerias-homenajes-y-mas/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:8080/wordpress/magazino/agendas/galerias-homenajes-y-mas/&amp;source=gmail&amp;ust=1573673889423000&amp;usg=AFQjCNFn0bysQChzUd4u-hWWbOJ7V7sktg">
-              <img src="https://ci5.googleusercontent.com/proxy/g5toDeIADb8wx_eF-xwg2IZb5ZGcPBH1K0iqlAjUgz_akvfN8gAtADtvF3GlVTfFdEkdzsOC5tzcDvTZn8aO0zdeRIZHc4s0ro13eVKPQ3v5ritzGdz5rzNRcoPmJDWVmZ5FVABFtg=s0-d-e1-ft#http://www.lunademiel.com.pe/emailing/2019/10-octubre/agenda/agenda-romantica/04.png" alt="" width="190" height="260" class="CToWUd">
-              <p width="200" style="margin:0;padding:0;margin-bottom:0;padding-right:10px!important;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;text-align:center;padding:3px 0">
-                - entretenimiento -</p>
-              <h1 style="color:black;line-height:100%;padding-right:10px!important;font-family:Times New Roman;font-size:20px;font-weight:200;text-align:center;margin:2px 0;line-height:1.2">
-                Galerías, homenajes <br>
-                 y más                                    </h1>
-            </a>
-          </td>
-          <td width="200" align="center" style="border-collapse:collapse">
-            <a href="http://localhost:8080/wordpress/magazino/agendas/galdos-y-sus-45/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:8080/wordpress/magazino/agendas/galdos-y-sus-45/&amp;source=gmail&amp;ust=1573673889423000&amp;usg=AFQjCNEey13Gm1X7-4wTR9JwFbNM79fuag">
-              <img src="https://ci6.googleusercontent.com/proxy/cAt8MZ5dOMJNE5m0aMnQpzLU9EjvtmsChpvJ678CwEJWLf4ls7S8Rlj2DPELSB5gHlYSMKa8AvcjsX9s2ljfZRTUltVzg6GHXpYPiDJ0TWZPU9O62tFbAOvno7RVE3YGbMk7kHQJDA=s0-d-e1-ft#http://www.lunademiel.com.pe/emailing/2019/10-octubre/agenda/agenda-romantica/05.png" alt="" width="190" height="260" class="CToWUd">
-              <p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;text-align:center;padding:3px 0">
-                - entretenimiento -</p>
-              <h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;text-align:center;margin:2px 0;line-height:1.2">
-                Galdós y <br>
-                 sus 45                                    </h1>
-            </a>
-          </td>
+        	<?php
+					global $post;
+					
+					//query subpages
+					$args = array(
+					'post_type' => 'agendasemanal',
+					'orderby' => 'date',
+					'order' => 'desc',
+					'post_status' => 'publish',  
+					'posts_per_page' => 2,
+					'offset' => 2
+					);
+
+					$listing = new WP_query($args);
+
+					// create output
+					if ($listing->have_posts()):
+						while ($listing->have_posts()) : $listing->the_post(); ?>
+							<td width="200" align="center" style="border-collapse:collapse;text-align:left" valign="top" >
+								<a href="http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/&amp;source=gmail&amp;ust=1573673889422000&amp;usg=AFQjCNGKz8we5bjzJDLP2oorRRZNT3y6Lw">
+								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;padding-right:10px!important;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;text-align:center;padding:3px 0">
+									- entretenimiento -</p>
+								<h1 style="color:black;line-height:100%;padding-right:10px!important;font-family:Times New Roman;font-size:20px;font-weight:200;text-align:center;margin:2px 0;line-height:1.2">
+							<?php the_title(); ?>		 
+							</h1>
+								</a>
+							</td>
+							<?php
+						endwhile;
+					endif;
+
+					// reset the query
+					wp_reset_postdata();
+				  ?>	
           <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
             <a href="http://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://www.lunademiel.com.pe/proveedores/&amp;source=gmail&amp;ust=1573673889423000&amp;usg=AFQjCNFhkN0DUM5kqqjNTSUPQWhpyGihjQ">
               <img src="https://ci6.googleusercontent.com/proxy/eTUATc6SNdrxfshV73kIyqfCwA3vHrn6653_H-5b6Nbe1cpcx7LY6Yfn7F0wGKcfN1xj-4_8Ty0SSV0W6DatylQQKkgd6pzONOZU=s0-d-e1-ft#http://lunademiel.com.pe/emailing/2019/3-marzo/29/mi.png" width="195" height="auto" style="border:0;display:block" alt="" class="CToWUd">
