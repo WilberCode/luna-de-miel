@@ -103,8 +103,7 @@
  get_footer(); 
 ?>
 */?>
-
-
+ 
 <!doctype html>
 <html>
 <head>
@@ -163,6 +162,33 @@
 
                /****** END RESETTING DEFAULTS ********/
 
+			   .post-firstrow tr td img, .post-firstsecond tr td img{
+					object-fit:cover;
+			   }
+			   .post-firstrow tr td:nth-child(1)  {
+					text-align: left !important;
+				}	
+				.post-firstrow tr td:nth-child(1)  h1, .post-firstrow tr td:nth-child(1)  p  {
+					padding-right:10px!important;  
+				}	   
+				.post-firstrow tr td:nth-child(3)  h1, .post-firstrow tr td:nth-child(3)  p  {
+					padding-left:10px!important;  
+				}	   
+				.post-firstrow tr td:nth-child(2)   {
+					text-align: center !important;
+				}	   
+				.post-firstrow tr td:nth-child(3){
+					text-align: right !important;
+				}	   
+				.post-firstsecond tr td:nth-child(1){
+					text-align: left !important;
+				}	
+				.post-firstsecond tr td:nth-child(1) h1,.post-firstsecond tr td:nth-child(1) p {
+						padding-right:10px!important;  
+				}	  
+				.post-firstsecond tr td:nth-child(2){
+					text-align: center !important;
+				}	  
        </style>
 </head>
 
@@ -172,12 +198,12 @@
       <tbody>
         <tr>
           <td width="200" align="left" valign="middle" bgcolor="#ffffff" style="border-collapse:collapse">
-            <a href="http://www.lunademiel.com.pe/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://www.lunademiel.com.pe/&amp;source=gmail&amp;ust=1573673889422000&amp;usg=AFQjCNGuFK8d-y_3p8JSRknw05B536qhdg">
-              <img src="https://ci6.googleusercontent.com/proxy/PjCiv6oRAanBBTSPl8dn1xA5fvh9x6SX6csYxSWa0oT9dO8mknfyoJL1IFyzkw851VSekHb3qR5GOd4CIhA6yqh7jLRNaSkRzH3fcJVGLEeur57uGA=s0-d-e1-ft#http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="" class="CToWUd">
+            <a href="http://www.lunademiel.com.pe/" style="color:black;text-decoration:none" target="_blank" >
+              <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="" >
             </a>
           </td>
           <td width="400" colspan="2" align="right" valign="middle" style="border-collapse:collapse;font-family:Prelo;font-size:14px;font-weight:bold;letter-spacing:1px;height:80px">
-            <span style="color:#eb3d82">ESPECIAL </span> &nbsp;OCTUBRE &gt;
+            <span style="color:#eb3d82">ESPECIAL </span> &nbsp;NOVIEMBRE &gt;
 			</td>
         </tr>
         <tr>
@@ -198,13 +224,12 @@
         </tr>
         <tr>
           <td width="600" height="10" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
-		</tr>
-		
-
-
+		</tr>  
 	   <tr>
-
-	   			<?php
+			<td width="600" colspan="3"  >  
+			 <table border="0"  cellpadding="0" cellspacing="0" class="post-firstrow">
+						   <tr>
+						   	<?php
 					global $post;
 					
 					//query subpages
@@ -215,31 +240,45 @@
 					'post_status' => 'publish',
 					'posts_per_page' => 3
 					);
-
-					$listing = new WP_query($args);
-
+					$first_number = 1; 
+					$listing = new WP_query($args);  
 					// create output
 					if ($listing->have_posts()):
 						while ($listing->have_posts()) : $listing->the_post(); ?>
-							<td width="200" align="center" style="border-collapse:collapse;text-align:left" valign="top" >
-								<a href="http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/&amp;source=gmail&amp;ust=1573673889422000&amp;usg=AFQjCNGKz8we5bjzJDLP2oorRRZNT3y6Lw">
+							<?php 
+							?>
+							<td width="200" align="<?php
+
+							 	if($first_number == 1 ){ echo 'left'; } else if($first_number == 3){ echo 'right';}else{echo 'center';}
+
+							 ?>" style="border-collapse:collapse" valign="top" >
+								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
 								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;padding-right:10px!important;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;text-align:center;padding:3px 0">
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
+
+							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
+
+							 ?>">
 									- entretenimiento -</p>
-								<h1 style="color:black;line-height:100%;padding-right:10px!important;font-family:Times New Roman;font-size:20px;font-weight:200;text-align:center;margin:2px 0;line-height:1.2">
+								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;<?php
+
+							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
+								$first_number++;
+							 ?>">
 							<?php the_title(); ?>		 
 							</h1>
 								</a>
 							</td>
 							<?php
 						endwhile;
-					endif;
-
+					endif; 
 					// reset the query
 					wp_reset_postdata();
 				  ?>	
-          
-         
+						   </tr>
+			 </table>
+			</td>
+	   		  
         </tr>
  
  
@@ -248,7 +287,10 @@
         </tr>
         
         <tr>
-        	<?php
+		<td width="600" colspan="3"  >  
+			 <table border="0"  cellpadding="0" cellspacing="0" class="post-firstsecond">
+				<tr>
+						<?php
 					global $post;
 					
 					//query subpages
@@ -258,21 +300,26 @@
 					'order' => 'desc',
 					'post_status' => 'publish',  
 					'posts_per_page' => 2,
-					'offset' => 2
+					'offset' => 3
 					);
 
 					$listing = new WP_query($args);
-
+					$second_number = 1; 
 					// create output
 					if ($listing->have_posts()):
 						while ($listing->have_posts()) : $listing->the_post(); ?>
-							<td width="200" align="center" style="border-collapse:collapse;text-align:left" valign="top" >
-								<a href="http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:8080/wordpress/magazino/agendas/el-estreno-mas-esperado/&amp;source=gmail&amp;ust=1573673889422000&amp;usg=AFQjCNGKz8we5bjzJDLP2oorRRZNT3y6Lw">
+							<td width="200" align="<?php
+
+							 	if($second_number == 1 ){ echo 'left';}else{echo 'center';}
+
+							 ?>" style="border-collapse:collapse;" valign="top" >
+								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
 								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;padding-right:10px!important;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;text-align:center;padding:3px 0">
-									- entretenimiento -</p>
-								<h1 style="color:black;line-height:100%;padding-right:10px!important;font-family:Times New Roman;font-size:20px;font-weight:200;text-align:center;margin:2px 0;line-height:1.2">
-							<?php the_title(); ?>		 
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
+								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - entretenimiento -</p>
+								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;
+								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>">
+							<?php the_title(); $second_number++; ?>		 
 							</h1>
 								</a>
 							</td>
@@ -283,11 +330,15 @@
 					// reset the query
 					wp_reset_postdata();
 				  ?>	
-          <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
-            <a href="http://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://www.lunademiel.com.pe/proveedores/&amp;source=gmail&amp;ust=1573673889423000&amp;usg=AFQjCNFhkN0DUM5kqqjNTSUPQWhpyGihjQ">
-              <img src="https://ci6.googleusercontent.com/proxy/eTUATc6SNdrxfshV73kIyqfCwA3vHrn6653_H-5b6Nbe1cpcx7LY6Yfn7F0wGKcfN1xj-4_8Ty0SSV0W6DatylQQKkgd6pzONOZU=s0-d-e1-ft#http://lunademiel.com.pe/emailing/2019/3-marzo/29/mi.png" width="195" height="auto" style="border:0;display:block" alt="" class="CToWUd">
-            </a>
-          </td>
+				   <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
+						<a href="http://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none"   >
+						<img src="https://lunademiel.com.pe/emailing/2019/3-marzo/29/mi.png" width="195" height="auto" style="border:0;display:block" alt="" >
+						</a>
+					</td>
+				</tr>
+				
+			 </table>
+			</td> 
         </tr>
         <tr>
           <td width="400" height="10" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
@@ -295,8 +346,8 @@
         <tr>
           <td width="400" align="right" colspan="2" valign="middle" style="border-collapse:collapse"></td>
           <td width="200" align="center" valign="top" style="border-collapse:collapse">
-            <a href="https://www.facebook.com/portallunademiel/" style="color:black;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/portallunademiel/&amp;source=gmail&amp;ust=1573673889423000&amp;usg=AFQjCNEh83o5FDdUxI5IWB_SxI6pCx5g4A">
-              <img src="https://ci3.googleusercontent.com/proxy/_e-NyrS30xD4Lrn45kf6qb04zYAWCMMSpf0cgOGC4_fWe4-ON9B0mnvdqvxlD5tL_Rh717_oHmK9FxWGOedH3o4tqCSKdRmaHeQpXuavKgLY=s0-d-e1-ft#http://lunademiel.com.pe/emailing/2019/3-marzo/29/facebook.png" width="190" height="auto" alt="" class="CToWUd">
+            <a href="https://www.facebook.com/portallunademiel/" style="color:black;text-decoration:none"   >
+              <img src="https://lunademiel.com.pe/emailing/2019/3-marzo/29/facebook.png" width="190" height="auto" alt="" >
             </a>
           </td>
         </tr>
