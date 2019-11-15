@@ -86,6 +86,7 @@
 							echo '<div class="col-xs-12 col-sm-6 col-md-3 show-grid">';
 							echo '<a href="' . get_permalink() . '" rel="nofollow" class="thumbnail"><img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
 							echo '</a>';
+							echo the_category(' - ');
 							echo '<a href="' . get_permalink() . '" class="title-list">'.get_the_title().'</a>';
 							echo '</div>';
 						endwhile;
@@ -202,8 +203,8 @@
               <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="" >
             </a>
           </td>
-          <td width="400" colspan="2" align="right" valign="middle" style="border-collapse:collapse;font-family:Prelo;font-size:14px;font-weight:bold;letter-spacing:1px;height:80px">
-            <span style="color:#eb3d82">ESPECIAL </span> &nbsp;NOVIEMBRE &gt;
+          <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-size:14px;font-weight:bold;letter-spacing:1px;height:80px">
+            <span style="color:#eb3d82" >ESPECIAL </span> &nbsp; <?   echo  date_i18n( 'F ', strtotime( get_the_time( "m" ) ) ); ?>  &gt;
 			</td>
         </tr>
         <tr>
@@ -231,8 +232,7 @@
 						   <tr>
 						   	<?php
 					global $post;
-					
-					//query subpages
+					 
 					$args = array(
 					'post_type' => 'agendasemanal',
 					'orderby' => 'date',
@@ -241,17 +241,30 @@
 					'posts_per_page' => 3
 					);
 					$first_number = 1; 
-					$listing = new WP_query($args);  
+					$listing = new WP_query($args);   
 					// create output
 					if ($listing->have_posts()):
-						while ($listing->have_posts()) : $listing->the_post(); ?>
+						while ($listing->have_posts()) : $listing->the_post();  
+						?>
 							<?php 
+							$terms_slugs_string = '';
+							$terms = get_the_terms( $post->ID, 'agenda' );
+							if ( $terms && ! is_wp_error( $terms ) ) {                
+								$term_slugs_array = array();
+								foreach ( $terms as $term ) {
+									$term_slugs_array[] = $term->slug;
+								}
+								$terms_slugs_string = join( " & ", $term_slugs_array ); 
+							} 
 							?>
 							<td width="200" align="<?php
 
 							 	if($first_number == 1 ){ echo 'left'; } else if($first_number == 3){ echo 'right';}else{echo 'center';}
 
 							 ?>" style="border-collapse:collapse" valign="top" >
+							 
+								 
+
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
 								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
@@ -259,7 +272,9 @@
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
 
 							 ?>">
-									- entretenimiento -</p>
+									- <?php echo $terms_slugs_string;?>-</p>     
+								
+
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;<?php
 
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
@@ -282,6 +297,20 @@
         </tr>
  
  
+
+				<?php 
+					///$promolist = get_terms( 'agenda', array('hide_empty' => false,'orderby'=>'count','order'=>'desc') );
+				?>
+			 	<!-- <ul class="nav navbar-nav">
+				<?php //foreach ($promolist as $promo) {	?>
+				<li>
+					 <p><?php// echo $promo->name; ?> </p>
+				</li>
+				<?php //} ?>				      
+				</ul>   -->
+
+
+
         <tr>
           <td width="600" height="28" align="center" colspan="3" valign="middle" style="border-collapse:collapse"></td>
         </tr>
@@ -308,6 +337,17 @@
 					// create output
 					if ($listing->have_posts()):
 						while ($listing->have_posts()) : $listing->the_post(); ?>
+						<?php 
+							$terms_slugs_string = '';
+							$terms = get_the_terms( $post->ID, 'agenda' );
+							if ( $terms && ! is_wp_error( $terms ) ) {                
+								$term_slugs_array = array();
+								foreach ( $terms as $term ) {
+									$term_slugs_array[] = $term->slug;
+								}
+								$terms_slugs_string = join( " ", $term_slugs_array ); 
+							} 
+							?>
 							<td width="200" align="<?php
 
 							 	if($second_number == 1 ){ echo 'left';}else{echo 'center';}
@@ -316,7 +356,7 @@
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
 								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
-								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - entretenimiento -</p>
+								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - <?php echo $terms_slugs_string;?> -</p>
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>">
 							<?php the_title(); $second_number++; ?>		 

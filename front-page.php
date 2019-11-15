@@ -13,6 +13,7 @@
   $foto_entrevistas = $settings->field('foto_entrevistas');
   $foto_articulos = $settings->field('foto_articulos');
 ?>
+  <?php global $wp;  ?>
     <section class="publicidad hidden-xs">
       <div class="container">
         <div class="row">
@@ -52,8 +53,8 @@
         <div class="row show-grid">
           <div class="col-xs-12 col-sm-7 col-md-8 box-promociones" style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;">
             <dl class="box-destacado text-center">
-              <dt>
-                <a href="/promociones/">PROMOCIONES</a>
+              <dt> 
+                <a href="<?php echo home_url( $wp->request );?>/promociones">PROMOCIONES</a> 
               </dt>
               <dd>/
                 <?php 
@@ -94,7 +95,7 @@
           <div class="col-md-12 col-md-10">
             <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
 
-              <a href="/viajes/" style="overflow:hidden;">
+              <a href="<?=home_url( $wp->request );?>/viajes/" style="overflow:hidden;">
                 <?php
 							global $post;
 							
@@ -121,7 +122,7 @@
 						?>
 
               </a>
-              <a href="/viajes/" class="titulo">VIAJES</a>
+              <a href="<?=home_url( $wp->request );?>/viajes/" class="titulo">VIAJES</a>
               <ul>
                 <?php
 							global $post;
@@ -150,7 +151,7 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
              
-              <a href="/entrevistas/" style="overflow:hidden;">
+              <a href="<?=home_url( $wp->request );?>/entrevistas/" style="overflow:hidden;">
                 <?php
                             global $post;
                             
@@ -177,7 +178,7 @@
                           ?>
 
             </a>
-              <a href="/entrevistas/" class="titulo">BODAS</a>
+              <a href="<?=home_url( $wp->request );?>/entrevistas/" class="titulo">BODAS</a>
               <ul>
                 <?php
 							global $post;
@@ -205,7 +206,7 @@
               </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
-              <a href="/articulos/" style="overflow:hidden;">
+              <a href="<?=home_url( $wp->request );?>/articulos/" style="overflow:hidden;">
                 <?php
 							global $post;
 							
@@ -232,7 +233,7 @@
 						?>
 
               </a>
-              <a href="/articulos/" class="titulo">MUNDO PAREJAS</a>
+              <a href="<?=home_url( $wp->request );?>/articulos/" class="titulo">MUNDO PAREJAS</a>
               <ul>
                 <?php
 							global $post;
