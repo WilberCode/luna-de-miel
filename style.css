@@ -758,6 +758,10 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 #suscripcion .input-group {
   margin-top: 1em;
 }
+#suscripcion .input-group form { 
+  display: flex;
+  flex-flow: row nowrap;
+}
 /* Styles Wilber End */
 
 .publicidad  {margin:10px 0px;}
