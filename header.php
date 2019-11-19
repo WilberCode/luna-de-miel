@@ -233,16 +233,16 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 				</div>
 			</section>    
 			<?php } ?>
-		<section id="suscripcion">
+		<section id="suscripcion" class="suscripcion">
 			<div class="container">
 				<div class="row">
-					<h2>GUÍA PARA PAREJAS: <small>Agenda romántica, novedades & promociones exclusivas.</small></h2>
 					
 					<!--SUSCRÍBETE boton-->
-					<div class="col-sx-12 col-md-8">
+					<div class="col-sx-12 col-md-7 col-lg-8">
+						<h2>GUÍA PARA PAREJAS: <small>Agenda romántica, novedades & promociones exclusivas.</small></h2>
 						<h2>SUSCRÍBETE <small>Y recibe la agenda, novedades & promociones exclusivas.</small></h2>
 					</div>
-					<div class="col-sx-12 col-md-4">
+					<div class="col-sx-12 col-md-5 col-lg-4">
 						<div class="input-group margin-bottom-sm">
 						  <!--<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
 						  <input class="form-control" type="text" placeholder="Tu email aquí"> -->

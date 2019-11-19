@@ -739,13 +739,26 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 
 
 
-#suscripcion {background-color:#FC088E;color:#FFF;padding:10px 0px;}
-
-#suscripcion h2 {margin:0px;}
-
-#suscripcion h2 small {color:#FFF;}
 
 
+/* Styles Wilber - Start */
+#suscripcion {
+  background-color: #FC088E;
+  color: #FFF;
+  padding: 1.5em 0px;
+}
+
+#suscripcion h2 {
+  margin: 0px;
+}
+
+#suscripcion h2 small {
+  color: #FFF;
+}
+#suscripcion .input-group {
+  margin-top: 1em;
+}
+/* Styles Wilber End */
 
 .publicidad  {margin:10px 0px;}
 
