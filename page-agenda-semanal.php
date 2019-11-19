@@ -103,8 +103,7 @@
 <?php
  get_footer(); 
 ?>
-*/?>
- 
+*/?> 
 <!doctype html>
 <html>
 <head>
@@ -226,6 +225,8 @@
         <tr>
           <td width="600" height="10" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
 		</tr>  
+
+		<!-- First row with 3 posts -->
 	   <tr>
 			<td width="600" colspan="3"  >  
 			 <table border="0"  cellpadding="0" cellspacing="0" class="post-firstrow">
@@ -266,13 +267,13 @@
 								 
 
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
-								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
+								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
 
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
 
 							 ?>">
-									- <?php echo $terms_slugs_string;?>-</p>     
+									- <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>     
 								
 
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;<?php
@@ -295,26 +296,11 @@
 			</td>
 	   		  
         </tr>
- 
- 
-
-				<?php 
-					///$promolist = get_terms( 'agenda', array('hide_empty' => false,'orderby'=>'count','order'=>'desc') );
-				?>
-			 	<!-- <ul class="nav navbar-nav">
-				<?php //foreach ($promolist as $promo) {	?>
-				<li>
-					 <p><?php// echo $promo->name; ?> </p>
-				</li>
-				<?php //} ?>				      
-				</ul>   -->
-
-
-
+  
         <tr>
           <td width="600" height="28" align="center" colspan="3" valign="middle" style="border-collapse:collapse"></td>
         </tr>
-        
+        <!-- Second row with 2 posts -->
         <tr>
 		<td width="600" colspan="3"  >  
 			 <table border="0"  cellpadding="0" cellspacing="0" class="post-firstsecond">
@@ -343,7 +329,7 @@
 							if ( $terms && ! is_wp_error( $terms ) ) {                
 								$term_slugs_array = array();
 								foreach ( $terms as $term ) {
-									$term_slugs_array[] = $term->slug;
+									$term_slugs_array[] = $term->slug; 
 								}
 								$terms_slugs_string = join( " ", $term_slugs_array ); 
 							} 
@@ -354,9 +340,9 @@
 
 							 ?>" style="border-collapse:collapse;" valign="top" >
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
-								<img src="<?php echo main_image_url('full'); ?>" alt="ww" width="190" height="260">
+								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
-								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - <?php echo $terms_slugs_string;?> -</p>
+								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>">
 							<?php the_title(); $second_number++; ?>		 

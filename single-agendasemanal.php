@@ -117,10 +117,10 @@
 <?php get_footer(); ?>
 */ 
 ?>
- 
+ <?php  get_header(); ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="margin-top:0!important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,7 +129,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content=" <?php echo  the_title(); ?> - Luna de Miel" />
   <meta property="og:description" content="<?php $numberd = 1; $terms = get_the_terms( $post->ID , 'agenda' );
-  	foreach ( $terms as $term ) {$term_link = get_term_link( $term, 'agenda' ); if( is_wp_error( $term_link ) ) continue;  ?> <?php echo $term->description; ?> <?php $numberd++; }?>"/>
+  	foreach ( $terms as $term ) {$term_link = get_term_link( $term, 'agenda' ); if( is_wp_error( $term_link ) ) continue; ?> <?php if($numberd >1){echo ' & '.$term->description;} else{ echo $term->description;} ?> <?php $numberd++; }?>"/>
   <meta property="og:image" content="<?php echo main_image_url('full'); ?>" />
 <link rel="shortcut icon" href="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" type="image/x-icon">
 
@@ -142,35 +142,59 @@
 	font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
 	margin: .3vw 0;
+	color:black;
   }
   h1{
 	  font-size: 5rem;
 	      
   }
+  h2{
+	   font-size: 3rem !important;
+  }
   p img{
-	  width:100% !important;
+	  width:100% !important;  
+  }
+  img{
+      vertical-align: unset !important;
   }
   .agenda-single  p img{
 	  width:100% !important;
 	  height:auto;
   }
   a{
-	  color: #EB3D82;
+	  color: #EB3D82; 
+  }
+  a:hover{
+      color:#eb3d82;
+  }
+  p,div{
+      color:black;
   }
   p{
-	  font-size: 20px;
+	  font-size: 20px; 
   }
-  	 
+  header{
+      display:none; 
+  }
+  .at-above-post.addthis_tool, .at-below-post.addthis_tool{
+      display:none;
+  }
+  body{
+    font-size: 1.6rem !important;
+    line-height: normal;
+  }
+  
   </style>
 </head>
 <body class="section_top_center"> 
+<div class="section_top_center">
   <section class="w_90 w_50_desktop section_middle_justify">
     <a href="http://www.lunademiel.com.pe/" target="_self">
       <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" alt="Luna de Miel" class="img_biggest img_normal_mobile">
     </a>
 
     <div class="align_right w_61 w_75_desktop font_tiny_mobile">
-      <span style=" color:#EB3D82; ">ESPECIAL </span> &nbsp;  <span style="text-transform:uppercase;" ><?php echo get_the_date( 'F' ); ?> </span>
+      <span style=" color:#EB3D82; ">ESPECIAL </span> &nbsp;  <span style="text-transform:uppercase;" ><?php echo get_the_date( 'F' ); ?> ></span>
      <div class="w_100 w_100_desktop " style=" font-family:Didot ;letter-spacing: 1px;font-size: 4.5vw; font-style: italic; margin-top: 20px; "  >
       #AgendaRomántica
     </div>
@@ -189,16 +213,20 @@
 	<span class="w_100 align_center pinkColor font_normal marginVertical_tiny">-
 	<?php
 	$number = 1;
-	$terms = get_the_terms( $post->ID , 'agenda' ); 
-		foreach ( $terms as $term ) {
-			$term_link = get_term_link( $term, 'agenda' );
-			if( is_wp_error( $term_link ) )
-				continue; 
-					?>
-				<a href="<?php $term_link; ?>"> <?php if($number > 1){ echo "& "; }else{ echo ' ';}?><?php echo $term->name; ?> </a> 
-		   <?php 
-		    $number++;
-		}   ?>
+	$termscategory = get_the_terms( $post->ID , 'agenda' ); 
+		if($termscategory){
+			foreach ( $termscategory as $term ) {
+				$term_link = get_term_link( $term, 'agenda' );
+				if( is_wp_error( $term_link ) )
+					continue; 
+						?>
+					<a href="<?php $term_link; ?>"> <?php if($number > 1){ echo "& "; }else{ echo ' ';}?><?php echo $term->name; ?> </a> 
+			<?php 
+				$number++;
+			} 
+		} else{
+			echo "actividades";
+		}?>
 	 
 	 -</span>
   	<div class="agenda-single" style="width:100%;" >
@@ -233,5 +261,6 @@
     </div>
     </div>
   </footer>
+  </div>
 </body>
 </html> 

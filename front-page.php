@@ -28,7 +28,7 @@
           <div class="col-xs-12 col-sm-7 col-md-8 box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
             <dl class="box-destacado text-center">
               <dt>
-                <a href="https://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/">AGENDA ROMÁNTICA</a>
+                <a href="<?php echo home_url( $wp->request );?>/agenda-semanal/">AGENDA ROMÁNTICA</a>
               </dt>
               <dd>
 
