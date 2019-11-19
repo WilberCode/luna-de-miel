@@ -762,6 +762,16 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
   display: flex;
   flex-flow: row nowrap;
 }
+@media (max-width:320px){
+  #suscripcion .input-group form {
+     transform: scale(.8);
+     margin-left: -15px;
+  }
+}
+nav.micromenu {  
+  border: 1px solid #ffe4f3;
+  margin-top: 1em;
+}
 /* Styles Wilber End */
 
 .publicidad  {margin:10px 0px;}
