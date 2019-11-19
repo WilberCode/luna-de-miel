@@ -775,6 +775,12 @@ nav.micromenu {
 body{
   overflow-x: hidden;
 }
+
+@media (max-width:400px) {
+  #destacados .box-destacado {
+    width: 100% !important;
+  }
+}
 /* Styles Wilber End */
 
 .publicidad  {margin:10px 0px;}
