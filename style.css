@@ -772,6 +772,9 @@ nav.micromenu {
   border: 1px solid #ffe4f3;
   margin-top: 1em;
 }
+body{
+  overflow-x: hidden;
+}
 /* Styles Wilber End */
 
 .publicidad  {margin:10px 0px;}
