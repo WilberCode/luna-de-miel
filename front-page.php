@@ -66,7 +66,7 @@
                   <?php echo $promo->name; ?>
                 </a>/
                 <?php
-							}
+							} 
 							?>
               </dd>
             </dl>

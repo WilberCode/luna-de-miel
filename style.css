@@ -538,13 +538,7 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
           box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.5);
 
         }
-
-
-
-        nav.macromenu ul.nav-prime ul li {
-
-        }
-
+ 
 
 
           nav.macromenu ul.nav-prime ul ul {
@@ -1153,4 +1147,9 @@ body{
 	.title-list{
 	 display:block;
 	} 
+}
+
+.parsley-required,
+.parsley-custom-error-message {
+  color: #ffffff !important;
 }
