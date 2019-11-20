@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="row show-grid">
-          <div class="col-xs-12 col-sm-7 col-md-8 box-promociones" style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;">
+          <div class="col-xs-12 col-sm-7 col-md-8 box-promociones box-agenda " style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;">
             <dl class="box-destacado text-center">
               <dt> 
                 <a href="<?php echo home_url( $wp->request );?>/promociones">PROMOCIONES</a> 

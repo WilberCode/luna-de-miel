@@ -84,9 +84,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 /* And here begins the WordPress fun.
 
--------------------------------------------------------------------------------*/
-
-.col-sidebar {}
+-------------------------------------------------------------------------------*/ 
 
 .col-sidebar h3 {color:#FF3399;margin-bottom:20px;}
 
@@ -757,6 +755,8 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 }
 #suscripcion .input-group {
   margin-top: 1em;
+  display: flex;
+  justify-content: center;
 }
 #suscripcion .input-group form { 
   display: flex;
@@ -764,8 +764,7 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 }
 @media (max-width:320px){
   #suscripcion .input-group form {
-     transform: scale(.8);
-     margin-left: -15px;
+     transform: scale(.8); 
   }
 }
 nav.micromenu {  
@@ -832,10 +831,25 @@ body{
 #destacados a, #novedades a {color:#333;}
 
 #destacados .box-agenda {min-height:250px;}
-
+/** wph style */
+#destacados .box-agenda {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+ 
 #destacados .box-promociones {min-height:250px;}
 
-#destacados .box-destacado {width:400px;float:right;background:#FFFFFF;border:2px solid #000;padding: 40px;margin-top: 60px;}
+#destacados .box-destacado {
+  /* width:400px;float:right;background:#FFFFFF;border:2px solid #000;padding: 40px;margin-top: 60px; */
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border:2px solid #000;
+  background: white;
+  display: block;
+  margin-bottom: 0;
+}
 
 #destacados .box-destacado dt a {font-size:20px;}
 
@@ -849,14 +863,7 @@ body{
 
 #novedades .item-novedades .titulo {font-size:20px;margin:10px 0px;display:inline-block;padding: 0px 20px;}
 
-#novedades .item-novedades ul li {margin:0px 0px 5px;padding: 0px 20px;}
-
-
-
-.lista-proveedores-destacados {}
-
-.lista-proveedores {}
-
+#novedades .item-novedades ul li {margin:0px 0px 5px;padding: 0px 20px;} 
 .lista-proveedores-destacados dl {padding:10px;border:2px solid #FF3399;}
 
 .lista-proveedores dl {padding:10px;background-color:#EFEFEF;}
@@ -864,10 +871,7 @@ body{
 .lista-proveedores-destacados dl dt {font-size:20px;}
 
 .lista-proveedores dl dt {font-size:20px;}
-
-.lista-proveedores-destacados dl dd {}
-
-.lista-proveedores dl dd {}
+ 
 
 .lista-proveedores-destacados dl dd span {font-weight:bold;}
 
@@ -891,11 +895,11 @@ body{
 
 
 
-.badge {background-color:#CCCCCC !important;}
+.badge {background-color:#ccc !important;}
 
 
 
-#footer {margin:20px 0px 40px;background-color:#E6E7E8;}
+#footer {margin:20px 0 0  ;background-color:#E6E7E8;padding-top: 10px;}
 
 #footer a {color:#333;}
 
