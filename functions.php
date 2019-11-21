@@ -154,4 +154,17 @@ function main_image_url($size){
     return $main_image[0];
 }
 
+
+ 
+function ldm_setup(){ 
+  add_theme_support('html5', array(
+    'comment-list',
+    'comment-form',
+    'search-form',
+    'gallery',
+    'caption'
+  ));  
+ 
+}
+add_action('after_setup_theme', 'ldm_setup');
 ?>

@@ -37,7 +37,9 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php bloginfo('template_directory'); ?>/_/js/bootstrap.min.js"></script>
 
-
+	<script>
+		document.getElementById('s').placeholder = "Buscar..."
+	</script>
 </body>
 
 </html>

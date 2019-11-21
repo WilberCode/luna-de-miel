@@ -22,8 +22,7 @@ header ("Pragma: no-cache"); //PARANOIA, NO GUARDAR EN CACHE 
 <!-- the "no-js" class is for Modernizr. -->
 
 <head id="<?php echo of_get_option('meta_headid'); ?>" data-template-set="html5-reset-wordpress-theme">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127421070-1"></script>
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127421070-1"></script> 
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -127,6 +126,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 	
 	 <!-- Bootstrap -->
+	 <link crossorigin="anonymous" rel="stylesheet" id="font-Awesome-Css-css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" type="text/css" media="all">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/bootstrap.min.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -136,8 +136,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-	<!-- Lea Verou's Prefix Free, lets you use only un-prefixed properties in yuor CSS files -->
-
+	<!-- Lea Verou's Prefix Free, lets you use only un-prefixed properties in yuor CSS files --> 
 
 	<!-- This is an un-minified, complete version of Modernizr.
 		 Before you move to production, you should generate a custom build that only has the detects you need. -->
@@ -260,8 +259,8 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 				<div class="row">
 					<div class="col-xs-12 col-md-2 social-icons">
 						<a href="https://www.facebook.com/portallunademiel/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-						<a href="/contacto/"><i class="fa fa-envelope-o fa-2x"></i></a>
-						<a href="/"><i class="fa fa-home fa-2x"></i></a>
+						<a href="<?=home_url( $wp->request );?>/contacto/"><i class="fa fa-envelope-o fa-2x"></i></a>
+						<a href="<?=home_url( $wp->request );?>"><i class="fa fa-home fa-2x"></i></a>  
 					</div>
 					<div class="col-xs-12 col-md-10">
 						<nav class="macromenu">
@@ -288,6 +287,14 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 						</nav>
 
 					</div>
+					<div class="col-xs-12 search-front-page-wrap" >
+						<div class=" col-xs-12 col-sm-5 col-md-4">
+							<div class="search-front-page">
+								<?php get_search_form(true);?>
+							</div>
+						</div>
+					 </div>
+				
 				</div>
 			</div>
 		</section>
