@@ -25,15 +25,17 @@
     <section id="destacados">
       <div class="container">
         <div class="row show-grid">
-          <div class="col-xs-12 col-sm-7 col-md-8 box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
-            <dl class="box-destacado text-center">
-              <dt>
-                <a href="<?php echo home_url( $wp->request );?>/agenda-semanal/">AGENDA ROMÁNTICA</a>
-              </dt>
-              <dd>
+          <div class="col-xs-12 col-sm-7 col-md-8" >
+            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
+              <dl class="box-destacado text-center">
+                <dt>
+                  <a href="<?php echo home_url( $wp->request );?>/agenda-semanal/">AGENDA ROMÁNTICA</a>
+                </dt>
+                <dd>
 
-              </dd>
-            </dl>
+                </dd>
+              </dl>
+            </div>
           </div>
           <div class="col-xs-12 col-sm-5 col-md-4">
             <div class="banner-right-300x250">
@@ -51,8 +53,9 @@
           </div>
         </div>
         <div class="row show-grid">
-          <div class="col-xs-12 col-sm-7 col-md-8 box-promociones box-agenda " style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;">
-            <dl class="box-destacado text-center">
+          <div class="col-xs-12 col-sm-7 col-md-8">
+            <div class="box-promociones box-agenda " style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;" >
+              <dl class="box-destacado text-center">
               <dt> 
                 <a href="<?php echo home_url( $wp->request );?>/promociones">PROMOCIONES</a> 
               </dt>
@@ -70,6 +73,7 @@
 							?>
               </dd>
             </dl>
+            </div>
           </div>
           <!--BRASIL-->
           <div class="col-xs-12 col-sm-5 col-md-4">
@@ -281,12 +285,12 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-1');
 	
 	-->
 
-    <section id="novedades">
+    <section id="novedades" class="novedades">
       <div class="container">
         <div class="row">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10">
-            <h3>NOVEDADES</h3>
+            <h3 class="novedades__title" >NOVEDADES</h3>
           </div>
           <div class="hidden-xs col-md-1">&nbsp;</div>
         </div>

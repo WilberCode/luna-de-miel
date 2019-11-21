@@ -154,15 +154,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 #menu .social-icons a {margin-right:15px;}
 
-
-
-#menu .social-icons{
-
-  text-align: center;
-
-}
-
-
+ 
 
 #nav .menu {margin:0px;}
 
@@ -750,13 +742,23 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 #suscripcion .input-group {
   margin-top: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 #suscripcion .input-group form { 
   display: flex;
   flex-flow: row nowrap;
 }
-@media (max-width:320px){
+@media (max-width:400px) {
+  #suscripcion .input-group {
+    justify-content: center;
+  }
+  #menu .social-icons {
+
+    text-align: center;
+
+  }
+}
+@media (max-width:330px){ 
   #suscripcion .input-group form {
      transform: scale(.8); 
   }
@@ -769,11 +771,7 @@ body{
   overflow-x: hidden;
 }
 
-@media (max-width:400px) {
-  #destacados .box-destacado {
-    width: 100% !important;
-  }
-}
+
 /* Styles Wilber End */
 
 .publicidad  {margin:10px 0px;}
@@ -843,9 +841,25 @@ body{
   background: white;
   display: block;
   margin-bottom: 0;
+  margin-right: 1.1em;
 }
 
 #destacados .box-destacado dt a {font-size:20px;}
+
+@media (max-width:400px) {
+  #destacados .box-destacado {
+    width: 100% !important; 
+  }
+}
+@media (max-width:475px) {  
+
+  #destacados .box-destacado { 
+    margin-right: 0 !important;
+  }
+  #destacados .box-agenda{
+    justify-content: center;
+  }
+}
 
 #destacados .item-destacados .titulo {font-size:20px;margin:10px 0px;display:inline-block;padding: 0px 20px;}
 
@@ -1153,3 +1167,10 @@ body{
 .parsley-custom-error-message {
   color: #ffffff !important;
 }
+
+/* Novedades */
+.novedades__title{
+  text-align: center;
+  margin-bottom: 1em;
+}
+ 
