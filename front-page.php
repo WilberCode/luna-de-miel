@@ -59,16 +59,21 @@
               <dt> 
                 <a href="<?php echo home_url( $wp->request );?>/promociones">PROMOCIONES</a> 
               </dt>
-              <dd>/
+              <dd> 
                 <?php 
+
+                
+
 								$promolist = get_terms( 'promocion', array('hide_empty' => false) );
-								
+								$numberpromo = 1;
 								foreach ($promolist as $promo) {
+                  if(	$numberpromo > 1){echo "/";}else{echo "";}
 							?>
                 <a href="/<?php echo $promo->taxonomy; ?>/<?php echo $promo->slug; ?>/">
                   <?php echo $promo->name; ?>
-                </a>/
+                </a>
                 <?php
+                $numberpromo++;
 							} 
 							?>
               </dd>
