@@ -1730,8 +1730,9 @@ $first-color:#FF3399;
 .msearch-post__title {
     font-weight: 600;
     font-size: var(--normal-font-size);
+    margin-top: 0 !important;
     margin-bottom: 0;
-    padding: 2em
+    padding: 2em 
 }
 
 .msearch-navigation {
