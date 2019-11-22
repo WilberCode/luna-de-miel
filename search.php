@@ -22,10 +22,10 @@
 						
 						<article class="msearch-post ed-container">
 							<?php if(main_image_url('full')){  ?>
-							<a href="<?php if(has_tag( array( 'no-link', 'no'))){ echo "#no-link"; }else{the_permalink();}; ?>" class="msearch-post__picture ed-item s-100 m-40 l-40" >
+							<a href="<?php if(has_tag( array( 'no-link', 'no'))){ echo "#no-link"; }else{the_permalink();}; ?>" class="msearch-post__picture  " >
 								<img src="<?php echo main_image_url('full'); ?>" alt="">
 							</a>
-							<div class="msearch-post__content ed-item s-100 m-60 l-60"> 
+							<div class="msearch-post__content  "> 
 								<a href="<?php if(has_tag( array( 'no-link', 'no'))){ echo "#no-link"; }else{the_permalink();}; ?>" class="msearch-post__link"> 
 									<h1 class="msearch-post__title">
 										<?php the_title(); ?>
@@ -55,4 +55,9 @@
 		</div>
 	</div>
 </div>
+<style>
+#footer{
+	margin-top:0;
+}
+</style>
 <?php get_footer();
