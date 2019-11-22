@@ -1044,6 +1044,9 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @media (max-width:420px) {
+        padding: 10px;
+    }
 }
 
 #destacados .box-promociones {
@@ -1681,9 +1684,8 @@ $first-color:#FF3399;
         height: auto
     }
 
-    &-post:hover {
-        -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15)
+    &-post:hover { 
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
     }
 
     &-post__picture {
