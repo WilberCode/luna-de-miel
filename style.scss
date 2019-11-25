@@ -1065,8 +1065,10 @@ body {
     margin-right: 1.1em;
 }
 
-#destacados .box-destacado dt a {
+#destacados .box-destacado dt a h1 {
     font-size: 20px;
+    color: #333;
+    font-weight: 700;
 }
 
 @media (max-width:400px) {
@@ -1086,11 +1088,19 @@ body {
     }
 }
 
-#destacados .item-destacados .titulo {
+#destacados .item-destacados .titulo,
+#destacados .item-destacados .titulo h1 {
     font-size: 20px;
     margin: 10px 0px;
     display: inline-block;
     padding: 0px 20px;
+   &:hover{
+        text-decoration: underline;
+   }
+}
+#destacados .item-destacados .titulo h1{
+        margin: 0; 
+        padding:0;
 }
 
 #destacados .item-destacados ul li {
@@ -1104,7 +1114,7 @@ body {
     display: inline-block;
 }
 
-#novedades .item-novedades .titulo {
+#novedades .item-novedades .titulo{
     font-size: 20px;
     margin: 10px 0px;
     display: inline-block;

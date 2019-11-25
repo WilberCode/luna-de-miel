@@ -190,7 +190,7 @@
 <div class="section_top_center">
   <section class="w_90 w_50_desktop section_middle_justify">
     <a href="http://www.lunademiel.com.pe/" target="_self">
-      <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" alt="Luna de Miel" class="img_biggest img_normal_mobile">
+      <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" alt="Luna de Miel agenda" class="img_biggest img_normal_mobile">
     </a>
 
     <div class="align_right w_61 w_75_desktop font_tiny_mobile">
@@ -250,7 +250,7 @@
       </a>
       <div class="w_60_desktop w_80 section_middle_right marginVertical_normal">
       <div class="w_90_desktop w_80 section_middle_right marginVertical_normal">
-        <a href="https://www.facebook.com/portallunademiel/"  class="w_20_desktop w_20 marginVertical_normal" target="_self"><img src="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/images/f.svg" alt="Correo" class="img_normal img_small_mobile"></a>
+        <a href="https://www.facebook.com/portallunademiel/"  class="w_20_desktop w_20 marginVertical_normal" target="_self"><img src="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/images/f.svg" alt="Facebook" class="img_normal img_small_mobile"></a>
         <div class="w_70 w_65_desktop whiteColor " style="margin-left:15px;">Únete a nuestra comunidad</div>
 
       </div>

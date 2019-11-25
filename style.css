@@ -601,8 +601,10 @@ body {
   margin-bottom: 0;
   margin-right: 1.1em; }
 
-#destacados .box-destacado dt a {
-  font-size: 20px; }
+#destacados .box-destacado dt a h1 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700; }
 
 @media (max-width: 400px) {
   #destacados .box-destacado {
@@ -616,11 +618,19 @@ body {
     -ms-flex-pack: center;
     justify-content: center; } }
 
-#destacados .item-destacados .titulo {
+#destacados .item-destacados .titulo,
+#destacados .item-destacados .titulo h1 {
   font-size: 20px;
   margin: 10px 0px;
   display: inline-block;
   padding: 0px 20px; }
+  #destacados .item-destacados .titulo:hover,
+  #destacados .item-destacados .titulo h1:hover {
+    text-decoration: underline; }
+
+#destacados .item-destacados .titulo h1 {
+  margin: 0;
+  padding: 0; }
 
 #destacados .item-destacados ul li {
   margin: 0px 0px 5px;
