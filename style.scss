@@ -1108,7 +1108,16 @@ body {
     padding: 0px 20px;
 }
 
+.novedades{
+    &__title{
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 20px;
+        font-size: 24px;
+    }
+}
 
+ 
 
 #novedades .item-novedades a {
     display: inline-block;
@@ -1533,11 +1542,6 @@ body {
 }
 
 /* Novedades */
-.novedades__title {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
 
 // Styles colores
 

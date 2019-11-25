@@ -297,7 +297,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-1');
         <div class="row">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10">
-            <h3 class="novedades__title" >NOVEDADES</h3>
+            <h1 class="novedades__title" >NOVEDADES</h1>
           </div>
           <div class="hidden-xs col-md-1">&nbsp;</div>
         </div>
