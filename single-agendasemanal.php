@@ -124,16 +124,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
   <meta property="og:url" content="<?php echo get_page_link();?>" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content=" <?php echo  the_title(); ?> - Luna de Miel" />
   <meta property="og:description" content="<?php $numberd = 1; $terms = get_the_terms( $post->ID , 'agenda' );
   	foreach ( $terms as $term ) {$term_link = get_term_link( $term, 'agenda' ); if( is_wp_error( $term_link ) ) continue; ?> <?php if($numberd >1){echo ' & '.$term->description;} else{ echo $term->description;} ?> <?php $numberd++; }?>"/>
   <meta property="og:image" content="<?php echo main_image_url('full'); ?>" />
-<link rel="shortcut icon" href="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" type="image/x-icon">
+   <link rel="shortcut icon" href="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" type="image/x-icon">
 
-  <title> Música para todos los gustos - Luna de Miel</title>
+  <title> <?php echo  the_title(); ?></title>
+  <meta name="description"  content="<?php $numberd = 1; $terms = get_the_terms( $post->ID , 'agenda' );
+  	foreach ( $terms as $term ) {$term_link = get_term_link( $term, 'agenda' ); if( is_wp_error( $term_link ) ) continue; ?> <?php if($numberd >1){echo ' & '.$term->description;} else{ echo $term->description;} ?> <?php $numberd++; }?>">
 
   <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/bastemp.min.css">
   <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/styles.min.css">

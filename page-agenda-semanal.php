@@ -199,7 +199,7 @@
         <tr>
           <td width="200" align="left" valign="middle" bgcolor="#ffffff" style="border-collapse:collapse">
             <a href="http://www.lunademiel.com.pe/" style="color:black;text-decoration:none" target="_blank" >
-              <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="Luna de miel agenda" >
+              <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="Luna de miel agenda semanal" >
             </a>
           </td>
           <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-size:14px;font-weight:bold;letter-spacing:1px;height:80px">
@@ -358,7 +358,7 @@
 				  ?>	
 				   <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
 						<a href="http://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none"   >
-						<img src="https://lunademiel.com.pe/emailing/2019/3-marzo/29/mi.png" width="195" height="auto" style="border:0;display:block" alt="" >
+						<img src="https://lunademiel.com.pe/emailing/2019/3-marzo/29/mi.png" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
 						</a>
 					</td>
 				</tr>
