@@ -25,7 +25,7 @@
 		<div class="container">
 			<div class="col-xs-12 col-md-12">
 				<?php edit_post_link(__('Edit this entry','html5reset'), '<span style=" text-align: center; font-family: Times New Roman; font-size: 35px;">', '</span>'); ?>
-				<h2  style=" font-family:Didot ;letter-spacing: 1px;font-size:44px; font-style: italic;color: black !important;text-align: center; "><?php the_title(); ?></h2>
+				<h1  style=" font-family:Didot ;letter-spacing: 1px;font-size:44px; font-style: italic;color: black !important;text-align: center; "><?php the_title(); ?></h1>
 				<div style=" text-align: center; font-family: Times New Roman; font-size: 35px;" >
 					<?php the_content(); ?>
 				</div>

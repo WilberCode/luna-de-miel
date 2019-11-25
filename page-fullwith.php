@@ -25,7 +25,7 @@
 	<section id="main" class="clearfix">
 		<div class="container">
 			<div class="col-xs-12 col-md-12">
-				<h2><?php the_title(); ?></h2>
+				<h1><?php the_title(); ?></h1>
 				<div class="entry">
 					<?php the_content(); ?>
 					<?php edit_post_link(__('Edit this entry','html5reset'), '<p>', '</p>'); ?>

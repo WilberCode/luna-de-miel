@@ -190,9 +190,11 @@ textarea:-moz-placeholder {
 
 
 
-#main h2 {
+#main h2,
+#main h1 {
     margin: 20px 0px 10px;
     color: #FF3399;
+    font-size: 30px;
 }
 
 #main .entry h2 {
