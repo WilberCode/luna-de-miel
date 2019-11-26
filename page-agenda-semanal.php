@@ -108,7 +108,8 @@
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Luna de miel</title>
+<title>Agenda Romántica</title>
+<meta  name="description" content="Ideas para romper la rutina y disfrutar toda la semana">
 
 <style type="text/css">
 

@@ -188,13 +188,21 @@ textarea:-moz-placeholder {
     margin-bottom: 40px;
 }
 
+// main 
 
-
-#main h2,
-#main h1 {
-    margin: 20px 0px 10px; 
-    font-size: 30px;
+#main {
+    & h1, & h2{
+        margin: 20px 0px 10px;
+        font-size: 30px;
+    }
+    & .entry h2 {
+        margin-bottom: 20px !important;
+    }
+    
 }
+
+// page
+
 .page{
   &-posts{
       h1 {
@@ -202,13 +210,7 @@ textarea:-moz-placeholder {
     }
   }
 }
-
-#main .entry h2 {
-    margin-bottom: 20px !important;
-}
-
-
-
+ 
 .addthis_toolbox {
     margin-top: 25px;
 }
@@ -240,19 +242,18 @@ textarea:-moz-placeholder {
 }
 
 
+// menu
 
 #menu {
     padding: 20px 0px 9px 0;
-}
+    a {
+        color: #333;
 
-#menu a {
-    color: #333;
-}
-
-#menu .social-icons a {
-    margin-right: 15px;
-}
-
+    }
+    & .social-icons a {
+        margin-right: 15px;
+    }
+}  
 
 
 #nav .menu {
