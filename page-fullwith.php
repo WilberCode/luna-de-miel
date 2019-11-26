@@ -22,7 +22,7 @@
 		</div>
 	</section>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<section id="main" class="clearfix">
+	<section id="main" class="clearfix page-posts">
 		<div class="container">
 			<div class="col-xs-12 col-md-12">
 				<h1><?php the_title(); ?></h1>

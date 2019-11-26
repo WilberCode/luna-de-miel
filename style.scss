@@ -192,9 +192,15 @@ textarea:-moz-placeholder {
 
 #main h2,
 #main h1 {
-    margin: 20px 0px 10px;
-    color: #FF3399;
+    margin: 20px 0px 10px; 
     font-size: 30px;
+}
+.page{
+  &-posts{
+      h1 {
+        color: #FF3399;
+    }
+  }
 }
 
 #main .entry h2 {
@@ -270,11 +276,7 @@ textarea:-moz-placeholder {
     text-transform: uppercase;
 }
 
-
-
-
-
-ul.nav-prime {}
+ 
 
 ul.nav-prime li {
 
@@ -1304,6 +1306,7 @@ body {
 
     .head-title h1 {
         font-size: 25px !important;
+        
     }
 
     .entry h3 {

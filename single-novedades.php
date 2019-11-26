@@ -5,7 +5,7 @@
  * @since HTML5 Reset 2.0
  */
  get_header(); ?>
-<section id="main" class="clearfix">
+<section id="main" class="clearfix single">
   <div class="container">
 	<div class="col-main col-sm-8">
 		<?php if (get_post_status()=='archive'){ ?>

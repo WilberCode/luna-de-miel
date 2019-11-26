@@ -21,7 +21,7 @@
 		</div>
 	</section>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<section id="main" class="clearfix">
+	<section id="main" class="clearfix page-posts">
 		<div class="container">
 			<div class="col-xs-12 col-md-12">
 				<?php edit_post_link(__('Edit this entry','html5reset'), '<span style=" text-align: center; font-family: Times New Roman; font-size: 35px;">', '</span>'); ?>
