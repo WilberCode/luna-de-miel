@@ -30,7 +30,7 @@
               <dl class="box-destacado text-center">
                 <dt>
                   <a href="<?php echo home_url( $wp->request );?>/agenda-semanal/">
-                    <h1>AGENDA ROMÁNTICA</h1>
+                    <h2>AGENDA ROMÁNTICA</h2>
                   </a>
                 </dt>
                 <dd>
@@ -59,7 +59,7 @@
             <div class="box-promociones box-agenda " style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;" >
               <dl class="box-destacado text-center">
               <dt> 
-                <a href="<?php echo home_url( $wp->request );?>/promociones"><h1>PROMOCIONES</h1></a> 
+                <a href="<?php echo home_url( $wp->request );?>/promociones"><h2>PROMOCIONES</h2></a> 
               </dt>
               <dd> 
                 <?php 
@@ -133,7 +133,7 @@
 						?>
 
               </a>
-              <a href="<?=home_url( $wp->request );?>/viajes/" class="titulo"><h1>VIAJES</h1></a>
+              <a href="<?=home_url( $wp->request );?>/viajes/" class="titulo"><h2>VIAJES</h2></a>
               <ul>
                 <?php
 							global $post;
@@ -189,7 +189,7 @@
                           ?>
 
             </a>
-              <a href="<?=home_url( $wp->request );?>/entrevistas/" class="titulo"><h1>BODAS</h1></a>
+              <a href="<?=home_url( $wp->request );?>/entrevistas/" class="titulo"><h2>BODAS</h2></a>
               <ul>
                 <?php
 							global $post;
@@ -244,7 +244,7 @@
 						?>
 
               </a>
-              <a href="<?=home_url( $wp->request );?>/articulos/" class="titulo"><h1>MUNDO PAREJAS</h1></a>
+              <a href="<?=home_url( $wp->request );?>/articulos/" class="titulo"><h2>MUNDO PAREJAS</h2></a>
               <ul>
                 <?php
 							global $post;
@@ -297,7 +297,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-1');
         <div class="row">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10">
-            <h1 class="novedades__title" >NOVEDADES</h1>
+            <h2 class="novedades__title" >NOVEDADES</h2>
           </div>
           <div class="hidden-xs col-md-1">&nbsp;</div>
         </div>

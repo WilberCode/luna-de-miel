@@ -238,11 +238,13 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 					
 					<!--SUSCRÍBETE boton-->
 					<div class="col-sx-12 col-md-7 col-lg-8">
-						<h2>GUÍA PARA PAREJAS: <small>Agenda romántica, novedades & promociones exclusivas.</small></h2>
-						<h2>SUSCRÍBETE <small>Y recibe la agenda, novedades & promociones exclusivas.</small></h2>
+						<h1  class="suscripcion__title" >GUÍA PARA PAREJAS</h1>
+						<p class="suscripcion__description" >Agenda romántica, novedades & promociones exclusivas.</p>
 					</div>
 					<div class="col-sx-12 col-md-5 col-lg-4">
 						<div class="input-group margin-bottom-sm"> 
+							<h2  class="suscripcion-form__title" >SUSCRÍBETE</h2>
+							<p class="suscripcion-form__description" >Y recibe la agenda, novedades & promociones exclusivas.</p>
 						  <?php
 						    $form_widget = new \MailPoet\Form\Widget();
                             echo $form_widget->widget(array('form' => 2, 'form_type' => 'php'));
