@@ -358,4 +358,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-1');
         </div>
       </div>
     </section>
+   
     <?php get_footer(); ?>
+
+  

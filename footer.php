@@ -37,9 +37,18 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php bloginfo('template_directory'); ?>/_/js/bootstrap.min.js"></script>
 
+	<!-- Search in front-page -->
 	<script>
 		document.getElementById('s').placeholder = "Buscar..."
 	</script>
+
+	<!-- Footer menu set nofollow -->
+	 <script>
+      var footer_menu = document.querySelectorAll('#menu-main-menu-1 li a') 
+      for(i in footer_menu){ 
+         footer_menu[i].rel = "nofollow" 
+      }
+    </script>
 </body>
 
 </html>
