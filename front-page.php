@@ -131,9 +131,9 @@
 								$countt ++;
 							endwhile;
 						?>
-
+                <h2  class="titulo" >VIAJES</h2>
               </a>
-              <a href="<?=home_url( $wp->request );?>/viajes/" class="titulo"><h2>VIAJES</h2></a>
+              <!-- <a href="/viajes/" class="titulo"><h2>VIAJES</h2></a>   -->
               <ul>
                 <?php
 							global $post;
