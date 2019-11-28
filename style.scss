@@ -149,8 +149,17 @@ textarea:-moz-placeholder {
     padding: 0px 5px !important;
 }
 
-.show-grid {
-    margin-bottom: 25px;
+.post {
+    &-card{
+      margin-bottom: 25px;
+      h2{
+        font-size: 16px !important;
+        color: #333;
+        margin-top: 6px !important;
+        text-align: center;
+      }
+    }
+   
 }
 
 .clear-all {
@@ -1094,13 +1103,7 @@ body {
     font-size: 16px;
     color: #000;
 }
-
-.listing div {
-    min-height: 300px;
-}
-
-
-
+ 
 .archived {
     margin-bottom: 0px;
 }
