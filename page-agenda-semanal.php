@@ -111,6 +111,8 @@
 <title>Agenda Romántica</title>
 <meta  name="description" content="Ideas para romper la rutina y disfrutar toda la semana">
 <link rel="shortcut icon" sizes="”1024x1024”" href="https://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
+<link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal/>
+
 <style type="text/css">
 
                 /****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
