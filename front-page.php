@@ -126,7 +126,7 @@
 								if($countt == 0){
 									$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
 									$imagethumb = $arr_image[0];
-									echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'" style="height:229px"/>';
+									echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
 								}
 								$countt ++;
 							endwhile;
@@ -182,7 +182,7 @@
                               if($countt == 0){
                                 $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
                                 $imagethumb = $arr_image[0];
-                                echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'" style="height:229px"/>';
+                                echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
                               }
                               $countt ++;
                             endwhile;
@@ -237,7 +237,7 @@
 								if($countt == 0){
 									$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
 									$imagethumb = $arr_image[0];
-									echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'" style="height:229px"/>';
+									echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
 								}
 								$countt ++;
 							endwhile;
@@ -327,8 +327,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-1');
 								 $imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
 							endif;
 							echo '<div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center">';
-							echo '<a href="' . get_permalink() . '" rel="nofollow"><img src="' . $imagethumb . '" alt="'.get_the_title().'"/></a>';
-							echo '<a href="' . get_permalink() . '" class="titulo">'.get_the_title().'</a>';
+							echo '<a href="' . get_permalink() . '" ><img src="' . $imagethumb . '" alt="'.get_the_title().'"/> <h2 class="titulo" >'.get_the_title().'</h2> </a>'; 
 							echo '</div>';
 						endwhile;
 					endif;
