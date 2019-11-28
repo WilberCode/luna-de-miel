@@ -187,9 +187,9 @@
                               $countt ++;
                             endwhile;
                           ?>
-
+                 <h2 class="titulo" >BODAS</h2>
             </a>
-              <a href="<?=home_url( $wp->request );?>/entrevistas/" class="titulo"><h2>BODAS</h2></a>
+              <!-- <a href=" /entrevistas/" class="titulo"><h2>BODAS</h2></a> -->
               <ul>
                 <?php
 							global $post;
@@ -241,10 +241,10 @@
 								}
 								$countt ++;
 							endwhile;
-						?>
-
+						?> 
+              <h2 class="titulo">MUNDO PAREJAS</h2>
               </a>
-              <a href="<?=home_url( $wp->request );?>/articulos/" class="titulo"><h2>MUNDO PAREJAS</h2></a>
+              <!-- <a href=" /articulos/" class="titulo"><h2>MUNDO PAREJAS</h2></a> -->
               <ul>
                 <?php
 							global $post;
