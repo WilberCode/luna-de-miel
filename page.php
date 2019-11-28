@@ -58,10 +58,10 @@
 							else :
 								 $imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
 							endif;
-							echo '<div class="col-xs-12 col-sm-6 col-md-3 post-card">';
-							echo '<a   href="' . get_permalink() . '"  ><img class="thumbnail"  src=" ' . $imagethumb . '" alt="'.get_the_title().'"/>';
-							echo '<h2 class="title-list">'.get_the_title().'</h2>';
-							echo '</a>'; 
+							echo '<div class="col-xs-12 col-sm-6 col-md-3 show-grid">';
+							echo '<a href="' . get_permalink() . '" rel="nofollow" class="thumbnail"><img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
+							echo '</a>';
+							echo '<a href="' . get_permalink() . '" class="title-list">'.get_the_title().'</a>';
 							echo '</div>';
 						endwhile;
 					endif;
