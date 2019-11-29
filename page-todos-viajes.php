@@ -5,7 +5,9 @@
  * @since HTML5 Reset 2.0
  * 
  */
+
  get_header(); ?>
+  <?php global $wp;  ?>
 	<section class="publicidad hidden-xs">
 		<div class="container">
 			<div class="row">
@@ -65,7 +67,7 @@
 					</div>
 			</div>
 			<div class="col-xs-12 col-md-12 text-center">
-				<a class="btn btn-default btn-lg" href="/viajes/" role="button">Regresar a viajes</a>
+				<a class="btn btn-default btn-lg" href="<?php echo home_url( $wp->request );?>/viajes/" role="button">Regresar a viajes</a>
 			</div>	
 		</div>
 	</section>		
