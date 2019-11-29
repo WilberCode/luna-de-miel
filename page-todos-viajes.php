@@ -26,8 +26,8 @@
 	<section id="main" class="clearfix ">
 		<div class="container page-wrap">
 			<div class="col-xs-12 col-md-12">
-				<?php edit_post_link(__('Edit this entry','html5reset'), '<span>', '</span>'); ?>
 				<div class="page-content">
+					<?php edit_post_link(__('Edit this entry','html5reset'), '<span>', '</span>'); ?>
 					<h1><?php the_title(); ?></h1>
 					<div class="entry">	
 						<?php the_content(); ?>
