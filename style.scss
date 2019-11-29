@@ -152,12 +152,23 @@ textarea:-moz-placeholder {
 .post {
     &-card{
       margin-bottom: 25px;
-      h2{
-        font-size: 16px !important;
-        color: #333;
-        margin-top: 6px !important;
-        text-align: center;
-      }
+      a{
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: stretch;
+        img{
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+        }
+        h2 {
+            font-size: 16px !important;
+            color: #333;
+            margin-top: 6px !important;
+            text-align: center;
+        }
+      } 
     }
    
 }
@@ -214,10 +225,16 @@ textarea:-moz-placeholder {
 // page
 
 .page{
-  &-posts{
-      h1 {
+  &-wrap{
+      width: 100% !important;
+      max-width: 1260px !important; 
+    h1 {
         color: #FF3399;
     }
+  }  
+  &-content{
+      padding-left: 1em; 
+      margin-bottom: 2em;
   }
 }
  
@@ -1641,7 +1658,7 @@ body {
     }
 
     .listing div a {
-        display: inline-block;
+        display: block;
     }
 
     .thumbnail {
