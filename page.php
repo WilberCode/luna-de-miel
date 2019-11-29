@@ -21,13 +21,16 @@
 		</div>
 	</section>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<section id="main" class="clearfix page-posts">
-		<div class="container">
+	<section id="main" class="clearfix">
+		<div class="container page-wrap">
 			<div class="col-xs-12 col-md-12">
-				<?php edit_post_link(__('Edit this entry','html5reset'), '<span style=" text-align: center; font-family: Times New Roman; font-size: 35px;">', '</span>'); ?>
-				<h1  style=" font-family:Didot ;letter-spacing: 1px;font-size:44px; font-style: italic;color: black !important;text-align: center; "><?php the_title(); ?></h1>
-				<div style=" text-align: center; font-family: Times New Roman; font-size: 35px;" >
-					<?php the_content(); ?>
+				<?php edit_post_link(__('Edit this entry','html5reset'), '<span style=" text-align: center; font-family: Times New Roman; font-size: 35px;">', '</span>'); ?> 
+			 
+				<div class="page-content">
+					<h1  style=" font-family:Didot ;letter-spacing: 1px;font-size:44px; font-style: italic;color: black !important;text-align: center; "><?php the_title(); ?></h1>
+					<div style=" text-align: center; font-family: Times New Roman; font-size: 35px;" >
+						<?php the_content(); ?>
+					</div>
 				</div>
 				
 				<?php 

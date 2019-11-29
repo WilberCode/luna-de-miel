@@ -31,7 +31,7 @@
 						<?php the_content(); ?>
 					</div>
 				</div>
-				<div class="listing">
+				<div class="listing post">
 				<?php
 					global $post;
 					
