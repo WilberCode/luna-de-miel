@@ -53,7 +53,7 @@
 								 $imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
 							endif;
 							echo '<div class="col-xs-12 col-sm-6 col-md-3 post-card ">';
-							echo '<a href="' . get_permalink() . '" class="thumbnail" ><img src="' . $imagethumb . '" alt="'.get_the_title().'"/> <h2  class="" >'.get_the_title().'</h2>';
+							echo '<a href="' . get_permalink() . '"  ><img src="' . $imagethumb . '" alt="'.get_the_title().'" class="thumbnail"/> <h2  class="" >'.get_the_title().'</h2>';
 							echo '</a>'; 
 							echo '</div>'; 
 						endwhile;
