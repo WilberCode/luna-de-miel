@@ -29,7 +29,7 @@
 				<div class="entry">
 					<?php the_content(); ?>
 				</div>
-				<div class="listing">
+				<div class="listing post">
 				<?php
 					global $post;
 					
@@ -52,11 +52,10 @@
 							else :
 								 $imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
 							endif;
-							echo '<div class="col-xs-12 col-sm-6 col-md-3 show-grid">';
-							echo '<a href="' . get_permalink() . '"  class="thumbnail"><img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
-							echo '</a>';
-							echo '<a href="' . get_permalink() . '" class="title-list">'.get_the_title().'</a>';
-							echo '</div>';
+							echo '<div class="col-xs-12 col-sm-6 col-md-3 post-card ">';
+							echo '<a href="' . get_permalink() . '"  ><img src="' . $imagethumb . '" alt="'.get_the_title().'" class="thumbnail"/> <h2>'.get_the_title().'</h2>';
+							echo '</a>'; 
+							echo '</div>'; 
 						endwhile;
 					endif;
 
