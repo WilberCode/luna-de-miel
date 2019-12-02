@@ -266,6 +266,7 @@ $number_single = 1;
 						'post_type' => 'agendasemanal',
 						'orderby' => 'date',
 						'order' => 'desc', 
+						'post__not_in' => array(get_the_ID()),
 						'post_status' => 'publish',
 						'posts_per_page' => 12
 						);
