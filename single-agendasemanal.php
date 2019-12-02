@@ -295,16 +295,11 @@ $number_single = 1;
 								} 
 								?>
 								 <div class="post-card item"> 
-									 <a href="<? the_permalink(); ?>"  >
-										 <img src="<?php echo $imagethumb; ?>" alt="<?php the_title();?>" class="thumbnail"/> 
-									 <p  style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
-
-									 if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
-
-									 ?>">
-									- <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>   
-									 <h2><?php the_title();?></h2>
-							 	</a> 
+									<a href="<? the_permalink(); ?>"  >
+										<img src="<?php echo $imagethumb; ?>" alt="<?php the_title();?>" class="thumbnail"/> 
+										<p>- <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>   
+										<h2><?php the_title();?></h2>
+							 		</a> 
 								 </div> 
 								<?php
 							endwhile;

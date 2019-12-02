@@ -1974,14 +1974,26 @@ body {
 .owl{
     &-carousel{
         & .item.post-card {
+            &:hover{
+                text-decoration: underline;
+            }
              margin-bottom: 0 !important;
-             a h2{
+             a {
+                 h2{
                     font-size: 20px !important;
+                
+                }
+                p{
+                    font-family:Prelo SemiBold;
+                    color:#eb3d82;
+                    font-size:14px;
+                    padding:3px 0;
+                    text-align:center;
+                }
+
             }
     }
     }
 
- .post-card.item:hover {
-     text-decoration: underline;
- }
+  
 }
