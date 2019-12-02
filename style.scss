@@ -1973,14 +1973,15 @@ body {
 }
 .owl{
     &-carousel{
-        & .item{
+        & .item.post-card {
+             margin-bottom: 0 !important;
              a h2{
                     font-size: 20px !important;
             }
-        }
     }
-}
+    }
 
  .post-card.item:hover {
      text-decoration: underline;
  }
+}
