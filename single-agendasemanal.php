@@ -265,7 +265,8 @@ $number_single = 1;
 						$args = array(
 						'post_type' => 'agendasemanal',
 						'orderby' => 'date',
-						'order' => 'desc',
+						'order' => 'desc', 
+						'post_status' => 'publish',
 						'posts_per_page' => 12
 						);
 
