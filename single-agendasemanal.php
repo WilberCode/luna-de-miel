@@ -257,7 +257,7 @@ $number_single = 1;
 	</div>  	
 	<div class="separador ">&nbsp;</div>
 		<h2  class="agenda-carousel__title" >Ver más publicaciones</h2> 
-		<div class="post owl-carousel owl-theme">
+		<div class="post owl-carousel agenda-carousel-wrap owl-theme">
 					<?php
 						global $post;
 						

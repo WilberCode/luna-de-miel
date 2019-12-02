@@ -20,6 +20,7 @@ License URI: http://opensource.org/licenses/bsd-license.php
 $shadow:0 1px 3px 0 rgba(0, 0, 0, .1),0 1px 2px 0 rgba(0, 0, 0, .06) !important;
 $shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, .1),0 4px 6px -2px rgba(0, 0, 0, .05) !important;
 $first-color:#FF3399;
+$first-color-alt:#d6297f;
  
 body {
     font: 13px Cambria, Georgia, serif;
@@ -1956,6 +1957,9 @@ body {
 
 .agenda{ 
     &-carousel{
+        &-wrap {
+   margin-bottom: 45px;
+        }
         &__title{
            margin-top: 0;
            margin-bottom: .8em;
@@ -1966,13 +1970,14 @@ body {
            border-radius: 0 0 25px;  
         }
         &__icon{
-            color: $first-color;
+            color: white;
         } 
+
     }
    
 }
 .owl{
-    &-carousel{
+    &-carousel{  
         & .item.post-card {
             &:hover h2{ 
                 text-decoration: underline;
@@ -1992,8 +1997,45 @@ body {
 
                   }  
             }
+         }
+        
     }
+    &-dots{
+        display: none;
     }
+    
+     &-theme &-nav {
+         top: 50%; 
+         position: absolute;
+         transform: translateY(-50%);
+         margin-top: 10px;
+         display: flex;
+         justify-content:space-between;
+         width: 100%;
+         margin-top: 0 !important;
+         button {
+             width: 30px;
+             height: 30px;
+             background: rgba($first-color-alt, 0.60) !important;
+             box-shadow: 0 0 0 4px rgba($first-color, 0.15);
+             border-radius: 50% !important;
+             &:hover{
+               background: rgba($first-color-alt, 0.85) !important;
+               box-shadow: 0 0 0 4px rgba($first-color, 0.40); 
+             }
+         }
+         & [class*=owl-]{
+            margin: 0 -14px !important;
+            color: white;
+         }
+     }
+     &-prev {
+        align-self: flex-start;
+        left: 5px;
+     }
+     &-next{
+        align-self: flex-end;
+     }
 
   
 }
