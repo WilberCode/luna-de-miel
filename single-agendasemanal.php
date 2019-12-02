@@ -143,6 +143,12 @@ $number_single = 1;
 
   <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/bastemp.min.css">
   <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/styles.min.css">
+
+   <!-- Owl -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"> 
   <style> 
   h1,h2,h3,h4,h5{
 	font-family: 'Times New Roman', Times, serif;
@@ -191,6 +197,7 @@ $number_single = 1;
   }
   
   </style>
+ 
 </head>
 <body class="section_top_center"> 
 <div class="section_top_center">
@@ -235,7 +242,7 @@ $number_single = 1;
 		}?>
 	 
 	 -</span>
-  	<div class="agenda-single" style="width:100%;" >
+  	<div class="agenda-single" style="width:100%;margin-bottom:4em;" >
 		<?php
 				if (have_posts()) :
 					while (have_posts()):
@@ -247,9 +254,45 @@ $number_single = 1;
 				// reset the query
 				wp_reset_postdata();
 		?> 
-	</div> 
+	</div>  	
+	<div class="separador ">&nbsp;</div>
+		<h2  class="agenda-carousel__title" >Ver más publicaciones</h2> 
+		<div class="post owl-carousel owl-theme">
+					<?php
+						global $post;
+						
+						//query subpages
+						$args = array(
+						'post_type' => 'agendasemanal',
+						'orderby' => 'date',
+						'order' => 'desc',
+						'posts_per_page' => 12
+						);
+
+						$listing = new WP_query($args);	
+
+						// create output
+						if ($listing->have_posts()) :
+							while ($listing->have_posts()) : $listing->the_post();
+								$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
+								if ( $arr_image[0] != '' ) :
+									$imagethumb = $arr_image[0];
+								else :
+									$imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
+								endif;
+								echo '<div class="post-card item">';
+								echo '<a href="' . get_permalink() . '"  ><img src="' . $imagethumb . '" alt="'.get_the_title().'" class="thumbnail"/> <h2>'.get_the_title().'</h2>';
+								echo '</a>'; 
+								echo '</div>'; 
+							endwhile;
+						endif;
+
+						// reset the query
+						wp_reset_postdata();
+					?>  
+		</div>		  
   </section>
- <footer class="pinkColorBg w_100 section_middle_center  ">
+ <footer class="pinkColorBg w_100 section_middle_center">
     <div class="w_50_desktop w_80 section_middle_center">
       <a href="http://www.lunademiel.com.pe" class="w_40_desktop w_80 marginVertical_normal">
         <img src="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/images/footer_img.svg" alt="Imagen" class="w_100">
@@ -268,5 +311,31 @@ $number_single = 1;
     </div>
   </footer>
   </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	  <script>
+ $('.owl-carousel').owlCarousel({
+	loop:true,
+	margin:18,
+	nav:true,  
+	navText: [
+		"<i class='fa fa-caret-left agenda-carousel__icon'></i>",
+		"<i class='fa fa-caret-right agenda-carousel__icon'></i>"
+	],
+	responsive:{
+		0:{
+			items:2
+		},
+		600:{
+			items:3
+		},
+		1000:{
+			items:5
+		}
+	}
+	})
+ 
+</script>
 </body>
 </html> 

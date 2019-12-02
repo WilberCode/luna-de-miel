@@ -53,6 +53,8 @@ fbq('track', 'PageView');
 
   gtag('config', 'UA-127421070-1');
 
+
+
 </script>
 
 
@@ -199,7 +201,8 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
-</script>
+</script> 
+ 
 </head>
 
 <body <?php body_class(); ?>>
@@ -351,6 +354,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 			</div>
 		</header>
 		
+		 
 		<?php } ?>
 		
 

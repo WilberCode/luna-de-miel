@@ -1950,6 +1950,29 @@ body {
 
 
  
+// Agenda
 
+// agenda single
 
+.agenda{ 
+    &-carousel{
+        &__title{
+           margin-top: 0;
+           margin-bottom: .8em;
+           font-size: 20px !important;
+           background: #eb3c82;
+           color: white;
+           padding: 5px 26px 5px 8px;
+           border-radius: 0 0 25px;
 
+        }
+        &__icon{
+            color: $first-color;
+        } 
+    }
+   
+}
+
+ .post-card.item:hover {
+     text-decoration: underline;
+ }
