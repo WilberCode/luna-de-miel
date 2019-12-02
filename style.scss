@@ -1974,15 +1974,11 @@ body {
 .owl{
     &-carousel{
         & .item.post-card {
-            &:hover{
+            &:hover h2{ 
                 text-decoration: underline;
             }
              margin-bottom: 0 !important;
-             a {
-                 h2{
-                    font-size: 20px !important;
-                
-                }
+             a { 
                 p{
                     font-family:Prelo SemiBold;
                     color:#eb3d82;
@@ -1990,7 +1986,11 @@ body {
                     padding:3px 0;
                     text-align:center;
                 }
+                  h2 {
+                      font-size: 20px !important;
+                      color: #333;
 
+                  }  
             }
     }
     }
