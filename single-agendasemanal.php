@@ -290,7 +290,7 @@ $number_single = 1;
 								if ( $terms && ! is_wp_error( $terms ) ) {                
 									$term_slugs_array = array();
 									foreach ( $terms as $term ) {
-										$term_slugs_array[] = $term->slug;
+										$term_slugs_array[] = $term->name;
 									}
 									$terms_slugs_string = join( " & ", $term_slugs_array ); 
 								} 
