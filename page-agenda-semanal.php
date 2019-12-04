@@ -271,7 +271,7 @@
 
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
 								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo;font-family:Prelo-Bold;font-weight:600;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo;font-family:Prelo-Bold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
 
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
 
@@ -344,7 +344,7 @@
 							 ?>" style="border-collapse:collapse;" valign="top" >
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
 								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo ;font-family:Prelo-Bold;font-weight:600;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo ;font-family:Prelo-Bold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>">
