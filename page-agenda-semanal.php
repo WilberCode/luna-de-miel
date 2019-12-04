@@ -112,7 +112,7 @@
 <meta  name="description" content="Ideas para romper la rutina y disfrutar toda la semana">
 <link rel="shortcut icon" sizes="”1024x1024”" href="https://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
 <link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal"> 
-
+<link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">
 <style type="text/css">
 
                 /****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
@@ -205,7 +205,7 @@
               <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="Luna de miel agenda semanal" >
             </a>
           </td>
-          <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-size:14px;font-weight:bold;letter-spacing:1px;height:80px">
+          <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-family:Prelo-Bold;font-size:14px;letter-spacing:1px;height:80px">
             <span style="color:#eb3d82" >ESPECIAL</span>&nbsp;<?echo date_i18n( 'F ', strtotime( get_the_time( "m" ) ) ); ?>  &gt;
 			</td>
         </tr>
@@ -215,7 +215,7 @@
 			</td>
         </tr>
         <tr>
-          <td width="600" align="right" colspan="3" valign="middle" style="border-collapse:collapse;font-family:Prelo;font-size:13px;letter-spacing:1px;padding-top:5px;    font-weight: 500;">
+          <td width="600" align="right" colspan="3" valign="middle" style="border-collapse:collapse;font-family:Prelo;font-family:Prelo-Medium;font-size:13px;letter-spacing:1px;padding-top:5px;    font-weight: 500;">
             Ideas para romper la rutina y disfrutar toda la semana
 			</td>
         </tr>
