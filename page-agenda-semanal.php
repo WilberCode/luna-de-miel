@@ -206,7 +206,7 @@
             </a>
           </td>
           <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-size:14px;font-weight:bold;letter-spacing:1px;height:80px">
-            <span style="color:#eb3d82" >ESPECIAL </span> &nbsp; <?   echo  date_i18n( 'F ', strtotime( get_the_time( "m" ) ) ); ?>  &gt;
+            <span style="color:#eb3d82" >ESPECIAL</span>&nbsp;<?echo date_i18n( 'F ', strtotime( get_the_time( "m" ) ) ); ?>  &gt;
 			</td>
         </tr>
         <tr>
@@ -215,12 +215,12 @@
 			</td>
         </tr>
         <tr>
-          <td width="600" align="right" colspan="3" valign="middle" style="border-collapse:collapse;font-family:Prelo;font-size:13px;letter-spacing:1px">
+          <td width="600" align="right" colspan="3" valign="middle" style="border-collapse:collapse;font-family:Prelo;font-size:13px;letter-spacing:1px;padding-top:5px;    font-weight: 500;">
             Ideas para romper la rutina y disfrutar toda la semana
 			</td>
         </tr>
         <tr>
-          <td width="600" height="15" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
+          <td width="600" height="10" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
         </tr>
         <tr>
           <td width="600" height="1" align="right" colspan="3" valign="middle" style="border-collapse:collapse;background-color:#eb3d82"></td>
@@ -271,7 +271,7 @@
 
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
 								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo;font-weight:600;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
 
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
 
@@ -344,7 +344,7 @@
 							 ?>" style="border-collapse:collapse;" valign="top" >
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
 								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo SemiBold;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo ;font-weight:600;color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>">
