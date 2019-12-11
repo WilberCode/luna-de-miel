@@ -1922,7 +1922,20 @@ body {
     &-navigation .page-numbers {
         border: 1px solid $first-color;
         padding: 1em 1.4em;
-        color: $first-color;
+         color: $first-color;
+        @media (max-width:400px) {
+            padding: .7em .9em;
+            
+        }
+        @media (max-width:300px) {
+            padding: .6em .8em;
+            
+        }
+        @media (max-width:200px) {
+            padding: .4em .6em;
+            
+        }
+        
     }
 
     &-navigation .page-numbers:hover {

@@ -20,7 +20,7 @@
 			<?php if(have_posts()):
 					while(have_posts()):  the_post(); ?> 
 						
-						<article class="msearch-post ed-container">
+						<article class="msearch-post">
 							<?php if(main_image_url('full')){  ?>
 							<a href="<?php if(has_tag( array( 'no-link', 'no'))){ echo "#no-link"; }else{the_permalink();}; ?>" class="msearch-post__picture  " >
 								<img src="<?php echo main_image_url('full'); ?>" alt="">
