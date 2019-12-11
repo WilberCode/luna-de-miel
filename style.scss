@@ -1910,7 +1910,8 @@ body {
     &-navigation {
         background-color: transparent;
         padding-top: 1em;
-        padding-bottom: 1em
+        padding-bottom: 1em;
+        
     }
 
     &-navigation .dots,
@@ -1922,7 +1923,9 @@ body {
     &-navigation .page-numbers {
         border: 1px solid $first-color;
         padding: 1em 1.4em;
-         color: $first-color;
+        color: $first-color;
+        display: inline-block;
+        margin-bottom: 8px;
         @media (max-width:400px) {
             padding: .7em .9em;
             
