@@ -44,10 +44,10 @@
 
 	<!-- Footer menu set nofollow -->
 	 <script>
-      var footer_menu = document.querySelectorAll('#menu-main-menu-1 li a') 
-      for(i in footer_menu){ 
-         footer_menu[i].rel = "nofollow" 
-      }
+    //   var footer_menu = document.querySelectorAll('#menu-main-menu-1 li a') 
+    //   for(i in footer_menu){ 
+    //      footer_menu[i].rel = "nofollow" 
+    //   }
     </script>
 
  
