@@ -131,20 +131,21 @@
 		</div>
 		<div class="col-sm-4 text-center">
 			<!--BRASIL-->
-			<div class="banner-right-300x250">
+			<!-- <div class="banner-right-300x250">  -->
 				<!-- /22596825/Home_Right_1_300x250 
 				<div id='div-gpt-ad-1459740034135-2' style='height:250px; width:300px;'>-->
-				<div style='height:320px; width:300px;'>
-			<a href="http://www.losincas.com.pe/bodaslima" target="_blank"><img src="http://lunademiel.com.pe/emailing/images/Mailing_luna-de-miel-.png" style="height: 320px; width: 300px" /></a>
-				<script type='text/javascript'>
+				<!-- <div style='height:320px; width:300px;'> -->
+			<!-- <a href="http://www.losincas.com.pe/bodaslima" target="_blank"><img src="http://lunademiel.com.pe/emailing/images/Mailing_luna-de-miel-.png" style="height: 320px; width: 300px" /></a> -->
+				<!-- <script type='text/javascript'>
 				//googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-2'); });
-				</script>
-			</div>
+				// </script> -->
+			<!-- </div> -->
 			<!--FIN BRASIL-->
 			<?php
 				$terms = get_terms( array('taxonomy' => 'rubros','hide_empty' => false,'orderby'=>'count','order'=>'desc','number'=>10));
 			?>
-			<div class="list-group siderbar-rubros">
+			<!-- <div class="list-group siderbar-rubros"> -->
+		 <div class="list-group  ">
 			<?php foreach($terms as $term) {?>			
 			  <a href="/rubros/<?php echo $term->slug?>/" class="list-group-item"><?php echo $term->name; ?><span class="badge"><?php echo $term->count; ?></span></a>
 			<?php }?>
