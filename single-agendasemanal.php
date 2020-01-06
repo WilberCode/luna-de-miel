@@ -162,6 +162,19 @@ $number_single = 1;
   }
   h2{
 	   font-size: 3rem !important;
+	   
+  }
+  @media (max-width:400px) {
+	h1{
+	   font-size: 3rem !important; 
+	  } 
+	h1 span{
+		font-size: 4rem !important; 
+	} 
+	h2{
+		font-size: 2rem !important;
+	
+	}
   }
   p img{
 	  width:100% !important;  

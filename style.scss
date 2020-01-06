@@ -383,12 +383,7 @@ ul.nav-prime ul :hover>a {
 
 
 /* MICROMENU ONLY STYLES */
-
-nav.micromenu {
-    /* Menu shown by default and on small screens */
-
-}
-
+ 
 nav.micromenu ul#nav-buttons {
     background: #fff;
 }
@@ -494,9 +489,7 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 /* Optional Mobile Menu 2 - Toggle */
 
 
-
-nav.micromenu ul.nav-prime {}
-
+ 
 nav.micromenu ul.nav-prime li {
 
     -webkit-transition: all 0.3s ease-in-out;
@@ -549,15 +542,7 @@ nav.micromenu ul.nav-prime a {
 
 
 
-
-
-nav.micromenu ul.nav-prime ul {
-    /* submenu styles */
-
-    /* submenu indent color */
-
-}
-
+ 
 
 
 nav.micromenu ul.nav-prime ul li {
@@ -618,16 +603,8 @@ nav.micromenu ul.nav-prime li.current-menu-parent>a {
 
 
 /* MACROMENU ONLY STYLES */
-
-
-
-nav.macromenu {
-    /* Menu shown own screens, decided by breakpoint. Inherits micromenu styles */
-
-}
-
-
-
+ 
+ 
 nav.macromenu ul.nav-prime {
 
     margin: 0;
@@ -637,69 +614,34 @@ nav.macromenu ul.nav-prime {
 
     height: auto;
     text-align: right;
+   & li {
 
-}
+        display: inline-block;
+        float: none;
+        text-align: left;
+        position: relative; 
+        margin: 0px;  
+        transition: all 0.3s ease-in-out;
+    }
+    & a { 
+        padding: 0px 6px !important; 
+    }
+    & ul {
 
+        top: 35px; 
+        background: #fff; 
+        box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
 
+    }
+    & ul ul {
 
-nav.macromenu ul.nav-prime li {
+        left: 100%; 
+        top: 0; 
+        list-style: none;
 
-    display: inline-block;
-    float: none;
-    text-align: left;
-    position: relative;
+    }
 
-    /* Remove space after inline-block (remove if not centering */
-
-    margin: 0px;
-
-    -webkit-transition: all 0.3s ease-in-out;
-
-    -moz-transition: all 0.3s ease-in-out;
-
-    -o-transition: all 0.3s ease-in-out;
-
-    -ms-transition: all 0.3s ease-in-out;
-
-    transition: all 0.3s ease-in-out;
-
-}
-
-
-
-nav.macromenu ul.nav-prime a {
-
-    padding: 0px 6px !important;
-    /* commented so pagging and linehight changes on mobile can pass to here */
-}
-
-
-
-nav.macromenu ul.nav-prime ul {
-
-    top: 35px;
-
-    background: #fff;
-
-    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
-
-    -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
-
-    box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
-
-}
-
-
-
-nav.macromenu ul.nav-prime ul ul {
-
-    left: 100%;
-
-    top: 0;
-
-    list-style: none;
-
-}
+} 
 
 .nav-sitemap ul li {
     float: left;
@@ -741,40 +683,22 @@ nav.micromenu {
 /* All menu styles - these values pass on to later breakpoints */
 
 
+ 
 
-ul.nav-prime li {
-
-    position: relative;
-
+ul{
+    &.nav-prime li { 
+        position: relative; 
+    }
+    &.nav-prime a { 
+        display: block; 
+    }
+    &.nav-prime ul { 
+        list-style: none; 
+        margin: 0 0 10px 0;
+        padding: 0; 
+        z-index: 99999; 
+    }
 }
-
-
-
-ul.nav-prime li:last-child,
-ul.nav-prime li:last-of-type {}
-
-
-
-ul.nav-prime a {
-
-    display: block;
-
-}
-
-
-
-ul.nav-prime ul {
-
-    list-style: none;
-
-    margin: 0 0 10px 0;
-    padding: 0;
-
-    z-index: 99999;
-
-}
-
-
 
 
 
@@ -1550,14 +1474,12 @@ body {
         padding: 0;
         list-style: none;
         height: 55px;
-        width: 100%;
-
+        width: 100%; 
         display: block;
 
     }
 
-    ul.nav-prime li {
-
+    ul.nav-prime li { 
         display: inline-block;
         float: left;
         position: relative;
@@ -1606,48 +1528,39 @@ body {
 
     }
 
-
-
-
-
 }
 
 
 
 @media (min-width: 48em) {
     /* About 768px */
-
-
-
+ 
     #header-int #logo-ldm {
         position: absolute;
         top: 0px;
         left: 0;
     }
-
-
-
+ 
     .publicidad .banner-right-300x250 {
         margin-top: 20px;
     }
-
-
-
 }
 
 /** wph style */
-.entry ol li {
+.entry {
+    ol li {
     margin-left: 1.5em;
     list-style-position: inside;
     font-size: 16px;
+    }
+    ul li {
+        margin-left: 1.5em;
+        list-style: disc;
+        font-size: 16px;
+        list-style-position: inside;
+    }
 }
-
-.entry ul li {
-    margin-left: 1.5em;
-    list-style: disc;
-    font-size: 16px;
-    list-style-position: inside;
-}
+ 
 
 .listing {
     display: flex;
@@ -1984,7 +1897,8 @@ body {
            background: #eb3c82;
            color: white;
            padding: 5px 26px 5px 8px;
-           border-radius: 0 0 25px;  
+           border-radius: 0 0 25px; 
+          
         }
         &__icon{
             color: white;
