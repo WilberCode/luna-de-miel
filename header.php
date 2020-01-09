@@ -319,7 +319,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 								  <input class="form-control" type="text" placeholder="Tu email aquí">
 								</div>
 							</div>-->
-							<div class="col-md-5 social-icons">
+							<div class=" social-icons">
 								<a href="https://www.facebook.com/portallunademiel/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 								<a href="/contacto/"><i class="fa fa-envelope-o fa-2x"></i></a>
 								<a href="/"><i class="fa fa-home fa-2x"></i></a>

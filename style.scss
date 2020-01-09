@@ -22,6 +22,21 @@ $shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, .1),0 4px 6px -2px rgba(0, 0, 0, .05)
 $first-color:#FF3399;
 $first-color-alt:#d6297f;
  
+
+// mixins
+
+@mixin toCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin toRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+ 
+
 body {
     font: 13px Cambria, Georgia, serif;
 }
@@ -247,21 +262,34 @@ textarea:-moz-placeholder {
 
 #header-int .suscripcion-int {
     margin: 20px 0px;
+    @include toRight();
 }
 
 #header-int .suscripcion-int h2 {
     font-size: 20px;
     margin: 5px 0px;
     font-weight: bold;
-}
+} 
+.social-icons { 
+    @include toCenter();
+    a {
+        margin-right: 10px;
+        border: 1px solid $first-color-alt;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 10px;
+        display: block;
+        @include toCenter;
+        color: $first-color-alt !important;
+        text-decoration: none !important; 
+        &:hover{
+            background: $first-color-alt;
+            color: white !important; 
+        }
 
-#header-int .social-icons {
-    margin: 10px 0 0 0;
-}
-
-#header-int .social-icons a {
-    margin-right: 10px;
-}
+    }
+} 
 
 
 
@@ -280,6 +308,7 @@ textarea:-moz-placeholder {
     }
     & .social-icons a {
         margin-right: 15px;
+        text-decoration: none;
     }
 }  
 
