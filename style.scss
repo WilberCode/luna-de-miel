@@ -263,6 +263,22 @@ textarea:-moz-placeholder {
 #header-int .suscripcion-int {
     margin: 20px 0px;
     @include toRight();
+     .social-icons {
+         a {
+             margin-right: 0;
+             margin-left: 10px;
+         }
+     }
+    @media (max-width:400px) {
+        @include toCenter();
+        .social-icons {
+            a {
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+        }
+    }
+   
 }
 
 #header-int .suscripcion-int h2 {
@@ -287,7 +303,7 @@ textarea:-moz-placeholder {
             background: $first-color-alt;
             color: white !important; 
         }
-
+        
     }
 } 
 
@@ -304,18 +320,18 @@ textarea:-moz-placeholder {
     padding: 20px 0px 9px 0;
     a {
         color: #333;
+        
 
     }
     & .social-icons a {
-        margin-right: 15px;
-        text-decoration: none;
+        // margin-right: 15px;
+        text-decoration: none; 
+        @media (max-width:400px) {
+            margin-right: 5px !important;
+            margin-left: 5px !important;
+        } 
     }
-}  
-
-
-#nav .menu {
-    margin: 0px;
-}
+}   
 
 #nav .menu li,
 #nav #menu-main-menu-1 li {
