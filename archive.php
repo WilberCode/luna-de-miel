@@ -23,7 +23,12 @@
 		<div class="container page-wrap">
 			<div class="col-main col-sm-12 show-grid">
 				<section class="head-title page-content">	
-					<h1><?php echo single_cat_title(''); ?></h1>
+					<style>
+						.page-category__title:first-letter{
+							text-transform: uppercase;
+						}
+					</style>
+					<h1  class="page-category__title"><?php echo single_cat_title(''); ?></h1>
 					<p><?php echo category_description(); ?></p>
 				</section>
 			</div>
@@ -47,8 +52,8 @@
 			endwhile; ?>
 			</div>
 			<?php else : ?>
-				<div class="col-main col-sm-12 show-grid">
-					Por el momento no tenemos promociones. Si deseas contactarnos para enviarnos promociones o deseas anunciar con nosotros puedes <a href="/contacto/" id="contacto">escribirnos aquí</a>.
+				<div class="col-main col-sm-12  ">
+					<p style="padding-left: 1em;" >	Por el momento no tenemos promociones. Si deseas contactarnos para enviarnos promociones o deseas anunciar con nosotros puedes <a href="/contacto/" id="contacto">escribirnos aquí</a>.</p>
 				</div>
 			<?php endif; ?>
 		</div>

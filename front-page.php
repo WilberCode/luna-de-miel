@@ -1,6 +1,6 @@
 <?php
 /**
- * @package WordPress
+* @package WordPress
  * @subpackage HTML5-Reset-WordPress-Theme
  * @since HTML5 Reset 2.0
  */
@@ -12,7 +12,7 @@
   $foto_viajes = $settings->field('foto_viajes');
   $foto_entrevistas = $settings->field('foto_entrevistas');
   $foto_articulos = $settings->field('foto_articulos');
-?>
+  ?>
   <?php global $wp;  ?>
     <section class="publicidad hidden-xs">
       <div class="container">
