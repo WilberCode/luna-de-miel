@@ -25,12 +25,39 @@
 				<section class="head-title page-content">	
 					<style>
 						.page-category__title:first-letter{
-							text-transform: uppercase;
+							text-transform:uppercase;
 						}
 					</style>
 					<h1  class="page-category__title"><?php echo single_cat_title(''); ?></h1>
 					<p><?php echo category_description(); ?></p>
 				</section>
+					<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand visible-xs-block">Filtros</a>
+			</div> 
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				<?php $agendalist = get_terms( 'agenda', array('orderby'=>'count','order'=>'desc') );?>
+				<?php foreach ($agendalist as $agenda) {?>
+				<li>
+					<a href="<?php echo get_term_link($agenda->slug, $taxonomy); ?>"><?php echo $agenda->name; ?>&nbsp;<span class="badge"><?php echo $agenda->count; ?></span>
+					</a>
+				</li>
+				<?php } ?>	 
+				</ul>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>	 				
+ 
 			</div>
 			<?php 
 			global $query_string;
@@ -53,7 +80,7 @@
 			</div>
 			<?php else : ?>
 				<div class="col-main col-sm-12  ">
-					<p style="padding-left: 1em;" >	Por el momento no tenemos promociones. Si deseas contactarnos para enviarnos promociones o deseas anunciar con nosotros puedes <a href="/contacto/" id="contacto">escribirnos aquí</a>.</p>
+					Por el momento no tenemos promociones. Si deseas contactarnos para enviarnos promociones o deseas anunciar con nosotros puedes <a href="/contacto/" id="contacto">escribirnos aquí</a>.
 				</div>
 			<?php endif; ?>
 		</div>
