@@ -34,6 +34,7 @@
 				<?php 
 					$promolist = get_terms( 'promocion', array('hide_empty' => false,'orderby'=>'count','order'=>'desc') );
 				?>
+				 
 				<nav class="navbar navbar-default">
 				  <div class="container-fluid">
 				    <!-- Brand and toggle get grouped for better mobile display -->

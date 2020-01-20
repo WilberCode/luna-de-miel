@@ -30,10 +30,14 @@
 					</style>
 					<h1  class="page-category__title"><?php echo single_cat_title(''); ?></h1>
 					<p><?php echo category_description(); ?></p>
-				</section>
+				</section> 
+
 					<nav class="navbar navbar-default">
+					
 			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
+			<!-- Brand and toggle get grouped for better mobile display --> 
+			
+
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
@@ -44,18 +48,39 @@
 				<a class="navbar-brand visible-xs-block">Filtros</a>
 			</div> 
 			<!-- Collect the nav links, forms, and other content for toggling -->
+	
+
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			
 				<ul class="nav navbar-nav"> 
+
+				
 				 <?php
 				 
-						$agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>  
+				if (  get_post_type( get_the_ID() ) == 'promociones') {
+					$agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>  
 						<?php foreach ($agendalist as $agenda) {?>
 							<li> 
 							<a href="<?php echo get_term_link($agenda->slug, $taxonomy); ?>"><?php echo $agenda->name; ?>&nbsp;<span class="badge"><?php echo $agenda->count; ?></span> 
 							</a>
 							</li> 	 
 						<?php 
-							} ?>
+							}
+				}   ?>
+						 
+				 <?php
+				 
+				if (  get_post_type( get_the_ID() ) == 'agendasemanal') {
+					$agendalist = get_terms( 'agenda', array('orderby'=>'count','order'=>'desc') );?>  
+						<?php foreach ($agendalist as $agenda) {?>
+							<li> 
+							<a href="<?php echo get_term_link($agenda->slug, $taxonomy); ?>"><?php echo $agenda->name; ?>&nbsp;<span class="badge"><?php echo $agenda->count; ?></span> 
+							</a>
+							</li> 	 
+						<?php 
+							}
+				}   ?>
+						
 			
 				</ul>
 			</div>
