@@ -45,7 +45,10 @@
 			</div> 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav"> 
+				<ul class="nav navbar-nav">
+				 <?php if(in_category("promocion")) { ?>
+				 			<?php echo "hola"; ?>
+				 <?php } ?>
 				 <?php
 				 
 						$agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>  
