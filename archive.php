@@ -46,13 +46,25 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-				<?php $agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>
-				<?php foreach ($agendalist as $promocion) {?>
-				<li>
-					<a href="<?php echo get_term_link($promocion->slug, $taxonomy); ?>"><?php echo $promocion->name; ?>&nbsp;<span class="badge"><?php echo $promocion->count; ?></span>
-					</a>
-				</li>
-				<?php } ?>	 
+					
+					<?php 
+					 if ( get_post_type( get_the_ID() ) == 'promociones') {
+					  $agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>
+					<?php foreach ($agendalist as $promocion) {?>
+						<li>
+							<a href="<?php echo get_term_link($promocion->slug, $taxonomy); ?>"><?php echo $promocion->name; ?>&nbsp;<span class="badge"><?php echo $promocion->count; ?></span>
+							</a>
+						</li>
+					<?php }} ?>	 
+					<?php 
+					 if ( get_post_type( get_the_ID() ) == 'agendasemanal') {
+					  $agendalist = get_terms( 'agenda', array('orderby'=>'count','order'=>'desc') );?>
+					<?php foreach ($agendalist as $agenda) {?>
+						<li>
+							<a href="<?php echo get_term_link($agenda->slug, $taxonomy); ?>"><?php echo $agenda->name; ?>&nbsp;<span class="badge"><?php echo $agenda->count; ?></span>
+							</a>
+						</li>
+					<?php }} ?>	 
 				</ul>
 			</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
