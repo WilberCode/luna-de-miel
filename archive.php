@@ -52,12 +52,11 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			
-				<ul class="nav navbar-nav"> 
-
+				<ul class="nav navbar-nav">  
 				
 				 <?php
 				 
-				if (  get_post_type( get_the_ID() ) == 'promociones') {
+				if ( get_post_type( get_the_ID() ) == 'promociones') {
 					$agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>  
 						<?php foreach ($agendalist as $promocion) {?>
 							<li> 
@@ -87,8 +86,7 @@
 			</div><!-- /.container-fluid -->
 		</nav>	 				
  
-			</div>
- 
+			</div> 
 			
 			<?php 
 			global $query_string;
