@@ -168,4 +168,3 @@ function ldm_setup(){
 }
 add_action('after_setup_theme', 'ldm_setup');
 ?>
- 
