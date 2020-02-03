@@ -33,8 +33,7 @@
                     <h2>AGENDA ROMÁNTICA</h2>
                   </a>
                 </dt>
-                <dd>
-
+                <dd> 
                 </dd>
               </dl>
             </div>
@@ -136,8 +135,7 @@
               <!-- <a href="/viajes/" class="titulo"><h2>VIAJES</h2></a>   -->
               <ul>
                 <?php
-							global $post;
-							
+							global $post; 
 							//query subpages
 							$args = array(
 							'post_type' => 'viajes',
