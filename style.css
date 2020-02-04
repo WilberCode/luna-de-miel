@@ -216,6 +216,9 @@ textarea:-moz-placeholder {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (min-width: 400px) {
+    .social-icons {
+      padding-left: 0 !important; } }
   .social-icons a {
     margin-right: 10px;
     border: 1px solid #d6297f;
@@ -238,6 +241,10 @@ textarea:-moz-placeholder {
     .social-icons a:hover {
       background: #d6297f;
       color: white !important; }
+    @media (max-width: 400px) {
+      .social-icons a {
+        margin-right: 5px;
+        margin-left: 5px; } }
 
 #slides {
   margin-top: -1px; }

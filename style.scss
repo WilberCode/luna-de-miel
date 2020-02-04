@@ -43,6 +43,12 @@ $first-color-alt:#d6297f;
     align-items: center; 
 }
  
+@mixin toLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+ 
 
 body {
     font: 13px Cambria, Georgia, serif;
@@ -293,10 +299,13 @@ textarea:-moz-placeholder {
     margin: 5px 0px;
     font-weight: bold;
 } 
-.social-icons { 
-    @include toCenter();
+.social-icons {
+    @include toCenter(); 
+    @media (min-width:400px) { 
+        padding-left: 0 !important;
+    }
     a {
-        margin-right: 10px;
+        margin-right: 10px; 
         border: 1px solid $first-color-alt;
         width: 40px;
         height: 40px;
@@ -309,6 +318,10 @@ textarea:-moz-placeholder {
         &:hover{
             background: $first-color-alt;
             color: white !important; 
+        }
+        @media (max-width:400px) {
+               margin-right: 5px;
+               margin-left: 5px;
         }
         
     }
