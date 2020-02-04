@@ -17,8 +17,15 @@ License: BSD 2-Clause
 License URI: http://opensource.org/licenses/bsd-license.php
 
 */
-$shadow:0 1px 3px 0 rgba(0, 0, 0, .1),0 1px 2px 0 rgba(0, 0, 0, .06) !important;
-$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, .1),0 4px 6px -2px rgba(0, 0, 0, .05) !important;
+ 
+
+$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+
+
 $first-color:#FF3399;
 $first-color-alt:#d6297f;
  
@@ -967,6 +974,7 @@ nav.micromenu ul.nav-prime {
         line-height: 40px;
         padding: .5em 1em;
         width: 100%;
+        border:none;
         &:hover{
             box-shadow: $shadow-lg;
         } 
@@ -992,7 +1000,7 @@ nav.micromenu ul.nav-prime {
     &>p:nth-child(8) {  
         position: absolute;
         z-index: 8;
-        right: 8px;
+        right: 3px;
         top: 50%;
         transform:translateY(-50%); 
 
@@ -1000,8 +1008,9 @@ nav.micromenu ul.nav-prime {
             background: $first-color;
             color: white; 
             border-radius: 5px;
-            line-height: 25px;
+            line-height: 48px;
             outline: none;
+            padding:0 12px;
         }
     } 
  
