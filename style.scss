@@ -1708,6 +1708,9 @@ body {
 .search{
     &-front-page{
         width: 100%; 
+        @media (max-width:500px) {
+                margin-top: 8px;
+        }
         &-wrap{
             display: flex;
             justify-content: flex-end;

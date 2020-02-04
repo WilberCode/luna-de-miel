@@ -1054,6 +1054,9 @@ body {
 
 .search-front-page {
   width: 100%; }
+  @media (max-width: 500px) {
+    .search-front-page {
+      margin-top: 8px; } }
   .search-front-page-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
