@@ -1095,8 +1095,11 @@ body {
       opacity: 0;
       z-index: 4000; }
 
-.frontpage-sidebar img {
-  margin-bottom: 1em; }
+.frontpage-sidebar {
+  text-align: center; }
+  .frontpage-sidebar img {
+    margin-bottom: 1em;
+    width: 100%; }
 
 .msearch {
   background: #fbfbfb;
