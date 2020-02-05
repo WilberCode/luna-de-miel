@@ -13,23 +13,48 @@
   $foto_entrevistas = $settings->field('foto_entrevistas');
   $foto_articulos = $settings->field('foto_articulos');
   ?>
-  <?php global $wp;  ?> 
+  <?php global $wp;  ?>
+    <section class="publicidad hidden-xs">
+      <div class="container">
+        <div class="row">
 
-<div class="container">
-    <div class="row">
-      <!-- Main -->
-        <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
-           <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
+        </div>
+      </div>
+    </section>
+
+    <section id="destacados">
+      <div class="container">
+        <div class="row show-grid">
+          <div class="col-xs-12 col-sm-7 col-md-8" >
+            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
               <dl class="box-destacado text-center">
                 <dt>
                   <a href="<?php echo home_url( $wp->request );?>/agenda-semanal/">
-                    <h2>AGENDA ROMÁNTICA</h2> 
+                    <h2>AGENDA ROMÁNTICA</h2>
                   </a>
                 </dt>
                 <dd> 
                 </dd>
               </dl>
             </div>
+          </div>
+          <div class="col-xs-12 col-sm-5 col-md-4">
+            <div class="banner-right-300x250">
+              <a href="http://www.lunademiel.com.pe/proveedores/">
+                <img src="http://www.lunademiel.com.pe/emailing/logo/directorio2.png" alt="¿Buscando proveedores?" width="100%" height="auto"
+                />
+              </a>
+              <!-- /22596825/Home_Right_2_300x250 -->
+              <!--<div id='div-gpt-ad-1459740034135-3' style='height:250px; width:300px;'>-->
+              <script type='text/javascript'>
+                //googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-3'); });
+              </script>
+              <!--</div>-->
+            </div>
+          </div>
+        </div>
+        <div class="row show-grid">
+          <div class="col-xs-12 col-sm-7 col-md-8">
             <div class="box-promociones box-agenda " style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;" >
               <dl class="box-destacado text-center">
               <dt> 
@@ -37,7 +62,9 @@
               </dt>
               <dd> 
                 <?php 
- 
+
+                
+
 								$promolist = get_terms( 'promocion', array('hide_empty' => false) );
 								$numberpromo = 1;
 								foreach ($promolist as $promo) {
@@ -53,20 +80,26 @@
               </dd>
             </dl>
             </div>
-        </div>
-        <!-- Sidebar -->
-        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-            <div class=" search-front-page-wrap" > 
-                <div class="search-front-page">
-                  <?php get_search_form(true);?>
-                </div> 
+          </div>
+          <!--BRASIL-->
+          <div class="col-xs-12 col-sm-5 col-md-4">
+            <div class="banner-right-300x250">
+              <a href="http://www.lunademiel.com.pe/contacto/">
+                <img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" alt="¿Tienes una marca para parejas?" width="100%" height="auto"
+                />
+              </a>
+              <!-- /22596825/Home_Right_1_300x250 
+						<!--<div id='div-gpt-ad-1459740034135-2' style='height:250px; width:300px;'>
+						<div style='height:250px; width:300px;'>
+						<a href="https://goo.gl/D9FlQc" target="_blank"><img src="http://www.lunademiel.com.pe/wp-content/uploads/2017/03/postlola-ldm.png" style="height: 250px; width: 300px" /></a>-->
+              <script type='text/javascript'>
+                //googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-2'); });
+              </script>
+              <!--</div>-->
             </div>
-            <?php get_template_part("/template-part/sidebar/sidebar-home") ;?>  
-    </div>
-</div>
-
-    <section  id="destacados"  >
-      <div class="container"> 
+          </div>
+          <!--FIN BRASIL-->
+        </div>
         <div class="row show-grid top-margin">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10">
@@ -305,7 +338,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-1');
         </div>
       </div>
     </section>
-   
+
     <section class="publicidad hidden-xs">
       <div class="container">
         <div class="row">
