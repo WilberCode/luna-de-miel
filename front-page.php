@@ -33,7 +33,7 @@
             <div class="box-promociones box-agenda " style="background:url(<?php echo $foto_promociones['guid']; ?>) center center no-repeat;" >
               <dl class="box-destacado text-center">
               <dt> 
-                <a href="<?php echo home_url( $wp->request );?>/promociones"><h2>PROMOCIONES</h2></a> 
+                <a href="<?php echo home_url( $wp->request );?>/promociones/"><h2>PROMOCIONES</h2></a> 
               </dt>
               <dd> 
                 <?php 
