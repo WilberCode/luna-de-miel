@@ -1101,7 +1101,7 @@ body {
     margin-bottom: 1em;
     width: 100%; }
   .frontpage-sidebar figure, .frontpage-sidebar img {
-    width: 100%; }
+    width: 100% !important; }
 
 .msearch {
   background: #fbfbfb;
