@@ -289,15 +289,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 							?>
 						</nav>
 
-					</div>
-					<div class="col-xs-12 search-front-page-wrap" >
-						<div class=" col-xs-12 col-sm-5 col-md-4">
-							<div class="search-front-page">
-								<?php get_search_form(true);?>
-							</div>
-						</div>
-					 </div>
-				
+					</div> 
 				</div>
 			</div>
 		</section>

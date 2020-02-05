@@ -7,6 +7,8 @@
 	add_image_size( 'img-listing', 300, 300, true );
 	add_image_size( 'img-sidebar', 100, 100, true );
 	add_image_size( 'img-listing-top', 300, 300, array( 'center', 'top' ) );
+
+	 include(get_template_directory().'/inc/widgets.php');  
 	
 	// Options Framework (https://github.com/devinsays/options-framework-plugin)
 	if ( !function_exists( 'optionsframework_init' ) ) {
