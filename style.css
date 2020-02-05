@@ -1100,6 +1100,8 @@ body {
   .frontpage-sidebar img {
     margin-bottom: 1em;
     width: 100%; }
+  .frontpage-sidebar figure, .frontpage-sidebar img {
+    width: 100%; }
 
 .msearch {
   background: #fbfbfb;
