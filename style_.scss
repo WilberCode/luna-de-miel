@@ -19,11 +19,11 @@ License URI: http://opensource.org/licenses/bsd-license.php
 */
  
 
-$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
-$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
-$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
-$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) ;
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06) ;
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05) ;
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04) ;
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25) ;
 
 
 $first-color:#FF3399;
@@ -372,44 +372,13 @@ textarea:-moz-placeholder {
 
  
 
-ul.nav-prime li {
-
-    -webkit-transition: all 0.3s ease-in-out;
-
-    -moz-transition: all 0.3s ease-in-out;
-
-    -o-transition: all 0.3s ease-in-out;
-
-    -ms-transition: all 0.3s ease-in-out;
-
-    transition: all 0.3s ease-in-out;
-
-}
-
-ul.nav-prime a {
-
-    padding: 0 10px;
-
-    line-height: 35px;
-
-    color: #3e3e3e;
-
-    font-weight: 400;
-    font-size: 14px;
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-}
-
+ 
 
 
 ul.nav-prime ul li {
 
-    background: rgba(255, 255, 255, 0.8);
-    padding: 0 10px;
-    /* submenu background color */
+    background: rgba(255, 255, 255, 0.8); 
+     position: relative;
 
 }
 
@@ -419,9 +388,7 @@ ul.nav-prime ul li a {
     /* submenu background color */
 
 }
-
-
-
+ 
 ul.nav-prime li:hover>a,
 
 ul.nav-prime ul :hover>a {
@@ -429,8 +396,6 @@ ul.nav-prime ul :hover>a {
     color: #32cb65;
 
 }
-
-
 
 .no-js ul.nav-prime li:hover>ul {
 
@@ -556,55 +521,26 @@ nav.micromenu ul#nav-buttons li#show-nav-prime {
 
  
 nav.micromenu ul.nav-prime li {
-
-    -webkit-transition: all 0.3s ease-in-out;
-
-    -moz-transition: all 0.3s ease-in-out;
-
-    -o-transition: all 0.3s ease-in-out;
-
-    -ms-transition: all 0.3s ease-in-out;
-
+  
     transition: all 0.3s ease-in-out;
 
 }
 
 
-
-nav.micromenu ul.nav-prime li:last-child,
-nav.micromenu ul.nav-prime li:last-of-type {}
-
+ 
 
 
 nav.micromenu ul.nav-prime a {
-
-    padding: 0 20px;
-
+  
     line-height: 55px;
 
-    color: #3e3e3e;
-
+    color: #3e3e3e; 
     font-weight: 400;
-    font-size: 1em;
-
-    text-decoration: none;
-
-    /*text-shadow:1px 1px 1px #666;*/
-
-    -webkit-transition: all 0.3s ease-in-out;
-
-    -moz-transition: all 0.3s ease-in-out;
-
-    -o-transition: all 0.3s ease-in-out;
-
-    -ms-transition: all 0.3s ease-in-out;
-
+    font-size: 1em; 
+    text-decoration: none; 
     transition: all 0.3s ease-in-out;
 
 }
-
-
-
 
 
  
@@ -666,44 +602,71 @@ nav.micromenu ul.nav-prime li.current-menu-parent>a {
 
 
 
-
 /* MACROMENU ONLY STYLES */
  
  
-nav.macromenu ul.nav-prime {
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-
-    height: auto;
-    text-align: right;
-   & li {
-
-        display: inline-block;
-        float: none;
-        text-align: left;
-        position: relative; 
-        margin: 0px;  
-        transition: all 0.3s ease-in-out;
-    }
-    & a { 
-        padding: 0px 6px !important; 
-    }
-    & ul {
-
-        top: 35px; 
-        background: #fff; 
-        box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
-
-    }
-    & ul ul {
-
-        left: 100%; 
-        top: 0; 
+.macromenu {   
+    display: none;
+    &> .nav-prime { 
+        margin: 0;
+        padding: 0;
         list-style: none;
-
+        width: 100%; 
+        height: auto;
+        text-align: right;  
+        & > li{ 
+            display: inline-block;
+            float: none;
+            text-align: left;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            margin:0 0 0 10px !important;
+            & > a{
+                line-height: 35px;
+                color: #3e3e3e;
+                font-weight: 400; 
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 4px 0 !important;
+                font-size: 14px; 
+                &:hover {
+                    background-color: transparent;
+                }
+                 &::before {
+                     content: '';
+                     position: absolute;
+                     width: 100%;
+                     height: 0;
+                     bottom: 0;
+                     border-radius: 8px 8px 0 0;
+                     background: $first-color;
+                 }
+            }
+            &:hover a::before {    
+                     height: 3px; 
+            }
+            & > .sub-menu {
+                border-radius: 0 6px 6px 6px;
+                box-shadow: $shadow, $shadow-lg;
+                overflow: hidden !important;
+                padding: .5em 0;
+                background-color: white;
+                left:0;
+                top: 43px !important;
+                list-style: none;
+                position: absolute;
+                & >li {
+                    & > a {
+                        display: block;
+                        padding: .5em 1em;
+                        font-size: 16px;
+                        &:hover{
+                            background: #EEEEEE;
+                        }
+                    }
+                }
+            }
+        }   
     }
 
 } 
@@ -728,11 +691,7 @@ nav.macromenu ul.nav-prime {
 
 
 
-nav.macromenu {
-
-    display: none;
-
-}
+ 
 
 
 
@@ -743,27 +702,7 @@ nav.micromenu {
 
 }
 
-
-
-/* All menu styles - these values pass on to later breakpoints */
-
-
  
-
-ul{
-    &.nav-prime li { 
-        position: relative; 
-    }
-    &.nav-prime a { 
-        display: block; 
-    }
-    &.nav-prime ul { 
-        list-style: none; 
-        margin: 0 0 10px 0;
-        padding: 0; 
-        z-index: 99999; 
-    }
-}
 
 
 
@@ -886,6 +825,11 @@ nav.micromenu ul.nav-prime {
     list-style: none;
     padding: 0;
     margin: 0;
+    .sub-menu{
+        position: absolute;
+        top: 55px;
+    }
+
 
 }
 
@@ -1166,6 +1110,7 @@ body {
 
 #destacados .box-promociones {
     min-height: 250px;
+    margin-top: 1em;
 }
 
 #destacados .box-destacado {
@@ -1374,9 +1319,7 @@ body {
     background: #FFFFFF !important;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    background-color: #EEEEEE !important;
-}
+ 
 
 
 
@@ -1504,12 +1447,7 @@ body {
     img {
         height: auto;
     }
-
-    nav.macromenu ul.nav-prime a {
-        padding: 0 10px;
-        font-size: 14px;
-    }
-
+ 
 }
 
 
@@ -1519,90 +1457,66 @@ body {
 
     #header-int .social-icons {
         margin: 0 0 0 0;
-    }
-
-
-
-    /* Hide the micromenu and begin showing the macromenu */
-
-    nav.macromenu {
-
+    }   
+    .macromenu{
         display: block;
         position: relative;
         margin: 0 0 0;
+        .nav-prime { 
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 55px;
+            width: 100%;
+            display: block;
+            li{
+                 display: inline-block; 
+                 position: relative;
+                    ul {
 
-    }
+                        display: none;
+                        position: absolute;
 
+                        top: 55px;
+
+                        left: 0px;
+
+                        list-style: none;
+                        width: 300px;
+
+                        z-index: 99999;
+                        li{
+                            width: 100%;
+                        }
+
+                    }
+            }
+
+        }
+    } 
     nav.micromenu {
-
-        display: none;
-
-    }
-
-    /* Macromenu styles */
-
-    ul.nav-prime {
-
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        height: 55px;
-        width: 100%; 
-        display: block;
-
-    }
-
-    ul.nav-prime li { 
-        display: inline-block;
-        float: left;
-        position: relative;
-
-    }
-
-
-
-    ul.nav-prime ul {
-
-        display: none;
-
-        position: absolute;
-
-        top: 55px;
-
-        left: 0px;
-
-        list-style: none;
-
-        /*margin:0 0 10px 10px; padding:0;*/
-
-        /*width: 350px;*/
-
-        width: 300px;
-
-        z-index: 99999;
-
-    }
-
-    ul.nav-prime ul li {
-
-        /*min-width: 250px;*/
-
-        width: 100%;
-
-    }
-
-    ul.nav-prime ul ul {
-
-        left: 100%;
-
-        top: 0;
-
+        display: none; 
+    }  
+    ul.nav-prime ul ul { 
+        left: 100%; 
+        top: 0; 
         list-style: none;
 
     }
 
 }
 
+@media (max-width:990px){
+    .micromenu{
+        .nav-prime{
+            li{
+                a{
+                    padding: 0 1em;
+                }
+            }
+        }
+    }
+}
 
 
 @media (min-width: 48em) {
@@ -1709,13 +1623,13 @@ body {
     &-front-page{
         width: 100%; 
         @media (max-width:500px) {
-                margin-top: 8px;
+                margin-top: 1.5em;
         }
         &-wrap{
             display: flex;
-            justify-content: flex-end;
-            margin-top: 5px;
+            justify-content: flex-end; 
             padding: 0 !important;
+            margin-bottom: .6em;
         }
         form{
             position: relative;
@@ -1743,12 +1657,10 @@ body {
                 font-size: 18px;
                 background: #fff;
                 margin: auto;
-                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1),
-                0 1px 2px 0 rgba(0, 0, 0, .06) !important; 
+                box-shadow:  $shadow, $shadow-2xl;
                 transition: all .3s linear;
                 &:hover{
-                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1),
-                    0 4px 6px -2px rgba(0, 0, 0, .05) !important;
+                    box-shadow:  $shadow-md;
                 }
 
             }
@@ -1766,7 +1678,16 @@ body {
     }
 }
 
-
+.frontpage-sidebar{
+    text-align: center;
+    img{
+        margin-bottom: 1em;
+        width: 100%;
+    }
+    figure, img{
+        width: 100% !important;
+    }
+}
 
 
 .msearch {  
