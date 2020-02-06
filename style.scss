@@ -841,11 +841,20 @@ nav.micromenu ul.nav-prime {
     &__title{
         font-size: 40px; 
         margin-top: .8em;
+        @media (max-width:400px) {
+            text-align: center;
+               font-size: 45px;
+        }
     }
     &__description{
         font-size: 20px; 
+         @media (max-width:400px) {
+           font-size: 23px;
+           text-align: center;
+         }
     }
     &-form{
+        background: $first-color-alt;
         &__title{
             font-size: 20px;
             margin-top: 0;

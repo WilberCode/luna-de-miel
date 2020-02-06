@@ -240,7 +240,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 				<div class="row">
 					
 					<!--SUSCRÍBETE boton-->
-					<div class="col-sx-12 col-md-7 col-lg-8">
+					<div class=" suscripcion-form col-sx-12 col-md-7 col-lg-8">
 						<h1  class="suscripcion__title" >GUÍA PARA PAREJAS</h1>
 						<p class="suscripcion__description" >Agenda romántica, novedades & promociones exclusivas.</p>
 					</div>
