@@ -226,15 +226,24 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 				</div>
 			</div>
 		</header>
-		<?php $layerSlider = 1;//get_post_meta($post->ID, 'layerSlider', true);
-		   if ( $layerSlider ) { ?>
-			<section id="slides">
+
+		<?php
+		//  $layerSlider = 1;//get_post_meta($post->ID, 'layerSlider', true);
+		//    if ( $layerSlider ) {
+			    ?>
+			<!-- <section id="slides">
 				<div class="container-fluid sin-padding" >
-					<?php echo do_shortcode('[layerslider id="'.$layerSlider.'"]'); ?> 
+					<?php //echo do_shortcode('[layerslider id="'.$layerSlider.'"]'); ?> 
 													
 				</div>
-			</section>    
-			<?php } ?>
+			</section>     -->
+			<?php// } ?>
+		<div class="banner-home" >
+			<?php echo do_shortcode('[metaslider id="28104"]'); ?>
+		</div>
+
+
+
 		<section id="suscripcion" class="suscripcion">
 			<div class="container">
 				<div class="row">
