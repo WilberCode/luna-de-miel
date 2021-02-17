@@ -4,7 +4,7 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
 
 
 .page-id-28231,.page-id-28319 {
-    color:#231f20;
+    color:#231f20 !important;
 }
 .page-id-28231   p,.page-id-28319 p{
         font-size: 16.8px !important;
@@ -21,7 +21,8 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
     #header #logo-ldm{
         width: 60px;
     }
-    .page-id-28231   p br, .page-id-28319  p br{  
-         display: none;
+    .page-id-28231   p br, .page-id-28319  p br{   
+         display: none  !important;
 } 
 }
+
