@@ -23,6 +23,14 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
     }
     .page-id-28231   p br, .page-id-28319  p br{   
          display: none  !important;
-} 
+    } 
+    .page-id-28231 em, .page-id-28319 em {
+        font-size: 19.05px !important;
+    }
+
+    .page-id-28231 p, .page-id-28319 p {
+        font-size: 15.8px !important;
+        line-height: 25px;
+    }
 }
 
