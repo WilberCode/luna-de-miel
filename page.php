@@ -25,7 +25,7 @@
 				
 				<div class="container-fluid mas-recientes">
 				<?php
-					global $post;
+				/* 	global $post;
 					
 					//query subpages
 					$args = array(
@@ -56,7 +56,7 @@
 					endif;
 
 					// reset the query
-					wp_reset_postdata();
+					wp_reset_postdata(); */
 				  ?>
 					</div>
 			</div>
