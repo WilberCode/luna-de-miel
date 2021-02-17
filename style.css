@@ -17,6 +17,10 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
         padding-left: 0  !important;
 } 
 
+.page-id-28231 #main h1, .page-id-28319 #main h1 {
+        margin: 40px 0 35px 0;
+}
+
 @media (max-width:500px){
     #header #logo-ldm{
         width: 60px;
