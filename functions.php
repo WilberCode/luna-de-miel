@@ -84,8 +84,8 @@
 		function core_mods() {
 			if ( !is_admin() ) {
 				wp_deregister_script( 'jquery' );
-				wp_register_script( 'jquery', ( "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ), false);
-				wp_enqueue_script( 'jquery' );
+		     	 wp_register_script( 'jquery', ( "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ), false);
+			   // wp_enqueue_script('jquery local',get_template_directory_uri().'/_/js/jquery.min.js',array(),'1.11.0',false);
 			}
 		}
 		add_action( 'wp_enqueue_scripts', 'core_mods' );
