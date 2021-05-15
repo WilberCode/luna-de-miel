@@ -1,16 +1,16 @@
  
 <!doctype html>
-<html>
+<html lang="es">
 <head>
 	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Agenda Romántica - Luna de miel</title>
 	<meta  name="description" content="Ideas para romper la rutina y disfrutar toda la semana. Música, Cultura, Entretenimiento, foodies, Drinks, Escapadas, Aventuras, Eventos, Imperdibles, Noches, Trasnochadas y De todo un poco.">
 	<meta  name="keywords" content="Guía para parejas, Luna de miel, moda, vivienda, ropa para mujer, cine, entretenimiento, farándula, eventos, actividades en pareja, cinerama, música en vivo, restaurante, novedades, 
 	restaurantes románticos, tendencias de boda, celebridades, catering, bares y café, escapadas, fotógrafos de boda, iglesias, nutrición, bodas, paseos, viajes, excursiones, bares, café, belleza, vacaciones, decoración, iglesias, tecnología, fiestas, tips, consejos, dio del padre, regalos papa, copa de américa, entradas, novedades, cartelera, combo cine, entradas, taquilla, butaca, estrenos, terror, comedia, drama, ciencia ficción, romántica, infantil, combos, estrenos, entradas, diversión, sorteos, concursos, bodas, shows, presentaciones, show musical, concierto, espectáculo, juegos, comida, cupones, descuento, fotodepilación, joyería, oferta, promoción, promo, combocine, 2x1, almuerzo, desayuno, ropa de moda, trajes de boda, florería, fotografías, weeding planner, despedidas, locales, recepción, paquetes de viaje, Nuevo Mundo Viajes, excursiones, hoteles, casa playa, vestidos, accesorios para bebes, anillos, zapatos, ternos, buques, casa ideas, artículos, juguetes, dulcería, lentes, celulares, coche de bebe, libros, juegos mecánicos, cosméticos, maquillaje, supermercado, ropa para mujer, sandalias, juegos, jeans, billeteras, bolsos, perfumes, casacas, joyas, pareja,depa,dormitorios, departamento,inmobiliaria,San Isidro, San Borja,comunes,coworking"> 
-	<link rel="shortcut icon" sizes="1024x1024" href="https://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
+	<link rel="shortcut icon" sizes="1024x1024" href="http://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
 	<link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal"> 
-	<link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">
- 	<style type="text/css" > 
+	<link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">  
+ 	<style type="text/css"> 
 	 	.ExternalClass {width:100%;}   
 		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
 			line-height: 100%;
@@ -80,73 +80,6 @@
 </head>
 
 <body style="background:red;"  >
-<style type="text/css" > 
-	 	.ExternalClass {width:100%;}   
-		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-			line-height: 100%;
-		}   
-		body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}  
-
-		body {margin:0; padding:0;}  
-
-		table td {border-collapse:collapse;} 
-
-		p {margin:0; padding:0; margin-bottom:0;}
-		
-		h1, h2, h3, h4, h5, h6 {
-		color: black;
-		line-height: 100%;
-		}  
-
-		a, a:link {
-		color:black;
-		text-decoration:none;
-		}  
-
-		.post-firstrow tr td img, .post-firstsecond tr td img{
-		object-fit:cover;
-		}
-		.post-firstrow tr td:nth-child(1)  {
-		text-align: left  ;
-		}	  
-		.post-firstrow tr td:nth-child(1)  h1 {
-		padding:0  20px 0 10px  ;  
-		}	  
-		.post-firstrow tr td:nth-child(1)  p  {
-		padding-right:10px!important;  
-		}	  
-		.post-firstrow tr td:nth-child(2) h1  {
-		text-align: center !important;
-		padding: 0  10px !important; 
-		}	
-		.post-firstrow tr td:nth-child(3)  h1{
-		padding:0  10px 0 20px !important;  
-		}	
-
-		.post-firstrow tr td:nth-child(3)  p  {
-		padding-left:10px!important;  
-		}
-
-		.post-firstrow tr td:nth-child(3){
-		text-align: right !important;
-		}	 
-
-		.post-firstsecond tr td:nth-child(1){
-		text-align: left !important;
-		}	 
-
-		.post-firstsecond tr td:nth-child(1) h1{
-		padding:0  20px 0 10px !important;  
-		}	 
-
-		.post-firstsecond tr td:nth-child(1) p {
-		padding-right: 10 !important;  
-		}	   
-		.post-firstsecond tr td:nth-child(2) h1{
-		text-align: center !important;
-		padding: 0  10px !important; 
-		}	  
-	 </style>
  <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
       <tbody>
         <tr>
@@ -351,8 +284,7 @@
 					<a href="mailto:contacto@lunademiel.com.pe" style="color:black;text-decoration:none;color:#ff3787" target="_blank">contacto@lunademiel.com.pe</a> o solicitando ser removido de la lista.</p>
           </td>
         </tr>
-      </tbody>
-	  <link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">
+      </tbody> 
     </table>
 </body>
 </html>
