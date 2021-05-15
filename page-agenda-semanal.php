@@ -86,7 +86,7 @@
         <tr>
           <td width="200" align="left" valign="middle" bgcolor="#ffffff" style="border-collapse:collapse">
             <a href="http://www.lunademiel.com.pe/" style="color:black;text-decoration:none" target="_blank" >
-              <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="104" height="auto" alt="Luna de miel agenda semanal" >
+              <img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/logo-ldm-agenda.png" width="115" height="auto" alt="Luna de miel agenda semanal" >
             </a>
           </td>
           <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-family:PreloBold;font-size:14px;letter-spacing:1px;height:80px">
@@ -260,7 +260,7 @@
           <td width="400" align="right" colspan="2" valign="middle" style="border-collapse:collapse"></td>
           <td width="200" align="center" valign="top" style="border-collapse:collapse">
             <a href="https://www.facebook.com/portallunademiel/" style="color:black;text-decoration:none"   >
-              <img src="https://lunademiel.com.pe/emailing/2019/3-marzo/29/facebook.png" width="190" height="auto" alt="" >
+              <img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/siguenos-en-facebook-ldm.png" width="109" height="auto" alt="" >
             </a>
           </td>
         </tr>
