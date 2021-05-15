@@ -352,6 +352,7 @@
           </td>
         </tr>
       </tbody>
+	  <link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">
     </table>
 </body>
 </html>
