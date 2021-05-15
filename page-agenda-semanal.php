@@ -79,7 +79,7 @@
 	 </style>
 </head>
 
-<body  >
+<body style="background:red;"  >
 <style type="text/css" > 
 	 	.ExternalClass {width:100%;}   
 		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
