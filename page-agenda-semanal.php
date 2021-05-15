@@ -9,8 +9,8 @@
 	restaurantes románticos, tendencias de boda, celebridades, catering, bares y café, escapadas, fotógrafos de boda, iglesias, nutrición, bodas, paseos, viajes, excursiones, bares, café, belleza, vacaciones, decoración, iglesias, tecnología, fiestas, tips, consejos, dio del padre, regalos papa, copa de américa, entradas, novedades, cartelera, combo cine, entradas, taquilla, butaca, estrenos, terror, comedia, drama, ciencia ficción, romántica, infantil, combos, estrenos, entradas, diversión, sorteos, concursos, bodas, shows, presentaciones, show musical, concierto, espectáculo, juegos, comida, cupones, descuento, fotodepilación, joyería, oferta, promoción, promo, combocine, 2x1, almuerzo, desayuno, ropa de moda, trajes de boda, florería, fotografías, weeding planner, despedidas, locales, recepción, paquetes de viaje, Nuevo Mundo Viajes, excursiones, hoteles, casa playa, vestidos, accesorios para bebes, anillos, zapatos, ternos, buques, casa ideas, artículos, juguetes, dulcería, lentes, celulares, coche de bebe, libros, juegos mecánicos, cosméticos, maquillaje, supermercado, ropa para mujer, sandalias, juegos, jeans, billeteras, bolsos, perfumes, casacas, joyas, pareja,depa,dormitorios, departamento,inmobiliaria,San Isidro, San Borja,comunes,coworking"> 
 	<link rel="shortcut icon" sizes="1024x1024" href="http://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
 	<link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal"> 
-	<link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">  
- 	<style type="text/css"> 
+	<link rel="stylesheet" href="https://lunademiel.com.pe/emailing/css/fontsagenda.css">  
+ 	<style type="text/css">  
 	 	.ExternalClass {width:100%;}   
 		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
 			line-height: 100%;
@@ -76,7 +76,7 @@
 		text-align: center !important;
 		padding: 0  10px !important; 
 		}	  
-		
+
 	 </style>
 </head>
 
@@ -107,7 +107,7 @@
           <td width="600" height="10" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
         </tr>
         <tr>
-          <td width="600" height="1" align="right" colspan="3" valign="middle" style="border-collapse:collapse;background-color:#eb3d82"></td>
+          <td width="600" height="1" align="right" colspan="3" valign="middle" style="border-collapse:collapse;background-color:#eb3d82"> <div></div> </td>
         </tr>
         <tr>
           <td width="600" height="10" align="right" colspan="3" valign="middle" style="border-collapse:collapse"></td>
