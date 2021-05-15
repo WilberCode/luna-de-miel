@@ -379,7 +379,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 				  ?>	
 				   <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
 						<a href="http://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none"   >
-						<img src="https://lunademiel.com.pe/emailing/2019/3-marzo/29/mi.png" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
+						<img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/Buscando-Proveedores-aqui.jpg" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
 						</a>
 					</td>
 				</tr>
