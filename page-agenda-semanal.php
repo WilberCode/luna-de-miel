@@ -79,7 +79,7 @@
 	 </style>
 </head>
 
-<body style="background:red;"  >
+<body >
  <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
       <tbody>
         <tr>
