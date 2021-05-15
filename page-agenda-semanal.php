@@ -9,7 +9,7 @@
 	restaurantes románticos, tendencias de boda, celebridades, catering, bares y café, escapadas, fotógrafos de boda, iglesias, nutrición, bodas, paseos, viajes, excursiones, bares, café, belleza, vacaciones, decoración, iglesias, tecnología, fiestas, tips, consejos, dio del padre, regalos papa, copa de américa, entradas, novedades, cartelera, combo cine, entradas, taquilla, butaca, estrenos, terror, comedia, drama, ciencia ficción, romántica, infantil, combos, estrenos, entradas, diversión, sorteos, concursos, bodas, shows, presentaciones, show musical, concierto, espectáculo, juegos, comida, cupones, descuento, fotodepilación, joyería, oferta, promoción, promo, combocine, 2x1, almuerzo, desayuno, ropa de moda, trajes de boda, florería, fotografías, weeding planner, despedidas, locales, recepción, paquetes de viaje, Nuevo Mundo Viajes, excursiones, hoteles, casa playa, vestidos, accesorios para bebes, anillos, zapatos, ternos, buques, casa ideas, artículos, juguetes, dulcería, lentes, celulares, coche de bebe, libros, juegos mecánicos, cosméticos, maquillaje, supermercado, ropa para mujer, sandalias, juegos, jeans, billeteras, bolsos, perfumes, casacas, joyas, pareja,depa,dormitorios, departamento,inmobiliaria,San Isidro, San Borja,comunes,coworking"> 
 	<link rel="shortcut icon" sizes="1024x1024" href="http://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
 	<link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal"> 
-	<link rel="stylesheet" href="https://lunademiel.com.pe/emailing/css/fonts.css">  
+	<link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">  
  	<style type="text/css">  
 	 	.ExternalClass {width:100%;}   
 		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
@@ -228,7 +228,7 @@
 							 ?>" style="border-collapse:collapse;" valign="top" >
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
 								<img src="<?php if(main_image_url('full')){echo  main_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
-								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo ;font-family:Prelo-Bold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
+								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo ;font-family:Prelo-SemiBold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> - <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>
 								<h1 style="color:black;line-height:100%;font-family:Times New Roman;font-size:20px;font-weight:200;margin:2px 0;line-height:1.2;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding:0  20px 0 10px !important;'; }else if($second_number == 2){ echo 'padding: 0  10px !important; ';}else{echo '';} ?>">
