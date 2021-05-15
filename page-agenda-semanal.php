@@ -88,7 +88,7 @@
               <img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/logo-ldm-agenda.png" width="115" height="auto" alt="Luna de miel agenda semanal" >
             </a>
           </td>
-          <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-family:Prelo-SemiBold;font-size:14px;letter-spacing:1px;height:80px">
+          <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-family:Prelo-SemiBold;font-family:PreloBold;font-size:14px;letter-spacing:1px;height:80px">
             <span style="color:#eb3d82" >ESPECIAL</span>&nbsp;<?echo date_i18n( 'F ', strtotime( get_the_time( "m" ) ) ); ?>  &gt;
 			</td>
         </tr>
