@@ -76,6 +76,7 @@
 		text-align: center !important;
 		padding: 0  10px !important; 
 		}	  
+		
 	 </style>
 </head>
 
