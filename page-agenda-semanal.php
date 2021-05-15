@@ -1,109 +1,4 @@
- <?php  
-/**
- * @package WordPress
- * @subpackage HTML5-Reset-WordPress-Theme
- * @since HTML5 Reset 2.0
- * 
- */
-/** 
- get_header(); ?>
-	<section class="publicidad hidden-xs">
-		<div class="container">
-			<div class="row">
-				<div class="banner-top-728x90">			
-					<!-- /22596825/Home_Top_Skycrapper -->
-					<div id='div-gpt-ad-1459740034135-4' style='height:90px; width:728px;'>
-					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-4'); });
-					</script>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<section id="main" class="clearfix">
-		<div class="container">
-			<div class="col-xs-12 col-md-12">
-				<?php edit_post_link(__('Edit this entry','html5reset'), '<span>', '</span>'); ?>
-				<h2><?php the_title(); ?></h2>
-				<div class="entry">
-					<?php the_content(); ?>
-				</div>
-				<?php 
-					$promolist = get_terms( 'agenda', array('hide_empty' => false,'orderby'=>'count','order'=>'desc') );
-				?>
-				<nav class="navbar navbar-default">
-				  <div class="container-fluid">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <a class="navbar-brand visible-xs-block">Filtros</a>
-				    </div>
-
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-						<?php foreach ($promolist as $promo) {	?>
-						<li>
-							<a href="/<?php echo $promo->taxonomy; ?>/<?php echo $promo->slug; ?>/"><?php echo $promo->name; ?>&nbsp;<span class="badge"><?php echo $promo->count; ?></span>
-							</a>
-						</li>
-						<?php } ?>				      
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-				<div class="listing">
-				<?php
-					global $post;
-					
-					//query subpages
-					$args = array(
-					'post_type' => 'agendasemanal',
-					'orderby' => 'date',
-					'order' => 'desc',
-					'post_status' => 'publish',
-					'posts_per_page' => -1
-					);
-
-					$listing = new WP_query($args);
-
-					// create output
-					if ($listing->have_posts()) :
-						while ($listing->have_posts()) : $listing->the_post();
-							$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
-							if ( $arr_image[0] != '' ) :
-								 $imagethumb = $arr_image[0];
-							else :
-								 $imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
-							endif;
-							echo '<div class="col-xs-12 col-sm-6 col-md-3 show-grid">';
-							echo '<a href="' . get_permalink() . '" rel="nofollow" class="thumbnail"><img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
-							echo '</a>';
-							echo the_category(' - ');
-							echo '<a href="' . get_permalink() . '" class="title-list">'.get_the_title().'</a>';
-							echo '</div>';
-						endwhile;
-					endif;
-
-					// reset the query
-					wp_reset_postdata();
-				  ?>
-					</div>
-			</div>
-		</div>
-	</section>		
-	<?php endwhile; endif; ?>
-<?php
- get_footer(); 
-?>
-*/?> 
+ 
 <!doctype html>
 <html>
 <head>
@@ -115,57 +10,32 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 <link rel="shortcut icon" sizes="”1024x1024”" href="https://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
 <link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal"> 
 <link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">
-<style type="text/css">
+<style type="text/css"> 
+ 
 
-                /****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
-
-                        .ExternalClass {width:100%;} /* Forces Outlook.com to display emails at full width */
+                        .ExternalClass {width:100%;}  
 
                         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
                             line-height: 100%;
-                            }  /* Forces Outlook.com to display normal line spacing, here is more on that:
-                            http://www.emailonacid.com/forum/viewthread/43/
-                            */
+                            }   
+                        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}  
 
-                        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;} /* Prevents Webkit and Windows Mobile
-                        platforms from changing default font sizes. */
-
-                        body {margin:0; padding:0;} /* Resets all body margins and padding to 0 for good measure */
+                        body {margin:0; padding:0;}  
 
                         table td {border-collapse:collapse;}
-                        /*This resolves the Outlook 07, 10, and Gmail td padding issue.  Heres more info:
-                                http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
-                                http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07
-                                */
-
-                /****** END BUG FIXES ********/
-
-                /****** RESETTING DEFAULTS, IT IS BEST TO OVERWRITE THESE STYLES INLINE ********/
+                     
 
                         p {margin:0; padding:0; margin-bottom:0;}
-                                /* This sets a clean slate for all clients EXCEPT Gmail.
-                               From there it forces you to do all of your spacing inline during the development process.
-                               Be sure to stick to margins because paragraph padding is not supported by Outlook 2007/2010
-                               Remember: Outlook.com does not support "margin" nor the "margin-top" properties.
-                               Stick to "margin-bottom", "margin-left", "margin-right" in order to control spacing
-                               It also doesnt hurt to set the inline top-margin to "0" for consistancy in Gmail for every instance of a
-                               paragraph tag (see our paragraph example within the body of this template)
-
-                               Another option:  Use double BRs instead... of paragraphs */
-
+                          
                        h1, h2, h3, h4, h5, h6 {
                            color: black;
                            line-height: 100%;
-                           }  /* This CSS will overwrite Outlook.com's default css and make your headings appear consistant with Gmail.
-                           From there, you can overwrite your styles inline if needed.  */
+                           }  
 
                        a, a:link {
                            color:black;
                            text-decoration:none;
-                           }  /* This is the embedded CSS link color for Gmail.  This will overwrite Outlook.com and Yahoo Beta's
-                           embedded link colors and make it consistent with Gmail.  You must overwrite this color inline */
-
-               /****** END RESETTING DEFAULTS ********/
+                           }  
 
 			   	.post-firstrow tr td img, .post-firstsecond tr td img{
 					object-fit:cover;
