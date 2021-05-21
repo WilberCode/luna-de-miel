@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/svg/email.svg": "/svg/email.svg",
+    "/svg/facebook-white.svg": "/svg/facebook-white.svg",
     "/svg/facebook.svg": "/svg/facebook.svg",
+    "/svg/hand.svg": "/svg/hand.svg",
     "/svg/logo.svg": "/svg/logo.svg"
 }
