@@ -140,9 +140,9 @@ $number_single = 1;
   <title> <?php echo  the_title(); ?></title>
   <meta name="description"  content="<?php $number_single = 1; $terms = get_the_terms( $post->ID , 'agenda' );
   	foreach ( $terms as $term ) {$term_link = get_term_link( $term, 'agenda' ); if( is_wp_error( $term_link ) ) continue; ?> <?php if($number_single >1){echo ' & '.$term->description;} else{ echo $term->description;} ?> <?php $number_single++; }?>">
-
+<!-- 
   <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/bastemp.min.css">
-  <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/styles.min.css">
+  <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/styles.min.css"> -->
 
    <!-- Owl -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif">
@@ -212,34 +212,42 @@ $number_single = 1;
   </style>
  
 </head>
-<body class="section_top_center"> 
-<div class="section_top_center">
-  <section class="w_90 w_50_desktop section_middle_justify">
-    <a href="http://www.lunademiel.com.pe/" target="_self">
-      <img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" alt="Luna de Miel agenda" class="img_biggest img_normal_mobile">
-    </a>
+<body class=" "> 
+<div class=" ">
+ 
+  <section class="max-w-[980px] space-x-2 m-auto "> 
+   		<div  class="flex flex-col md:flex-row justify-between" >
+			<div class=" flex justify-between sm:block" >
+				<a href="http://www.lunademiel.com.pe/" target="_self">
+					<img src="<?=get_stylesheet_directory_uri().'/build/svg/logo.svg'?>" alt="Luna de Miel agenda" class=" w-24  sm:w-[150px]">
+				</a>
+				<div  class="inline-flex   md:hidden uppercase space-x-3  " >
+					<span class="text-[#eb3d82] font-bold" >ESPECIAL  </span> <span class="font-bold"  ><?php echo get_the_date( 'F' ); ?> ></span>
+				</div>
+			</div>
 
-    <div class="align_right w_61 w_75_desktop font_tiny_mobile">
-      <span style=" color:#EB3D82; ">ESPECIAL </span> &nbsp;  <span style="text-transform:uppercase;" ><?php echo get_the_date( 'F' ); ?> ></span>
-     <div class="w_100 w_100_desktop " style=" font-family:Didot ;letter-spacing: 1px;font-size: 4.5vw; font-style: italic; margin-top: 20px; "  >
-      #AgendaRomántica
-    </div>
-      <br>
-      Ideas para romper la rutina y disfrutar toda la semana
-    </div>
+			<div class="text-right pt-6 sm:pt-10">
+				<div  class=" hidden-xs md:inline-flex    uppercase space-x-3 " >
+					<span class="text-[#eb3d82] font-bold" >ESPECIAL  </span> <span class="font-bold"  ><?php echo get_the_date( 'F' ); ?> ></span>
+				</div>
+				<div class=" mt-6 sm:mt-12 text-[35px]  sm:text-[50px] lg:text-[88.5px] tracking-wide " style=" font-family:Didot ;"  >
+				#AgendaRomántica
+				</div> 
+				<p  class=" text-[15px]  sm:text-[20px] lg:text-[22.53px]  " >Ideas para romper la rutina y disfrutar toda la semana</p>
+			</div>
+		</div>
 
     <div class="separador marginVertical_small">&nbsp;</div>
-    <div class="w_100 section_middle_right">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_page_link();?>"
-      target="_blank" class="pinkColor section_middle_right w_20_desktop">
-        ¡Compártelo!&nbsp;&nbsp;<img src="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/images/facebook.svg" alt="facebook" class="img_small img_tiny_mobile">
+    <div class="text-right">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_page_link();?>"   target="_blank" class="text-primary-500 text-[15px]  md:text-[19px] font-semibold inline-flex items-center">
+        ¡Compártelo!&nbsp;&nbsp;<img class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] " src="<?=get_stylesheet_directory_uri().'/build/svg/facebook.svg'?>" alt="facebook">
       </a>
     </div>
-
-	<span class="w_100 align_center pinkColor font_normal marginVertical_tiny">-
+ 
+	<span class="text-center block  text-[16px] md:text-[20px] font-semibold py-8">-
 	<?php
 	$number = 1;
-	$termscategory = get_the_terms( $post->ID , 'agenda' ); 
+	$termscategory = get_the_terms( $post->ID , 'agenda' );  
 		if($termscategory){
 			foreach ( $termscategory as $term ) {
 				$term_link = get_term_link( $term, 'agenda' );
@@ -324,8 +332,8 @@ $number_single = 1;
 					?>  
 		</div>		  
   </section>
- <footer class="pinkColorBg w_100 section_middle_center">
-    <div class="w_50_desktop w_80 section_middle_center">
+ <footer class="bg-primary-500 py-4 ">
+    <div class="hidden">
       <a href="http://www.lunademiel.com.pe" class="w_40_desktop w_80 marginVertical_normal">
         <img src="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/images/footer_img.svg" alt="Imagen" class="w_100">
       </a>

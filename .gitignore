@@ -1,3 +1,9 @@
 front-page__.php
 style__.scss
-assets
+assets 
+app/  
+node_modules/
+package.json
+tailwind.config.js
+webpack.mix.js
+yarn.lock

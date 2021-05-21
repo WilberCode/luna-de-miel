@@ -1,9 +1,15 @@
+
+
 <?php
 /**
  * @package WordPress
  * @subpackage HTML5-Reset-WordPress-Theme
  * @since HTML5 Reset 2.0
  */
+
+
+//	require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
+	
 	add_image_size( 'img-listing', 300, 300, true );
 	add_image_size( 'img-sidebar', 100, 100, true );
 	add_image_size( 'img-listing-top', 300, 300, array( 'center', 'top' ) );
@@ -15,6 +21,17 @@
 		define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/_/inc/' );
 		require_once dirname( __FILE__ ) . '/_/inc/options-framework.php';
 	}
+
+
+/* css: agendasemanal */
+function add_theme_scripts() {
+	if (is_singular( array( 'agendasemanal' ) )) {
+			wp_enqueue_style( 'style', get_stylesheet_uri() ); 
+			wp_enqueue_style( 'app', get_template_directory_uri() . '/build/css/app.css', array(), '1.1', 'all'); 
+	  }  
+} 
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
 
 	// Theme Setup (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function html5reset_setup() {
