@@ -20,13 +20,13 @@
 
 
 	/* css: agendasemanal */
-	/* function add_theme_scripts() {
+	function add_theme_scripts() {
 		if (is_singular( array( 'agendasemanal' ) )) {
 				wp_enqueue_style( 'style', get_stylesheet_uri() ); 
 				wp_enqueue_style( 'app', get_template_directory_uri() . '/build/css/app.css', array(), '1.1', 'all'); 
 		}  
 	} 
-	add_action( 'wp_enqueue_scripts', 'add_theme_scripts' ); */
+	add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );  
 
 
 	// Theme Setup (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
