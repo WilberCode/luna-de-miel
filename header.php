@@ -202,6 +202,8 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     googletag.enableServices();
   });
 </script>  
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
