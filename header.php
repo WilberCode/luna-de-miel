@@ -202,8 +202,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     googletag.enableServices();
   });
 </script>  
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
