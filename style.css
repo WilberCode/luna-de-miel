@@ -39,4 +39,13 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
 }
 
 
+.container {
+    width: 1050px !important;
+}
+
+@media (max-width:1050px) {
+    .container {
+        width: auto !important;
+    }
+}
 

@@ -15,8 +15,19 @@
   ?>
   <?php global $wp;  ?> 
 
-<div class="container">
-    <div class="row">
+<div class="container" >
+  <div class="row" style="position: relative;" >
+      <div class="" style=" width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-169px);" > 
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Sidebar left -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:160px;height:800px"
+          data-ad-client="ca-pub-2072313038095874"
+          data-ad-slot="5262301206"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+       </div>
       <!-- Main -->
         <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
@@ -64,6 +75,17 @@
             <?php 
                 dynamic_sidebar('frontpage-sidebar');
             ?>
+      <div class="" style=" width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(169px);" > 
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Sidebar left -->
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:160px;height:800px"
+        data-ad-client="ca-pub-2072313038095874"
+        data-ad-slot="5262301206"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+      </div>
     </div>
 </div>
 </div>
