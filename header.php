@@ -204,9 +204,6 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 </script>  
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 </head>
 
 <body <?php body_class(); ?>>
