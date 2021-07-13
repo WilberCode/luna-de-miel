@@ -265,7 +265,6 @@
 
     <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
         <div class="row">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- Antes de Novedades -->
           <ins class="adsbygoogle"
               style="display:block"
@@ -273,9 +272,7 @@
               data-ad-slot="3701807524"
               data-ad-format="auto"
               data-full-width-responsive="true"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+            
         </div>
     </div> 
 
