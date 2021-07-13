@@ -76,10 +76,10 @@
                 dynamic_sidebar('frontpage-sidebar');
             ?>
       <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(169px);" > 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- Sidebar Right -->
         <ins class="adsbygoogle"
-            style="display:inline-block;width:160px;height:800px"
+            style="display:inline-block;width:160px;height:796px"
             data-ad-client="ca-pub-2072313038095874"
             data-ad-slot="5023106988"></ins>
         <script>
