@@ -60,11 +60,6 @@
     //      footer_menu[i].rel = "nofollow" 
     //   }
     </script>
-
-<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
- 
     
 </body>
 
