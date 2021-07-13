@@ -17,7 +17,18 @@
 					Portal Luna de Miel - Todos los derechos reservados - <?php echo date("Y"); ?>
 				</div>
 				<div class="col-xs-4 col-md-6 col-lg-6 text-right">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home-footer"><img src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" width="158" height="138" alt="Portal Luna de Miel" title="Portal Luna de Miel"/></a>
+				<?php 
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );?>
+                        <?php if ( has_custom_logo() ) { ?> 
+                    <a  href="<?php echo home_url();?>" rel="home">
+                        <img width="158" height="138"    class="w-34 sm:w-43" src="<?php echo esc_url( $logo[0]);?>" alt="<?php bloginfo('name'); ?>" >
+                    </a> 
+                        <?php }else{?>
+                    <a  href="<?php echo home_url();?>" rel="home">
+                        <?php echo  '<h1 class="text-primary-500">'.get_bloginfo( "name" ).'</h1>'; ?>
+                    </a>     
+                        <?php }?>   
 				</div>
 			</div>
 		</div>

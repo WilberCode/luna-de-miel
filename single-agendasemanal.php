@@ -44,7 +44,7 @@ $number_single = 1;
   <section class="agenda max-w-[980px]  m-auto "> 
    		<div  class=" flex flex-col md:flex-row justify-between px-4 lg:px-0" >
 			<div class=" flex justify-between md:block" >
-				<a href="http://www.lunademiel.com.pe/" target="_self">
+				<a href="<?=get_home_url(); ?>" target="_self">
 					<img src="<?=get_stylesheet_directory_uri().'/build/svg/logo.svg'?>" alt="Luna de Miel agenda" class=" w-28  0 sm:w-[150px]">
 				</a>
 				<div  class="inline-flex  md:hidden uppercase space-x-3  mt-5 " >
@@ -163,7 +163,7 @@ $number_single = 1;
  <footer class="bg-primary-500 py-20 px-6 lg:px-0  mt-20">
     <div class="  md:flex  justify-between text-white w-full max-w-[873px] m-auto  space-x-6 ">
       <div  class="  inline-flex text-[18px]   sm:text-[20px]  lg:text-[24px]  items-center space-x-10 font-prelo tracking-wider " >
-		<a href="http://www.lunademiel.com.pe" class="block">
+		<a href="<?=get_home_url();?>" class="block">
 			<img src="<?=get_stylesheet_directory_uri().'/build/svg/hand.svg'?>" alt="Imagen" class=" w-[45px]   md:w-[60px] lg:w-[77.7px]">
 		</a>
 		<span>

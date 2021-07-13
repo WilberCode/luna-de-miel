@@ -201,8 +201,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
-</script> 
-<script data-ad-client="ca-pub-2072313038095874" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</script>  
 </head>
 
 <body <?php body_class(); ?>>
@@ -221,7 +220,18 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 			<div class="container">
 				<div class="row clearfix">
 					<div class="col-md-12">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" id="logo-home"><img id="logo-ldm" src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png"  width="158" height="138" alt="Portal Luna de Miel" title="Portal Luna de Miel"/></a>
+					<?php 
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );?>
+							<?php if ( has_custom_logo() ) { ?> 
+						<a  href="<?php echo home_url();?>" rel="home" id="logo-home">
+							<img width="158" height="138"  class="w-26 sm:w-27 "  id="logo-ldm" src="<?php echo esc_url( $logo[0]);?>" alt="<?php bloginfo('name'); ?>" >
+						</a> 
+							<?php }else{?>
+						<a  href="<?php echo home_url();?>" rel="home">
+							<?php echo  '<h1 class="text-primary-500">'.get_bloginfo( "name" ).'</h1>'; ?>
+						</a>     
+                     <?php }?> 
 					</div>
 				</div>
 			</div>
@@ -307,8 +317,19 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 			<div class="container">
 				<div class="row clearfix">
 					<div class="col-sx-12 col-sm-3 col-md-2 text-center">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" id="logo-home"><img id="logo-ldm" src="http://lunademiel.com.pe/wp-content/uploads/2019/01/lunaDeMiel.png" alt="Portal Luna de Miel" width="100" height="90" title="Portal Luna de Miel"/></a>
-					</div>
+					<?php 
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );?>
+							<?php if ( has_custom_logo() ) { ?> 
+						<a  href="<?php echo home_url();?>" rel="home" id="logo-home">
+							<img  width="100" height="90" class="w-26 sm:w-27 "  id="logo-ldm" src="<?php echo esc_url( $logo[0]);?>" alt="<?php bloginfo('name'); ?>" >
+						</a> 
+							<?php }else{?>
+						<a  href="<?php echo home_url();?>" rel="home">
+							<?php echo  '<h1 class="text-primary-500">'.get_bloginfo( "name" ).'</h1>'; ?>
+						</a>     
+                     <?php }?> 
+ 					</div>
 					<div class="col-sx-12 col-sm-9 col-md-10">
 						<div class="row suscripcion-int">				
 							<!--<div class="col-md-2">

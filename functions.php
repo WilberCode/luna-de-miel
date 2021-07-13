@@ -5,7 +5,7 @@
  * @since HTML5 Reset 2.0
  */
  
-	
+	require get_stylesheet_directory() . '/includes/widgets.php'; 
 	add_image_size( 'img-listing', 300, 300, true );
 	add_image_size( 'img-sidebar', 100, 100, true );
 	add_image_size( 'img-listing-top', 300, 300, array( 'center', 'top' ) );
