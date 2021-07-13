@@ -20,13 +20,10 @@
       <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-169px);" > 
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- Sidebar left -->
-      <ins class="adsbygoogle"
+       <ins class="adsbygoogle"
           style="display:inline-block;width:160px;height:800px"
           data-ad-client="ca-pub-2072313038095874"
-          data-ad-slot="5262301206"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+          data-ad-slot="5262301206"></ins> 
        </div>
       <!-- Main -->
         <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
@@ -72,10 +69,9 @@
                   <?php get_search_form(true);?>
                 </div> 
             </div>
-            <?php 
-                dynamic_sidebar('frontpage-sidebar');
-            ?>
-      <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(169px);" > 
+            <?php  dynamic_sidebar('frontpage-sidebar');  ?> 
+       </div>
+       <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(169px);" > 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <ins class="adsbygoogle"
           style="display:block; text-align:center;"
@@ -87,7 +83,6 @@
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
       </div>
-    </div>
 </div>
 </div>
 
@@ -268,7 +263,7 @@
       </div>
     </section>
 
-    <div class=" container " style="margin-top:4rem; margin-bottom:4rem;" >
+    <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
         <div class="row">
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- Antes de Novedades -->
