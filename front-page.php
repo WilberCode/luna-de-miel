@@ -81,7 +81,7 @@
         <ins class="adsbygoogle"
             style="display:inline-block;width:160px;height:800px"
             data-ad-client="ca-pub-2072313038095874"
-            data-ad-slot="5262301206"></ins>
+            data-ad-slot="5023106988"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
