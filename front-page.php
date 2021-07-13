@@ -268,7 +268,19 @@
       </div>
     </section>
 
-     
+    <div style="margin:4rem 0;" >
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Antes de Novedades -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-2072313038095874"
+      data-ad-slot="3701807524"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+    </div> 
 
     <section id="novedades" class="novedades">
       <div class="container">
