@@ -77,14 +77,14 @@
             ?>
       <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(169px);" > 
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Sidebar right -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:160px;height:800px"
-     data-ad-client="ca-pub-2072313038095874"
-     data-ad-slot="6355891021"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <!-- Sidebar Right -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:160px;height:800px"
+            data-ad-client="ca-pub-2072313038095874"
+            data-ad-slot="5023106988"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
     </div>
 </div>
