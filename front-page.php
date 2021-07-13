@@ -268,7 +268,7 @@
       </div>
     </section>
 
-    <div class=" container " style="margin:4rem 0;" >
+    <div class=" container " style="margin-top:4rem; margin-bottom:4rem;" >
         <div class="row">
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- Antes de Novedades -->
