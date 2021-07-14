@@ -73,8 +73,8 @@
                 </div> 
             </div>
             <?php  dynamic_sidebar('frontpage-sidebar');  ?> 
-      <!--  </div>
-       <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
+      </div>
+         <!--  <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
           <!-- Sidebar Right -->
         <!--   <ins class="adsbygoogle"
@@ -265,10 +265,10 @@
       </div>
     </section>
 
-    <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
+    <!-- Antes de Novedades -->
+    <!-- <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
         <div class="row">
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Antes de Novedades -->
             <ins class="adsbygoogle"
                 style="display:block"
                 data-ad-client="ca-pub-2072313038095874"
@@ -279,7 +279,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-    </div> 
+    </div>  -->
 
     <section id="novedades" class="novedades">
       <div class="container">
