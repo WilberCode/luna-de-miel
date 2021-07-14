@@ -38,9 +38,7 @@
 	<?php wp_footer(); ?>
 <!-- 
 	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-
-	<!-- jQuery is called via the WordPress-friendly way via functions.php -->
-
+  
 	<!-- this is where we put our custom functions -->
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/hoverIntent.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
@@ -52,15 +50,6 @@
 	<script>
 		document.getElementById('s').placeholder = "Buscar..."
 	</script>
-
-	<!-- Footer menu set nofollow -->
-	 <script>
-    //   var footer_menu = document.querySelectorAll('#menu-main-menu-1 li a') 
-    //   for(i in footer_menu){ 
-    //      footer_menu[i].rel = "nofollow" 
-    //   }
-    </script>
-    
-</body>
-
+  
+</body> 
 </html>
