@@ -22,7 +22,7 @@
                     $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );?>
                         <?php if ( has_custom_logo() ) { ?> 
                     <a  href="<?php echo home_url();?>" rel="home">
-                        <img width="158" height="138"    class="w-34 sm:w-43" src="<?php echo esc_url( $logo[0]);?>" alt="<?php bloginfo('name'); ?>" >
+                        <img width="158" height="142"    class="w-34 sm:w-43" src="<?php echo esc_url( $logo[0]);?>" alt="<?php bloginfo('name'); ?>" >
                     </a> 
                         <?php }else{?>
                     <a  href="<?php echo home_url();?>" rel="home">
