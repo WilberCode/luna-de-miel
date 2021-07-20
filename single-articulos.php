@@ -84,6 +84,17 @@
 	<div class="col-sidebar col-sm-1"></div>
 	<div class="col-sidebar col-sm-3">
 	  	<div class="row show-grid">
+			  <!-- Post -  Sidebar -->
+				<ins class="adsbygoogle"
+					style="display:block"
+					data-ad-client="ca-pub-2072313038095874"
+					data-ad-slot="9092330038"
+					data-ad-format="auto"
+					data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			  <br>
 			<h3>Los más recientes</h3>
 			<div class="container-fluid mas-recientes">
 			<?php
