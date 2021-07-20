@@ -28,6 +28,16 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
      </div> -->
+     <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
+      <amp-ad
+          layout="fixed"
+          width="160"
+          height="796"
+          type="adsense"
+          data-ad-client="ca-pub-2072313038095874"
+          data-ad-slot="5023106988">
+      </amp-ad>
+     </div> 
       <!-- Main -->
         <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
