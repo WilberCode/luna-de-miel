@@ -14,7 +14,9 @@
   $foto_articulos = $settings->field('foto_articulos');
   ?>
   <?php global $wp;  ?> 
-
+  <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-2072313038095874">
+</amp-auto-ads>
 <div class="container" >
   <div class="row" style="position: relative;" >
      <!--  <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 

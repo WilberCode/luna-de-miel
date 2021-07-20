@@ -220,9 +220,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
   $pinterest = $settings->field('pinterest');
   $instagram = $settings->field('instagram');
 ?>	
-<amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-2072313038095874">
-</amp-auto-ads>
+
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 		<?php if(is_front_page()){ ?>
 		<header id="header" class="clearfix">
