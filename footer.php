@@ -50,8 +50,6 @@
 	<script>
 		document.getElementById('s').placeholder = "Buscar..."
 	</script>
-  <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+ 
 </body> 
 </html>

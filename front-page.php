@@ -25,6 +25,9 @@
             data-ad-client="ca-pub-2072313038095874"
             data-ad-slot="5262301206"></ins>
             </div> 
+            <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
       <!-- Main -->
         <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
@@ -78,6 +81,9 @@
               data-ad-client="ca-pub-2072313038095874"
               data-ad-slot="5023106988"></ins> 
          </div> 
+         <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
   </div>
 </div>
 
@@ -269,6 +275,9 @@
               data-ad-format="auto"
               data-full-width-responsive="true"></ins>
         </div>
+        <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div> 
 
     <section id="novedades" class="novedades">
