@@ -71,7 +71,7 @@
             </div>
             <?php  dynamic_sidebar('frontpage-sidebar');  ?> 
       </div> 
-         <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
+         <div class="ins-wrap" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
           <!-- Home - Sidebar Right -->
           <ins class="adsbygoogle"
               style="display:inline-block;width:160px;height:796px"
@@ -260,10 +260,10 @@
 
     <!-- Antes de Novedades -->
     <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
-        <div class="row">
+        <div class="row ins-wrap">
             <!-- Home - Antes de Novedades -->
           <ins class="adsbygoogle"
-              style="display:block"
+              style="display:block;"
               data-ad-client="ca-pub-2072313038095874"
               data-ad-slot="3701807524"
               data-ad-format="auto"
