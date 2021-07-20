@@ -27,19 +27,7 @@
 		<?php //endif; ?>	
 		<div class="entry">
 			<?php the_content(); ?>
-		</div>
-	<section class="publicidad hidden-xs">
-			<div class="row">
-				<div class="banner-footer-728x90">			
-					<!-- /22596825/Home_Footer_Skycrapper -->
-					<div id='div-gpt-ad-1459740034135-0' style='height:90px; width:728px;'>
-					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-0'); });
-					</script>
-					</div>
-				</div>
-			</div>
-	</section>		
+		</div> 	
 	<section class="related">
 		<h3>También te puede interesar:</h3>
 		<div class="row">
@@ -85,8 +73,10 @@
   	</div>
 	<div class="col-sidebar col-sm-1"></div>
 	<div class="col-sidebar col-sm-3">
-	  	<div class="row show-grid">
-			  <!-- Post -  Sidebar -->
+	  	<div class="row show-grid ">
+			  
+			<div  class="ins-wrap  " >
+				<!-- Post -  Sidebar -->
 				<ins class="adsbygoogle"
 					style="display:block"
 					data-ad-client="ca-pub-2072313038095874"
@@ -95,8 +85,8 @@
 					data-full-width-responsive="true"></ins>
 				<script>
 					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			  <br>
+				</script> 
+			</div>
 			<h3>Los más recientes</h3>
 			<div class="container-fluid mas-recientes">
 			<?php
@@ -138,29 +128,26 @@
 					wp_reset_postdata();
 				  ?>
 				 </div>
+	  	</div>  
+		<div class="row ">
+			<a href="<?=get_home_url().'/contacto';?>" target="_blank"><img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" /></a>
 	  	</div>
-		<!--BRASIL-->
-		<div class="banner-right-300x250">
-			<!-- /22596825/Home_Right_1_300x250 
-			<div id='div-gpt-ad-1459740034135-2' style='height:250px; width:300px;'>-->
-			<div style='height:300px; width:300px;'>
-			<a href="http://www.lunademiel.com.pe/contacto/" target="_blank"><img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" style="height: 280px; width: 300px" /></a>
-			<script type='text/javascript'>
-			//googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-2'); });
-			</script>
-		</div>
 		<!--FIN BRASIL-->
 		<div class="row show-grid">
 			<h3>También visita</h3>
 			<?php wp_nav_menu( array('theme_location' => 'sidebar','menu_class' => 'menu-sidebar') ); ?>
 	  	</div>
-	  	<div class="banner-right-300x250">
-			<!-- /22596825/Home_Right_2_300x250 -->
-			<div id='div-gpt-ad-1459740034135-3' style='height:250px; width:300px;'>
-			<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-3'); });
+	  	<div class="ins-wrap">
+			<!-- Post - Sidebar 2 -->
+			<ins class="adsbygoogle"
+				style="display:block"
+				data-ad-client="ca-pub-2072313038095874"
+				data-ad-slot="8852850407"
+				data-ad-format="auto"
+				data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
-			</div>
 		</div>
 	</div> 
   </div>

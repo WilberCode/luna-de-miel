@@ -70,3 +70,17 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
 .ins-wrap ins{
     background-color: white !important;
 }
+
+@media (min-width:768px) {
+    .container { 
+    }
+}
+@media (max-width:767px) {
+    .container { 
+    }
+}
+@media (max-width:500px) {
+    .container { 
+    }
+}
+
