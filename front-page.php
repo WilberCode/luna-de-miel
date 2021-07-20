@@ -259,20 +259,17 @@
     </section>
 
     <!-- Antes de Novedades -->
-    <!-- <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
+    <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
         <div class="row">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            <!-- Home - Antes de Novedades -->
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-2072313038095874"
+              data-ad-slot="3701807524"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
         </div>
-    </div>  -->
+    </div> 
 
     <section id="novedades" class="novedades">
       <div class="container">
