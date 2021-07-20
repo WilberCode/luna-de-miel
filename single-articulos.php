@@ -5,6 +5,8 @@
  * @since HTML5 Reset 2.0
  */
  get_header(); ?>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
+     crossorigin="anonymous"></script>
 <section id="main" class="clearfix single">
   <div class="container">
 	<div class="col-main col-sm-8">
