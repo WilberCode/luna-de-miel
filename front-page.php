@@ -18,17 +18,13 @@
 
 <div class="container" >
   <div class="row" style="position: relative;" >
-     <!--  <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- Sidebar left -->
-    <!--     <ins class="adsbygoogle"
-            style="display:inline-block;width:160px;height:800px;background-color:white;"
+     <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
+       <!-- Home - Sidebar Left -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:160px;height:800px"
             data-ad-client="ca-pub-2072313038095874"
-            data-ad-slot="5262301206"></ins> -->
-      <!--   <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-     </div> --> 
+            data-ad-slot="5262301206"></ins>
+            </div> 
       <!-- Main -->
         <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
@@ -74,27 +70,13 @@
                 </div> 
             </div>
             <?php  dynamic_sidebar('frontpage-sidebar');  ?> 
-      </div>
-         <!--  <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-          <!-- Sidebar Right -->
-        <!--   <ins class="adsbygoogle"
-              style="display:inline-block;width:160px;height:796px;background-color:white;"
-              data-ad-client="ca-pub-2072313038095874"
-              data-ad-slot="5023106988"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>  -->
-     <!--  </div> -->
+      </div> 
          <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
           <!-- Home - Sidebar Right -->
           <ins class="adsbygoogle"
               style="display:inline-block;width:160px;height:796px"
               data-ad-client="ca-pub-2072313038095874"
-              data-ad-slot="5023106988"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+              data-ad-slot="5023106988"></ins> 
          </div> 
   </div>
 </div>
