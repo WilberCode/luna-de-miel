@@ -17,6 +17,8 @@
   <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-2072313038095874">
 </amp-auto-ads>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
 <div class="container" >
   <div class="row" style="position: relative;" >
      <!--  <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
