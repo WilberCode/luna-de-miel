@@ -14,10 +14,7 @@
   $foto_articulos = $settings->field('foto_articulos');
   ?>
   <?php global $wp;  ?> 
-  <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-2072313038095874">
-</amp-auto-ads>
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  
 
 <div class="container" >
   <div class="row" style="position: relative;" >
@@ -90,14 +87,14 @@
           </script>  -->
      <!--  </div> -->
          <div class="" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
-          <amp-ad
-            layout="fixed"
-            width="160"
-            height="796"
-            type="adsense"
-            data-ad-client="ca-pub-2072313038095874"
-            data-ad-slot="5023106988">
-        </amp-ad>
+          <!-- Home - Sidebar Right -->
+          <ins class="adsbygoogle"
+              style="display:inline-block;width:160px;height:796px"
+              data-ad-client="ca-pub-2072313038095874"
+              data-ad-slot="5023106988"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
          </div> 
   </div>
 </div>
