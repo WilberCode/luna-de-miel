@@ -5,7 +5,7 @@
  * @since HTML5 Reset 2.0
  */
  get_header(); ?>
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
+ 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
 	crossorigin="anonymous"></script>
 	<div  class="ins-wrap sm-from-hide justify-center " style="height:90px;" >
 		<!-- Post - top in mobile -->
