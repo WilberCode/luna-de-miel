@@ -58,19 +58,17 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
 .ins-wrap ins{
     background-color: white !important;
 }
-.container {
+.home .container {
     width: auto !important;
     max-width: 1050px !important;
 }
 
 @media (max-width:1050px) {
-    .container {
+    .home .container {
         width: auto !important;
     }
 } 
-@media (min-width:768px) {
-    .container { 
-    }
+@media (min-width:768px) { 
     .lg-show{
         display: block;
     }
