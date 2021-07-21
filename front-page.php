@@ -15,16 +15,18 @@
   ?>
   <?php global $wp;  ?> 
   
-  <?php   if(!is_admin()) { ?> 
-      <div  class="ins-wrap sm-from-hide justify-center " style="height:90px;" >
-        <!-- Post - top in mobile -->
-        <ins class="adsbygoogle"
-          style="display:inline-block;width:325px;height:90px"
-          data-ad-client="ca-pub-2072313038095874"
-          data-ad-slot="7278848626"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+  <?php   if(!is_admin()) { ?>  
+      <div  class="sm-from-hide">
+        <div  class="ins-wrap  justify-center " style="height:90px;margin-bottom:4px;" >
+          <!-- Post - top in mobile -->
+          <ins class="adsbygoogle"
+            style="display:inline-block;width:325px;height:90px"
+            data-ad-client="ca-pub-2072313038095874"
+            data-ad-slot="7278848626"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
       </div>
     <?php }?> 
 
