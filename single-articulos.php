@@ -7,14 +7,26 @@
  get_header(); ?>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
      crossorigin="anonymous"></script>
-<section id="main" class="clearfix single">
+	 <div  class="ins-wrap" style="height:80px;background:red;" >
+				<!-- Post - Content Footer -->
+				<ins class="adsbygoogle"
+				style="display:block"
+				data-ad-client="ca-pub-2072313038095874"
+				data-ad-slot="8266333524"
+				data-ad-format="auto"
+				data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script> 
+		</div>
+  <section id="main" class="clearfix single">
   <div class="container">
 	<div class="col-main col-sm-8">
 		<?php if (get_post_status()=='archive'){ ?>
 			<div class="alert alert-warning" role="alert">
 			  Este artículo ya no se encuentra disponible. Te invitamos a que visites <a href="/articulos/" class="alert-link">nuestra sección de artículos</a>.
 			</div>
-		<?php } ?>
+		<?php } ?> 
 		<section class="head-title">	
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<h1><?php echo get_the_title(); ?></h1>
