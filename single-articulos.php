@@ -7,7 +7,7 @@
  get_header(); ?>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
      crossorigin="anonymous"></script>
-	 <div  class="ins-wrap sm-from-hide" style="height:90px;" >
+	 <div  class="ins-wrap sm-from-hide justify-center " style="height:90px;" >
 			<!-- Post - top in mobile -->
 			<ins class="adsbygoogle"
 				style="display:inline-block;width:300px;height:90px"

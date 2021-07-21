@@ -131,4 +131,8 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
         display: none;
     }
 }
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
 
