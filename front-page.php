@@ -18,7 +18,7 @@
 
 <div class="container" >
   <div class="row" style="position: relative;" >
-     <div class="ins-wrap" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
+     <div class="ins-wrap sm-hide " style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
        <!-- Home - Sidebar Left -->
         <ins class="adsbygoogle"
             style="display:inline-block;width:160px;height:800px"
@@ -74,7 +74,7 @@
             </div>
             <?php  dynamic_sidebar('frontpage-sidebar');  ?> 
       </div> 
-         <div class="ins-wrap" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
+         <div class="ins-wrap sm-hide" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
           <!-- Home - Sidebar Right -->
           <ins class="adsbygoogle"
               style="display:inline-block;width:160px;height:796px"
