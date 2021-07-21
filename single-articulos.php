@@ -8,17 +8,15 @@
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
      crossorigin="anonymous"></script>
 	 <div  class="ins-wrap sm-from-hide" style="height:80px;" >
-				<!-- Post - Content Footer -->
-				<ins class="adsbygoogle"
-				style="display:block"
+			<!-- Post - top in mobile -->
+			<ins class="adsbygoogle"
+				style="display:inline-block;width:300px;height:90px"
 				data-ad-client="ca-pub-2072313038095874"
-				data-ad-slot="8266333524"
-				data-ad-format="auto"
-				data-full-width-responsive="true"></ins>
+				data-ad-slot="7278848626"></ins>
 			<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 			</script> 
-		</div>
+	 </div>
   <section id="main" class="clearfix single">
   <div class="container">
 	<div class="col-main col-sm-8">
