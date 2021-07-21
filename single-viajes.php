@@ -5,6 +5,18 @@
  * @since HTML5 Reset 2.0
  */
  get_header(); ?>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
+	crossorigin="anonymous"></script>
+	<div  class="ins-wrap sm-from-hide justify-center " style="height:90px;" >
+		<!-- Post - top in mobile -->
+		<ins class="adsbygoogle"
+			style="display:inline-block;width:325px;height:90px"
+			data-ad-client="ca-pub-2072313038095874"
+			data-ad-slot="7278848626"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
 <section id="main" class="clearfix single">
   <div class="container">
 	<div class="col-main col-sm-8">
