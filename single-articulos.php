@@ -8,14 +8,14 @@
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
      crossorigin="anonymous"></script>
 	 <div  class="ins-wrap sm-from-hide justify-center " style="height:90px;" >
-			<!-- Post - top in mobile -->
+			<!-- Post - top in mobile --> 
 			<ins class="adsbygoogle"
-				style="display:inline-block;width:300px;height:90px"
+				style="display:inline-block;width:320px;height:90px"
 				data-ad-client="ca-pub-2072313038095874"
 				data-ad-slot="7278848626"></ins>
 			<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script> 
+			</script>
 	 </div>
   <section id="main" class="clearfix single">
   <div class="container">
