@@ -55,7 +55,9 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
     }
 }
 
-
+.ins-wrap ins{
+    background-color: white !important;
+}
 .container {
     width: auto !important;
     max-width: 1050px !important;
@@ -65,22 +67,39 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
     .container {
         width: auto !important;
     }
-}
- 
-.ins-wrap ins{
-    background-color: white !important;
-}
-
+} 
 @media (min-width:768px) {
     .container { 
     }
-}
-@media (max-width:767px) {
-    .container { 
+    .lg-show{
+        display: block;
+    }
+    .lg-hide{
+        display: none;
     }
 }
-@media (max-width:500px) {
-    .container { 
+@media (max-width:767px) { 
+    .md-show{
+        display: block;
+    }
+    .md-hide{
+        display: none;
+    }
+}
+@media (max-width:520px) { 
+    .sm-show{
+        display: block;
+    }
+    .sm-hide{
+        display: none;
+    }
+}
+@media (max-width:400spx) { 
+    .sm-show{
+        display: block;
+    }
+    .sm-hide{
+        display: none;
     }
 }
 

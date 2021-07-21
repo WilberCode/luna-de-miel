@@ -278,8 +278,7 @@
         <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-    </div> 
-
+    </div>  
     <section id="novedades" class="novedades">
       <div class="container">
         <div class="row">

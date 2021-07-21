@@ -221,7 +221,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 		<?php if(is_front_page()){ ?>
-		<header id="header" class="clearfix">
+		<header id="header" class="clearfix ">
 			<div class="container">
 				<div class="row clearfix">
 					<div class="col-md-12">
