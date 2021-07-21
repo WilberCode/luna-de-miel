@@ -12,6 +12,7 @@
 				<div class="ins-wrap justify-center">			 
 
   					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874" crossorigin="anonymous"></script>
+					 
 					<!-- Categoria - top -->
 					<ins class="adsbygoogle"
 						style="display:block;height:100px;"
