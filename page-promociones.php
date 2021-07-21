@@ -6,7 +6,7 @@
  * 
  */
  get_header(); ?>
-	<section class="publicidad hidden-xs">
+	<section class="publicidad ">
 		<div class="container">
 			<div class="row">
 				<div class="ins-wrap">			
