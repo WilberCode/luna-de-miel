@@ -296,7 +296,7 @@
     </div>
     <?php  } ?>   
     <?php   if(!is_admin()) { ?>  
-        <section class="ins-wrap" style="margin-top:3rem; margin-bottom:3rem; display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:2rem; max-width:820px; margin-left:auto;margin-right:auto;" >  
+        <section class="ins-wrap" style="margin-top:3rem; margin-bottom:3rem;  display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: 220px; gap:2rem; max-width:820px; margin-left:auto;margin-right:auto;" >  
                     <div style="width:100%;" >
                       <!-- Home - Antes de Novedades -->
                       <ins class="adsbygoogle"
