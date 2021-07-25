@@ -280,7 +280,7 @@
     </section>
     <?php   if(!is_admin()) { ?>  
     <!-- Antes de Novedades -->
-    <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
+    <div class="container sm-from-hide " style="margin-top:3rem; margin-bottom:3rem;" >
           <div class="row ins-wrap">
               <!-- Home - Antes de Novedades -->
             <ins class="adsbygoogle"
@@ -294,13 +294,10 @@
           </script>
           </div> 
     </div>
-    <?php  } ?>
-    
-    
-
+    <?php  } ?> 
 
     <section  class="novedades">
-      <div class="container"> 
+      <div class="container sm-hide "> 
         <div class="row show-grid">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10"> 
@@ -318,24 +315,23 @@
 					   </div>  
 						 <div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center"> 
                 <div class="row ins-wrap">
-                 <!-- Home - as post -->
-                  <ins class="adsbygoogle"
-                      style="display:inline-block;width:251px;height:251px"
-                      data-ad-client="ca-pub-2072313038095874"
-                      data-ad-slot="5629535661"></ins>
-                  <script>
-                      (adsbygoogle = window.adsbygoogle || []).push({});
-                  </script>
-                
-              </div> 
+                    <!-- Home - as post 2 -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:251px;height:251px"
+                        data-ad-client="ca-pub-2072313038095874"
+                        data-ad-slot="6256221624"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+               </div> 
 					   </div>  
 						 <div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center"> 
                 <div class="row ins-wrap">
-                  <!-- Home - as post -->
+                  <!-- Home - as post 3 -->
                   <ins class="adsbygoogle"
                       style="display:inline-block;width:251px;height:251px"
                       data-ad-client="ca-pub-2072313038095874"
-                      data-ad-slot="5629535661"></ins>
+                      data-ad-slot="2403965899"></ins>
                   <script>
                       (adsbygoogle = window.adsbygoogle || []).push({});
                   </script>
