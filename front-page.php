@@ -104,14 +104,14 @@
   <?php   if(!is_admin()) { ?>  
       <div  class="sm-from-hide">
         <div  class="ins-wrap  justify-center " style=" margin-top:6px; margin-bottom:6px;" >
-           <!-- Home - Antes de Novedades -->
-           <ins class="adsbygoogle"
-                style="display:block;"
-                data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-                <script>
+           <!-- Home - Full -->
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-2072313038095874"
+              data-ad-slot="3701807524"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
