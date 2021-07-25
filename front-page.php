@@ -17,7 +17,7 @@
   
   <?php   if(!is_admin()) { ?>  
       <div  class="sm-from-hide">
-        <div  class="ins-wrap  justify-center " style="height:90px;margin-bottom:4px;" >
+        <div  class="ins-wrap  justify-center " style="height:90px;margin-bottom:6px;" >
           <!-- Post - top in mobile -->
           <ins class="adsbygoogle"
             style="display:inline-block;width:325px;height:90px"
@@ -281,19 +281,66 @@
 
     <!-- Antes de Novedades -->
     <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
-        <div class="row ins-wrap">
-            <!-- Home - Antes de Novedades -->
-          <ins class="adsbygoogle"
-              style="display:block;"
-              data-ad-client="ca-pub-2072313038095874"
-              data-ad-slot="3701807524"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-        </div>
-        <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>  
+          <div class="row ins-wrap">
+              <!-- Home - Antes de Novedades -->
+            <ins class="adsbygoogle"
+                style="display:block;"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="3701807524"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          </div> 
+    </div> 
+    
+    <section >
+      <div class="container">
+          <div class="row">
+                <div  style="margin-top:3rem; margin-bottom:3rem; display:flex; max-width:935px; margin-left:auto;margin-right;">
+                  
+                  <div style="width:100%; padding:0 4px;" >
+                      <!-- Home - Antes de Novedades -->
+            <ins class="adsbygoogle"
+                style="display:block;"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="3701807524"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+                </div> 
+                  <div style="width:100%; padding:0 4px;" >
+                    <!-- Home - Antes de Novedades -->
+            <ins class="adsbygoogle"
+                style="display:block;"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="3701807524"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+                </div> 
+                  <div style="width:100%; padding:0 4px;" >
+                    <!-- Home - Antes de Novedades -->
+            <ins class="adsbygoogle"
+                style="display:block;"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="3701807524"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+                </div> 
+
+                </div>
+          </div> 
+      </div>
+    </section>
     <section id="novedades" class="novedades">
       <div class="container">
         <div class="row">
