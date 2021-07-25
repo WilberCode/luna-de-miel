@@ -277,27 +277,9 @@
           <div class="hidden-xs col-md-1">&nbsp;</div>
         </div>
       </div>
-    </section>
-    <?php   if(!is_admin()) { ?>  
-    <!-- Antes de Novedades -->
-    <div class="container sm-from-hide " style="margin-top:3rem; margin-bottom:3rem;" >
-          <div class="row ins-wrap">
-              <!-- Home - Antes de Novedades -->
-            <ins class="adsbygoogle"
-                style="display:block;"
-                data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-                <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          </div> 
-    </div>
-    <?php  } ?> 
-
+    </section> 
     <section  class="novedades">
-      <div class="container sm-hide "> 
+      <div class="container"> 
         <div class="row show-grid">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10"> 
