@@ -278,7 +278,7 @@
         </div>
       </div>
     </section>
-
+    <?php   if(!is_admin()) { ?>  
     <!-- Antes de Novedades -->
     <div class="container" style="margin-top:3rem; margin-bottom:3rem;" >
           <div class="row ins-wrap">
@@ -293,54 +293,49 @@
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
           </div> 
-    </div> 
-    
-    <section >
-      <div class="container">
-          <div class="row">
-                <div  style="margin-top:3rem; margin-bottom:3rem; display:flex; max-width:935px; margin-left:auto;margin-right;">
-                  
-                  <div style="width:100%; padding:0 4px;" >
+    </div>
+    <?php  } ?>   
+    <?php   if(!is_admin()) { ?>  
+        <section class="ins-wrap" style="margin-top:3rem; margin-bottom:3rem; display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:2rem; max-width:820px; margin-left:auto;margin-right:auto;" >  
+                    <div style="width:100%;" >
                       <!-- Home - Antes de Novedades -->
-            <ins class="adsbygoogle"
-                style="display:block;"
-                data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-                <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-                </div> 
-                  <div style="width:100%; padding:0 4px;" >
-                    <!-- Home - Antes de Novedades -->
-            <ins class="adsbygoogle"
-                style="display:block;"
-                data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-                <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-                </div> 
-                  <div style="width:100%; padding:0 4px;" >
-                    <!-- Home - Antes de Novedades -->
-            <ins class="adsbygoogle"
-                style="display:block;"
-                data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-                <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-                </div> 
-
-                </div>
-          </div> 
-      </div>
-    </section>
+                      <ins class="adsbygoogle"
+                          style="display:block;"
+                          data-ad-client="ca-pub-2072313038095874"
+                          data-ad-slot="3701807524"
+                          data-ad-format="auto"
+                          data-full-width-responsive="true"></ins>
+                          <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                  </div> 
+                    <div style="width:100%;" >
+                      <!-- Home - Antes de Novedades -->
+                      <ins class="adsbygoogle"
+                          style="display:block;"
+                          data-ad-client="ca-pub-2072313038095874"
+                          data-ad-slot="3701807524"
+                          data-ad-format="auto"
+                          data-full-width-responsive="true"></ins>
+                          <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                  </div> 
+                    <div style="width:100%;" >
+                      <!-- Home - Antes de Novedades -->
+                      <ins class="adsbygoogle"
+                          style="display:block;"
+                          data-ad-client="ca-pub-2072313038095874"
+                          data-ad-slot="3701807524"
+                          data-ad-format="auto"
+                          data-full-width-responsive="true"></ins>
+                          <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                  </div>  
+      </section>
+    <?php  } ?>  
+   
     <section id="novedades" class="novedades">
       <div class="container">
         <div class="row">
