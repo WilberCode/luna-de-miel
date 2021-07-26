@@ -6,12 +6,10 @@
  * 
  */
  get_header(); ?>
-   	<section class="publicidad   ">
+    <section class="publicidad   ">
 		<div class="container">
 			<div class="row">
-				<div class="ins-wrap justify-center">
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
-					crossorigin="anonymous"></script>
+				<div class="ins-wrap justify-center">  
 				<!-- Categoria - top -->
 				<ins class="adsbygoogle"
 					style="display:inline-block;width:728px;height:90px"
