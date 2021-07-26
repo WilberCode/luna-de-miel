@@ -39,14 +39,13 @@
 		<div class="entry">
 			<?php the_content(); ?>
 		</div> 
-		<div  class="ins-wrap" >
+		<div  class="ins-wrap" style="margin: 1rem 0;" >
 				<!-- Post - Content Footer -->
 				<ins class="adsbygoogle"
-				style="display:block"
+				style="display:inline-block;width:100%;height:90px"
 				data-ad-client="ca-pub-2072313038095874"
-				data-ad-slot="8266333524"
-				data-ad-format="auto"
-				data-full-width-responsive="true"></ins>
+				data-ad-slot="8266333524" 
+				 ></ins>
 			<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 			</script> 
