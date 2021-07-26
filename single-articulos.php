@@ -7,16 +7,7 @@
  get_header(); ?>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
      crossorigin="anonymous"></script>
-	 <div  class="ins-wrap sm-from-hide justify-center " style="height:90px;" >
-			<!-- Post - top in mobile -->
-			<ins class="adsbygoogle"
-				style="display:inline-block;width:325px;height:90px"
-				data-ad-client="ca-pub-2072313038095874"
-				data-ad-slot="7278848626"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-	 </div>
+	 
   <section id="main" class="clearfix single">
   <div class="container">
 	<div class="col-main col-sm-8">
@@ -25,6 +16,16 @@
 			  Este artículo ya no se encuentra disponible. Te invitamos a que visites <a href="/articulos/" class="alert-link">nuestra sección de artículos</a>.
 			</div>
 		<?php } ?> 
+		<div  class="ins-wrap   " style="height:90px;" >
+				<!-- Post - top in mobile -->
+				<ins class="adsbygoogle"
+					style="display:inline-block;width:100%;height:90px"
+					data-ad-client="ca-pub-2072313038095874"
+					data-ad-slot="7278848626"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+		</div>
 		<section class="head-title">	
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<h1><?php echo get_the_title(); ?></h1>
