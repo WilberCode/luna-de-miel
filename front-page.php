@@ -95,24 +95,22 @@
               style="display:inline-block;width:160px;height:796px"
               data-ad-client="ca-pub-2072313038095874"
               data-ad-slot="5023106988"></ins> 
-         </div> 
-         <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+         </div>  
   </div>
 </div>
   <?php   if(!is_admin()) { ?>  
       <div  class="sm-from-hide">
-        <div  class="ins-wrap  justify-center " style=" margin-top:6px; margin-bottom:6px;" >
-           <!-- Home - Full -->
+        <div  class="ins-wrap  justify-center " style="height:90px;margin-bottom:6px;" >
+          <!-- Post - top in mobile -->
           <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-client="ca-pub-2072313038095874"
-              data-ad-slot="3701807524"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
+            style="display:inline-block;width:325px;height:90px"
+            data-ad-client="ca-pub-2072313038095874"
+            data-ad-slot="7278848626"></ins>
           <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
       </div>
