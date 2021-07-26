@@ -104,14 +104,14 @@
   <?php   if(!is_admin()) { ?>  
       <div  class="sm-from-hide">
         <div  class="ins-wrap  justify-center " style="height:90px;margin-bottom:6px;" >
-          <!-- Post - top in mobile -->
+          <!-- Categoria - top -->
           <ins class="adsbygoogle"
-            style="display:inline-block;width:325px;height:90px"
+            style="display:inline-block;width:325px;height:90px" 
             data-ad-client="ca-pub-2072313038095874"
-            data-ad-slot="7278848626"></ins>
+            data-ad-slot="1746007268"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          </script>	 
         </div>
       </div>
     <?php }?> 
