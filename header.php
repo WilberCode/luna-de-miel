@@ -192,7 +192,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
   })();
 </script>
 
-<script type='text/javascript'>
+<!-- <script type='text/javascript'>
   googletag.cmd.push(function() {
     googletag.defineSlot('/22596825/Home_Footer_Skycrapper', [728, 90], 'div-gpt-ad-1459740034135-0').addService(googletag.pubads());
     googletag.defineSlot('/22596825/Home_Middle_720x300', [720, 300], 'div-gpt-ad-1459740034135-1').addService(googletag.pubads());
@@ -202,8 +202,8 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
-</script>   
-  <script data-ad-client="ca-pub-2072313038095874" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+</script>  -->  
+<!--   <script data-ad-client="ca-pub-2072313038095874" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874" crossorigin="anonymous"></script>
 </head>
 
