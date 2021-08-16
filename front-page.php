@@ -292,15 +292,15 @@
         </div>
       </div>
     </section> 
-    <section  class="novedades" style="margin-top:4px;" >
+<!--     <section  class="novedades" style="margin-top:4px;" >
       <div class="container"> 
         <div class="row show-grid">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10"> 
 						 <div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center"> 
-                  <div class="row ins-wrap">
+                  <div class="row ins-wrap"> -->
                     <!-- Home - as post -->
-                    <ins class="adsbygoogle"
+                  <!--   <ins class="adsbygoogle"
                         style="display:inline-block;width:251px;height:251px"
                         data-ad-client="ca-pub-2072313038095874"
                         data-ad-slot="5629535661"></ins>
@@ -310,21 +310,21 @@
                 </div> 
 					   </div>  
 						 <div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center"> 
-                <div class="row ins-wrap">
+                <div class="row ins-wrap"> -->
                     <!-- Home - as post 2 -->
-                    <ins class="adsbygoogle"
+            <!--         <ins class="adsbygoogle"
                         style="display:inline-block;width:251px;height:251px"
                         data-ad-client="ca-pub-2072313038095874"
-                        data-ad-slot="6256221624"></ins>
-                    <script>
+                        data-ad-slot="6256221624"></ins> -->
+                  <!--   <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                </div> 
 					   </div>  
 						 <div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center"> 
-                <div class="row ins-wrap">
+                <div class="row ins-wrap"> -->
                   <!-- Home - as post 3 -->
-                  <ins class="adsbygoogle"
+                 <!--  <ins class="adsbygoogle"
                       style="display:inline-block;width:251px;height:251px"
                       data-ad-client="ca-pub-2072313038095874"
                       data-ad-slot="2403965899"></ins>
@@ -337,9 +337,24 @@
           <div class="hidden-xs col-md-1">&nbsp;</div>
         </div>
       </div>
+    </section>  -->
+
+    <section  class="novedades" style="margin-top:4px;" >
+      <div class="container"> 
+        <div class="row show-grid">
+              <div class="row ins-wrap">
+                    <!-- Home - as post -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:100%;height:auto"
+                        data-ad-client="ca-pub-2072313038095874"
+                        data-ad-slot="5629535661"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div> 
+        </div>
+      </div>
     </section> 
-
-
 
     <section id="novedades" class="novedades">
       <div class="container">
