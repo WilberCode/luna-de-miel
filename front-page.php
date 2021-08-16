@@ -343,14 +343,16 @@
       <div class="container"> 
         <div class="row show-grid">
               <div class="row ins-wrap">
-                    <!-- Home - as post -->
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:100%;height:auto"
-                        data-ad-client="ca-pub-2072313038095874"
-                        data-ad-slot="5629535661"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+                   <!-- Home - Full -->
+                  <ins class="adsbygoogle"
+                      style="display:block"
+                      data-ad-client="ca-pub-2072313038095874"
+                      data-ad-slot="3701807524"
+                      data-ad-format="auto"
+                      data-full-width-responsive="true"></ins>
+                  <script>
+                      (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
                 </div> 
         </div>
       </div>
