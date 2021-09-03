@@ -340,7 +340,7 @@
       </div>
     </section>  -->
 
-    <section  class="novedades" style="margin-top:4px;" >
+    <section  class="novedades" style="margin-top:4px; margin-bottom: 2rem;" >
       <div class="container"> 
         <div class="row show-grid">
               <div class="row ins-wrap">
@@ -359,54 +359,7 @@
       </div>
     </section> 
 
-    <section id="novedades" class="novedades">
-      <div class="container">
-        <div class="row">
-          <div class="hidden-xs col-md-1">&nbsp;</div>
-          <div class="col-md-12 col-md-10">
-            <h2 class="novedades__title" >NOVEDADES</h2>
-          </div>
-          <div class="hidden-xs col-md-1">&nbsp;</div>
-        </div>
-        <div class="row show-grid">
-          <div class="hidden-xs col-md-1">&nbsp;</div>
-          <div class="col-md-12 col-md-10">
-            <?php
-					global $post;
-					
-					//query subpages
-					$args = array(
-					'post_type' => 'novedades',
-					'orderby' => 'date',
-					'orderby' => 'desc',
-					'posts_per_page' => 3
-					);
-
-					$listing = new WP_query($args);
-
-					// create output
-					if ($listing->have_posts()) :
-						while ($listing->have_posts()) : $listing->the_post();
-							$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
-							if ( $arr_image[0] != '' ) :
-								 $imagethumb = $arr_image[0];
-							else :
-								 $imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
-							endif;
-							echo '<div class="col-xs-12 col-sm-4 col-md-4 item-novedades text-center">';
-							echo '<a href="' . get_permalink() . '" ><img src="' . $imagethumb . '" alt="'.get_the_title().'"/> <h2 class="titulo" >'.get_the_title().'</h2> </a>'; 
-							echo '</div>';
-						endwhile;
-					endif;
-
-					// reset the query
-					wp_reset_postdata();
-				  ?>
-          </div>
-          <div class="hidden-xs col-md-1">&nbsp;</div>
-        </div>
-      </div>
-    </section> 
+   
    
     <?php get_footer(); ?>
 
