@@ -121,42 +121,42 @@
         <div class="row show-grid top-margin">
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10">
-            <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
+          <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
+              <a href="<?=home_url( $wp->request );?>/articulos/" style="overflow:hidden;">
+                  <?php
+                global $post;
+                
+                //query subpages
+                $args = array(
+                'post_type' => 'articulos',
+                'orderby' => 'date',
+                'orderby' => 'desc',
+                'posts_per_page' => 4
+                );
 
-              <a href="<?=home_url( $wp->request );?>/viajes/" style="overflow:hidden;">
+                $listing = new WP_query($args);
+                
+                $countt = 0;
+                
+                while ($listing->have_posts()) : $listing->the_post();
+                  if($countt == 0){
+                    $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
+                    $imagethumb = $arr_image[0];
+                    echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
+                  }
+                  $countt ++;
+                endwhile;
+              ?> 
+                <h2 class="titulo">MUNDO PAREJAS</h2>
+              </a>
+              <!-- <a href=" /articulos/" class="titulo"><h2>MUNDO PAREJAS</h2></a> -->
+              <ul>
                 <?php
 							global $post;
 							
 							//query subpages
 							$args = array(
-							'post_type' => 'viajes',
-							'orderby' => 'date',
-							'orderby' => 'desc',
-							'posts_per_page' => 4
-							);
-
-							$listing = new WP_query($args);
-							
-							$countt = 0;
-							
-							while ($listing->have_posts()) : $listing->the_post();
-								if($countt == 0){
-									$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
-									$imagethumb = $arr_image[0];
-									echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
-								}
-								$countt ++;
-							endwhile;
-						?>
-                <h2  class="titulo" >VIAJES</h2>
-              </a>
-              <!-- <a href="/viajes/" class="titulo"><h2>VIAJES</h2></a>   -->
-              <ul>
-                <?php
-							global $post; 
-							//query subpages
-							$args = array(
-							'post_type' => 'viajes',
+							'post_type' => 'articulos',
 							'orderby' => 'date',
 							'orderby' => 'desc',
 							'posts_per_page' => 4
@@ -175,7 +175,7 @@
 							wp_reset_postdata();
 						  ?>
               </ul>
-            </div>
+            </div> 
             <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
              
               <a href="<?=home_url( $wp->request );?>/entrevistas/" style="overflow:hidden;">
@@ -204,7 +204,7 @@
                             endwhile;
                           ?>
                  <h2 class="titulo" >BODAS</h2>
-            </a>
+              </a>
               <!-- <a href=" /entrevistas/" class="titulo"><h2>BODAS</h2></a> -->
               <ul>
                 <?php
@@ -232,42 +232,42 @@
 						  ?>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
-              <a href="<?=home_url( $wp->request );?>/articulos/" style="overflow:hidden;">
-                <?php
-							global $post;
-							
-							//query subpages
-							$args = array(
-							'post_type' => 'articulos',
-							'orderby' => 'date',
-							'orderby' => 'desc',
-							'posts_per_page' => 4
-							);
+             <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
 
-							$listing = new WP_query($args);
-							
-							$countt = 0;
-							
-							while ($listing->have_posts()) : $listing->the_post();
-								if($countt == 0){
-									$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
-									$imagethumb = $arr_image[0];
-									echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
-								}
-								$countt ++;
-							endwhile;
-						?> 
-              <h2 class="titulo">MUNDO PAREJAS</h2>
+              <a href="<?=home_url( $wp->request );?>/viajes/" style="overflow:hidden;">
+                <?php
+                  global $post;
+                  
+                  //query subpages
+                  $args = array(
+                  'post_type' => 'viajes',
+                  'orderby' => 'date',
+                  'orderby' => 'desc',
+                  'posts_per_page' => 4
+                  );
+
+                  $listing = new WP_query($args);
+                  
+                  $countt = 0;
+                  
+                  while ($listing->have_posts()) : $listing->the_post();
+                    if($countt == 0){
+                      $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
+                      $imagethumb = $arr_image[0];
+                      echo '<img src="' . $imagethumb . '" alt="'.get_the_title().'"/>';
+                    }
+                    $countt ++;
+                  endwhile;
+                ?>
+                <h2  class="titulo" >VIAJES</h2>
               </a>
-              <!-- <a href=" /articulos/" class="titulo"><h2>MUNDO PAREJAS</h2></a> -->
+              <!-- <a href="/viajes/" class="titulo"><h2>VIAJES</h2></a>   -->
               <ul>
                 <?php
-							global $post;
-							
+							global $post; 
 							//query subpages
 							$args = array(
-							'post_type' => 'articulos',
+							'post_type' => 'viajes',
 							'orderby' => 'date',
 							'orderby' => 'desc',
 							'posts_per_page' => 4
@@ -287,6 +287,7 @@
 						  ?>
               </ul>
             </div>
+           
           </div>
           <div class="hidden-xs col-md-1">&nbsp;</div>
         </div>
