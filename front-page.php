@@ -36,7 +36,7 @@
      <div class="ins-wrap sm-hide " style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;    transform: translateX(-149px);" > 
        <!-- Home - Sidebar Left -->
         <ins class="adsbygoogle"
-            style="display:inline-block;width:160px;height:800px"
+            style="display:inline-block;width:160px;height:600px"
             data-ad-client="ca-pub-2072313038095874"
             data-ad-slot="5262301206"></ins>
             </div> 
@@ -92,7 +92,7 @@
          <div class="ins-wrap sm-hide" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
           <!-- Home - Sidebar Right -->
           <ins class="adsbygoogle"
-              style="display:inline-block;width:160px;height:796px"
+              style="display:inline-block;width:160px;height:601px"
               data-ad-client="ca-pub-2072313038095874"
               data-ad-slot="5023106988"></ins> 
               <script>
