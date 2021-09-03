@@ -55,8 +55,9 @@ body{font:13px Cambria, Georgia, serif;overflow-x:hidden}body,input,select,texta
     }
 }
 
-.ins-wrap ins{
+.ins-wrap ins, ins{
     background-color: white !important;
+    background:white !important;
 }
 .home .container {
     width: auto !important;
