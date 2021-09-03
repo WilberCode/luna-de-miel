@@ -343,7 +343,7 @@
     <section  class="novedades" style="margin-top:4px; margin-bottom: 2rem;" >
       <div class="container"> 
         <div class="row show-grid">
-              <div class="row ins-wrap">
+              <div class="row ins-wrap" style="width:100%;max-width:793px; margin-left:auto; margin-right:auto;" >
                    <!-- Home - Full -->
                   <ins class="adsbygoogle"
                       style="display:block"
