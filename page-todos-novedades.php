@@ -9,7 +9,7 @@
 	 <section class="publicidad   ">
 		<div class="container">
 			<div class="row">
-				<div class="ins-wrap justify-center"> 
+			<div class="ins-wrap justify-center"> 
 				<!-- Categoria - top -->
 				<ins class="adsbygoogle"
 					style="display:inline-block;width:728px;height:90px"
