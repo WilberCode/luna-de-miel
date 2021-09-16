@@ -16,16 +16,16 @@
 			  Este artículo ya no se encuentra disponible. Te invitamos a que visites <a href="/articulos/" class="alert-link">nuestra sección de artículos</a>.
 			</div>
 		<?php } ?> 
-		<!-- <div  class="ins-wrap   " style="height:90px;" > -->
-				<!-- Post - top in mobile -->
-				<!-- <ins class="adsbygoogle"
+		 <div  class="ins-wrap   " style="height:90px;" > 
+				 <!-- Post - top in mobile  -->
+				 <ins class="adsbygoogle"
 					style="display:inline-block;width:100%;height:90px"
 					data-ad-client="ca-pub-2072313038095874"
-					data-ad-slot="7278848626"></ins> -->
-			<!-- 	<script>
+					data-ad-slot="7278848626"></ins> 
+			 	<script>
 					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script> -->
-	<!-- 	</div> -->
+				</script> 
+	 	</div> 
 		<section class="head-title">	
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<h1><?php echo get_the_title(); ?></h1>
@@ -97,18 +97,18 @@
 	<div class="col-sidebar col-sm-3">
 	  	<div class="row show-grid ">
 			  
-			<!-- <div  class="ins-wrap  " > -->
-				<!-- Post -  Sidebar -->
-				<!-- <ins class="adsbygoogle"
+			 <div  class="ins-wrap  " > 
+				 <!-- Post -  Sidebar  -->
+				 <ins class="adsbygoogle"
 					style="display:block"
 					data-ad-client="ca-pub-2072313038095874"
 					data-ad-slot="9092330038"
 					data-ad-format="auto"
-					data-full-width-responsive="true"></ins> -->
-				<!-- <script>
+					data-full-width-responsive="true"></ins> 
+				 <script>
 					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>  -->
-			<!-- </div> -->
+				</script>  
+			 </div> 
 			<h3>Los más recientes</h3>
 			<div class="container-fluid mas-recientes">
 			<?php
