@@ -196,4 +196,7 @@ add_action('after_setup_theme', 'ldm_setup');
     ));  
    
 }
-add_action('widgets_init', 'ldm_front_widgets');?>
+add_action('widgets_init', 'ldm_front_widgets');
+ 
+ 
+
