@@ -152,7 +152,7 @@
 				 </div>
 	  	</div>  
 		<div class="row ">
-			<a href="<?=get_home_url().'/contacto';?>" target="_blank"><img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" /></a>
+			<a href="<?=get_home_url().'/contacto';?>"  ><img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" /></a>
 	  	</div>
 		<!--FIN BRASIL-->
 		<div class="row show-grid">

@@ -139,14 +139,10 @@
 				 </div>
 	  	</div>
 		<!--BRASIL-->
-		<div class="banner-right-300x250">
-			<!-- /22596825/Home_Right_1_300x250 
-			<div id='div-gpt-ad-1459740034135-2' style='height:250px; width:300px;'>-->
+		<div class="banner-right-300x250"> 
 		<div style='height:300px; width:300px;'>
-			<a href="http://www.lunademiel.com.pe/contacto/" target="_blank"><img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" style="height: 280px; width: 300px" /></a>
-			<script type='text/javascript'>
-			//googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459740034135-2'); });
-			</script>
+			<a href="<?=get_home_url().'/contacto';?>" ><img src="http://www.lunademiel.com.pe/emailing/logo/b3.png" style="height: 280px; width: 300px" /></a>
+	 
 		</div>
 		<!--FIN BRASIL-->
 		<div class="row show-grid">
