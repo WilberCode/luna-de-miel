@@ -43,22 +43,11 @@ fbq('track', 'PageView');
 
 <script>
 
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
-
- 
-
-  gtag('config', 'UA-127421070-1');
-
-
-
-</script>
-
-
-
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'UA-127421070-1');  
+</script> 
 	<meta charset="<?php bloginfo('charset'); ?>">
 
 	<!-- Always force latest IE rendering engine (even in intranet) -->
@@ -75,9 +64,9 @@ fbq('track', 'PageView');
 	
    	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 	
-	<meta name="keywords" content="Guía para parejas, Luna de miel, moda, vivienda, ropa para mujer, cine, entretenimiento, farándula, eventos, actividades en pareja, cinerama, música en vivo, restaurante, novedades, 
+<!-- 	<meta name="keywords" content="Guía para parejas, Luna de miel, moda, vivienda, ropa para mujer, cine, entretenimiento, farándula, eventos, actividades en pareja, cinerama, música en vivo, restaurante, novedades, 
 restaurantes románticos, tendencias de boda, celebridades, catering, bares y café, escapadas, fotógrafos de boda, iglesias, nutrición, bodas, paseos, viajes, excursiones, bares, café, belleza, vacaciones, decoración, iglesias, tecnología, fiestas, tips, consejos, dio del padre, regalos papa, copa de américa, entradas, novedades, cartelera, combo cine, entradas, taquilla, butaca, estrenos, terror, comedia, drama, ciencia ficción, romántica, infantil, combos, estrenos, entradas, diversión, sorteos, concursos, bodas, shows, presentaciones, show musical, concierto, espectáculo, juegos, comida, cupones, descuento, fotodepilación, joyería, oferta, promoción, promo, combocine, 2x1, almuerzo, desayuno, ropa de moda, trajes de boda, florería, fotografías, weeding planner, despedidas, locales, recepción, paquetes de viaje, Nuevo Mundo Viajes, excursiones, hoteles, casa playa, vestidos, accesorios para bebes, anillos, zapatos, ternos, buques, casa ideas, artículos, juguetes, dulcería, lentes, celulares, coche de bebe, libros, juegos mecánicos, cosméticos, maquillaje, supermercado, ropa para mujer, sandalias, juegos, jeans, billeteras, bolsos, perfumes, casacas, joyas, pareja,depa,dormitorios, departamento,inmobiliaria,San Isidro, San Borja,comunes,coworking,Surco,Surquillo”>
-
+ -->
 	<?php
 		if (true == of_get_option('meta_author'))
 			echo '<meta name="author" content="' . of_get_option("meta_author") . '" />';
