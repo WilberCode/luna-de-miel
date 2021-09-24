@@ -7,7 +7,7 @@
 	<meta  name="description" content="Ideas para romper la rutina y disfrutar toda la semana. Música, Cultura, Entretenimiento, foodies, Drinks, Escapadas, Aventuras, Eventos, Imperdibles, Noches, Trasnochadas y De todo un poco.">
 	<meta  name="keywords" content="Guía para parejas, Luna de miel, moda, vivienda, ropa para mujer, cine, entretenimiento, farándula, eventos, actividades en pareja, cinerama, música en vivo, restaurante, novedades, 
 	restaurantes románticos, tendencias de boda, celebridades, catering, bares y café, escapadas, fotógrafos de boda, iglesias, nutrición, bodas, paseos, viajes, excursiones, bares, café, belleza, vacaciones, decoración, iglesias, tecnología, fiestas, tips, consejos, dio del padre, regalos papa, copa de américa, entradas, novedades, cartelera, combo cine, entradas, taquilla, butaca, estrenos, terror, comedia, drama, ciencia ficción, romántica, infantil, combos, estrenos, entradas, diversión, sorteos, concursos, bodas, shows, presentaciones, show musical, concierto, espectáculo, juegos, comida, cupones, descuento, fotodepilación, joyería, oferta, promoción, promo, combocine, 2x1, almuerzo, desayuno, ropa de moda, trajes de boda, florería, fotografías, weeding planner, despedidas, locales, recepción, paquetes de viaje, Nuevo Mundo Viajes, excursiones, hoteles, casa playa, vestidos, accesorios para bebes, anillos, zapatos, ternos, buques, casa ideas, artículos, juguetes, dulcería, lentes, celulares, coche de bebe, libros, juegos mecánicos, cosméticos, maquillaje, supermercado, ropa para mujer, sandalias, juegos, jeans, billeteras, bolsos, perfumes, casacas, joyas, pareja,depa,dormitorios, departamento,inmobiliaria,San Isidro, San Borja,comunes,coworking"> 
-	<link rel="shortcut icon" sizes="1024x1024" href="http://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
+	<link rel="shortcut icon" sizes="1024x1024" href="https://www.lunademiel.com.pe/wp-content/uploads/2019/05/favicon.png">
 	<link rel="canonical" href="https://www.lunademiel.com.pe/agenda-semanal">  
 	<link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">    
  	<style type="text/css">  
@@ -85,8 +85,8 @@
       <tbody>
         <tr>
           <td width="200" align="left" valign="middle" bgcolor="#ffffff" style="border-collapse:collapse">
-            <a href="http://www.lunademiel.com.pe/" style="color:black;text-decoration:none" target="_blank" >
-              <img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/logo-ldm-agenda.png" width="115" height="auto" alt="Luna de miel agenda semanal" >
+            <a href="https://www.lunademiel.com.pe/" style="color:black;text-decoration:none" target="_blank" >
+              <img src="https://www.lunademiel.com.pe/wp-content/uploads/2021/05/logo-ldm-agenda.png" width="115" height="auto" alt="Luna de miel agenda semanal" >
             </a>
           </td>
           <td width="400" colspan="2" align="right" valign="middle" style="text-transform:uppercase;border-collapse:collapse;font-family:Prelo;font-family:Prelo-SemiBold;font-family:PreloBold;font-size:14px;letter-spacing:1px;height:80px">
@@ -244,8 +244,8 @@
 					wp_reset_postdata();
 				  ?>	
 				   <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
-						<a href="http://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none"   >
-						<img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/Buscando-Proveedores-aqui.jpg" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
+						<a href="https://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none"   >
+						<img src="https://www.lunademiel.com.pe/wp-content/uploads/2021/05/Buscando-Proveedores-aqui.jpg" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
 						</a>
 					</td>
 				</tr>
@@ -260,7 +260,7 @@
           <td width="400" align="right" colspan="2" valign="middle" style="border-collapse:collapse"></td>
           <td width="200" align="center" valign="top" style="border-collapse:collapse">
             <a href="https://www.facebook.com/portallunademiel/" style="color:black;text-decoration:none"   >
-              <img src="http://www.lunademiel.com.pe/wp-content/uploads/2021/05/siguenos-en-facebook-ldm.png" width="109" height="auto" alt="" >
+              <img src="https://www.lunademiel.com.pe/wp-content/uploads/2021/05/siguenos-en-facebook-ldm.png" width="109" height="auto" alt="" >
             </a>
           </td>
         </tr>
