@@ -89,7 +89,7 @@
             </div>
             <?php  dynamic_sidebar('frontpage-sidebar');  ?> 
       </div> 
-         <div class="ins-wrap sm-hide" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
+        <div class="ins-wrap sm-hide" style=" background:white; width: 160px; height:fit-content; position:absolute;top: 0;  right:0;  transform: translateX(149px);" > 
           <!-- Home - Sidebar Right -->
           <ins class="adsbygoogle"
               style="display:inline-block;width:160px;height:601px"
@@ -98,7 +98,7 @@
               <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-         </div>  
+        </div>  
   </div>
 </div>
   <?php   if(!is_admin()) { ?>  
