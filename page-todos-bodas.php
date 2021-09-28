@@ -31,7 +31,7 @@
 					<?php edit_post_link(__('Editar esta entreda','html5reset'), '<span>', '</span>'); ?>
 					<h1><?php the_title(); ?></h1>
 					<div class="entry">	
-						<?php the_content(); ?>
+						<?php the_content(); ?>   
 					</div>
 				</div>
 				<div class="listing post">
