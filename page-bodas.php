@@ -6,10 +6,10 @@
  * 
  */
  get_header(); ?>
-	 <section class="publicidad   ">
+    <section class="publicidad   ">
 		<div class="container">
 			<div class="row">
-				<div class="ins-wrap justify-center"> 
+				<div class="ins-wrap justify-center">  
 				<!-- Categoria - top -->
 				<ins class="adsbygoogle"
 					style="display:inline-block;width:728px;height:90px"
@@ -24,9 +24,9 @@
 		</div>
 	</section>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<section id="main" class="clearfix">
+	<section id="main" class="clearfix ">
 		<div class="container page-wrap">
-			<div class="col-xs-12 col-md-12"> 
+			<div class="col-xs-12 col-md-12">
 				<div class="page-content">
 					<?php edit_post_link(__('Editar esta entrada','html5reset'), '<span>', '</span>'); ?>
 					<h1><?php the_title(); ?></h1>
@@ -40,7 +40,7 @@
 					
 					//query subpages
 					$args = array(
-					'post_type' => 'articulos',
+					'post_type' => 'bodas',
 					'orderby' => 'date',
 					'order' => 'desc',
 					'posts_per_page' => 24
@@ -70,8 +70,8 @@
 					</div>
 			</div>
 			<div class="col-xs-12 col-md-12 text-center">
-				<a class="btn btn-default btn-lg" href="/todos-articulos/" role="button">Ver todos los artículos</a>
-			</div>
+				<a class="btn btn-default btn-lg" href="/todos-bodas/" role="button">Ver todas las bodas</a>
+			</div>			
 		</div>
 	</section>		
 	<?php endwhile; endif; ?>
