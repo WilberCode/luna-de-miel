@@ -26,9 +26,9 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<section id="main" class="clearfix page-posts">
 		<div class="container page-wrap">
-			<div class="col-xs-12 col-md-12"> 
+			<div class="col-xs-12 col-md-12">
 				<div class="page-content">
-					<?php edit_post_link(__('Editar esta entrada','html5reset'), '<span>', '</span>'); ?>
+					<?php edit_post_link(__('Editar esta entreda','html5reset'), '<span>', '</span>'); ?>
 					<h1><?php the_title(); ?></h1>
 					<div class="entry">	
 						<?php the_content(); ?>
@@ -40,7 +40,7 @@
 					
 					//query subpages
 					$args = array(
-					'post_type' => 'articulos',
+					'post_type' => 'bodas',
 					'orderby' => 'date',
 					'order' => 'desc',
 					'posts_per_page' => -1
@@ -68,11 +68,10 @@
 					wp_reset_postdata();
 				  ?>
 					</div>
-					
 			</div>
 			<div class="col-xs-12 col-md-12 text-center">
-				<a class="btn btn-default btn-lg" href="/articulos/" role="button">Regresar a artículos</a>
-			</div>
+				<a class="btn btn-default btn-lg" href="/bodas/" role="button">Regresar a Bodas</a>
+			</div>				
 		</div>
 	</section>		
 	<?php endwhile; endif; ?>

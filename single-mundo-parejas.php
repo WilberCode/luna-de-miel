@@ -25,7 +25,7 @@
 			 	<script>
 					(adsbygoogle = window.adsbygoogle || []).push({});
 				</script> 
-	 	</div> 
+	 	</div>  
 		<section class="head-title">	
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<h1><?php echo get_the_title(); ?></h1>

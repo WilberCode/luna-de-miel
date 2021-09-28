@@ -122,13 +122,13 @@
           <div class="hidden-xs col-md-1">&nbsp;</div>
           <div class="col-md-12 col-md-10">
           <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
-              <a href="<?=home_url( $wp->request );?>/articulos/" style="overflow:hidden;">
+              <a href="<?=home_url( $wp->request );?>/mundo-parejas/" style="overflow:hidden;">
                   <?php
                 global $post;
                 
                 //query subpages
                 $args = array(
-                'post_type' => 'articulos',
+                'post_type' => 'mundo-parejas',
                 'orderby' => 'date',
                 'orderby' => 'desc',
                 'posts_per_page' => 4
@@ -156,7 +156,7 @@
 							
 							//query subpages
 							$args = array(
-							'post_type' => 'articulos',
+							'post_type' => 'mundo-parejas',
 							'orderby' => 'date',
 							'orderby' => 'desc',
 							'posts_per_page' => 4
@@ -178,13 +178,13 @@
             </div> 
             <div class="col-xs-12 col-sm-4 col-md-4 item-destacados text-center">
              
-              <a href="<?=home_url( $wp->request );?>/entrevistas/" style="overflow:hidden;">
+              <a href="<?=home_url( $wp->request );?>/bodas/" style="overflow:hidden;">
                 <?php
                             global $post;
                             
                             //query subpages
                             $args = array(
-                            'post_type' => 'entrevistas',
+                            'post_type' => 'bodas',
                             'orderby' => 'date',
                             'orderby' => 'desc',
                             'posts_per_page' => 4
@@ -212,7 +212,7 @@
 							
 							//query subpages
 							$args = array(
-							'post_type' => 'entrevistas',
+							'post_type' => 'bodas',
 							'orderby' => 'date',
 							'orderby' => 'desc',
 							'posts_per_page' => 4

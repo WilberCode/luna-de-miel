@@ -49,7 +49,7 @@
 					</div>
 				</div>
 			</div>
-	</section>		
+	</section>		 
 	<section class="related">
 		<h3>También te puede interesar:</h3>
 		<div class="row">

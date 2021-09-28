@@ -24,11 +24,11 @@
 		</div>
 	</section>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<section id="main" class="clearfix page-posts">
+	<section id="main" class="clearfix">
 		<div class="container page-wrap">
-			<div class="col-xs-12 col-md-12">
+			<div class="col-xs-12 col-md-12"> 
 				<div class="page-content">
-					<?php edit_post_link(__('Editar esta entreda','html5reset'), '<span>', '</span>'); ?>
+					<?php edit_post_link(__('Editar esta entrada','html5reset'), '<span>', '</span>'); ?>
 					<h1><?php the_title(); ?></h1>
 					<div class="entry">	
 						<?php the_content(); ?>
@@ -40,10 +40,10 @@
 					
 					//query subpages
 					$args = array(
-					'post_type' => 'entrevistas',
+					'post_type' => 'mundo-parejas',
 					'orderby' => 'date',
 					'order' => 'desc',
-					'posts_per_page' => -1
+					'posts_per_page' => 24
 					);
 
 					$listing = new WP_query($args);
@@ -70,8 +70,8 @@
 					</div>
 			</div>
 			<div class="col-xs-12 col-md-12 text-center">
-				<a class="btn btn-default btn-lg" href="/entrevistas/" role="button">Regresar a entrevistas</a>
-			</div>				
+				<a class="btn btn-default btn-lg" href="/todos-mundo-parejas/" role="button">Ver todos los artículos</a>
+			</div>
 		</div>
 	</section>		
 	<?php endwhile; endif; ?>
