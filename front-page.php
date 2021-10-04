@@ -46,7 +46,7 @@
       <!-- Main -->
         <div id="destacados" class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
-              <dl class="box-destacado text-center">
+              <dl class="box-destacado text-center" style="padding: 10px 28px 20px  28px">
                 <dt>
                   <a href="<?php echo home_url( $wp->request );?>/mundo-parejas/">
                     <!-- <h2>AGENDA ROMÁNTICA</h2>  -->
