@@ -48,11 +48,37 @@
            <div class="box-agenda" style="background:url(<?php echo $foto_agenda_semanal['guid']; ?>) center center no-repeat;">
               <dl class="box-destacado text-center">
                 <dt>
-                  <a href="<?php echo home_url( $wp->request );?>/agenda-semanal/">
-                    <h2>AGENDA ROMÁNTICA</h2> 
+                  <a href="<?php echo home_url( $wp->request );?>/mundo-parejas/">
+                    <!-- <h2>AGENDA ROMÁNTICA</h2>  -->
+                    <h2>MUNDO PAREJAS</h2> 
                   </a>
                 </dt>
                 <dd> 
+                <?php
+                    global $post;
+                    
+                    //query subpages
+                    $args = array(
+                    'post_type' => 'mundo-parejas',
+                    'orderby' => 'date',
+                    'orderby' => 'desc',
+                    'posts_per_page' => 4
+                    );
+
+                    $listing = new WP_query($args);
+                    $mundo_count = 1;
+                    // create output
+                    if ($listing->have_posts()) :
+                      while ($listing->have_posts()) : $listing->the_post();
+                        if(	$mundo_count > 1){echo " / ";}else{echo "";}
+                        echo '<a href="' . get_permalink() . '">'.get_the_title().'</a>';
+                        $mundo_count++;
+                      endwhile;
+                    endif;
+
+                    // reset the query
+                    wp_reset_postdata();
+                    ?>
                 </dd>
               </dl>
             </div>
