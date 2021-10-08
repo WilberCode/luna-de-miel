@@ -58,7 +58,7 @@
 			
 			//query subpages
 			$args = array(
-			'post_type' => 'articulos',
+			'post_type' => 'mundo-parejas',
 			'orderby' => 'comment_count',
 			'order' => 'desc',
 			'post__not_in' => array(get_the_ID()),
@@ -116,7 +116,7 @@
 					
 					//query subpages
 					$args = array(
-					'post_type' => 'articulos',
+					'post_type' => 'mundo-parejas',
 					'orderby' => 'date',
 					'order' => 'desc',
 					'post__not_in' => array(get_the_ID()),

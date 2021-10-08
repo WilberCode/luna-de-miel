@@ -58,7 +58,7 @@
 			
 			//query subpages
 			$args = array(
-			'post_type' => 'entrevistas',
+			'post_type' => 'bodas',
 			'orderby' => 'comment_count',
 			'order' => 'desc',
 			'post__not_in' => array(get_the_ID()),
@@ -103,7 +103,7 @@
 					
 					//query subpages
 					$args = array(
-					'post_type' => 'entrevistas',
+					'post_type' => 'bodas',
 					'orderby' => 'date',
 					'order' => 'desc',
 					'post__not_in' => array(get_the_ID()),
