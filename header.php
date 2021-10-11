@@ -22,20 +22,22 @@ header ("Pragma: no-cache"); //PARANOIA, NO GUARDAR EN CACHE 
 <!-- the "no-js" class is for Modernizr. -->
 
 <head id="<?php echo of_get_option('meta_headid'); ?>" data-template-set="html5-reset-wordpress-theme">
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127421070-1"></script>  -->
+<script async  src="https://www.googletagmanager.com/gtag/js?id=UA-127421070-1"></script> 
 <!-- Facebook Pixel Code -->
-<!-- <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
- fbq('init', '2347629658600209'); 
-fbq('track', 'PageView');
-</script> -->
+<script>
+window.onload = function(){
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '2347629658600209'); 
+	fbq('track', 'PageView');
+}
+</script>
 <noscript>
 <img height="1" width="1" alt="Luna de Miel" src="https://www.facebook.com/tr?id=2347629658600209&ev=PageView&noscript=1"/>
 </noscript>
@@ -166,7 +168,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 	?>
 	<?php wp_head(); ?>
 
-<!-- <script type='text/javascript'>
+<script type='text/javascript'>
   var googletag = googletag || {};
   googletag.cmd = googletag.cmd || [];
   (function() {
@@ -179,7 +181,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     var node = document.getElementsByTagName('script')[0];
     node.parentNode.insertBefore(gads, node);
   })();
-</script> -->
+</script>
 
 <!-- <script type='text/javascript'>
   googletag.cmd.push(function() {
@@ -193,12 +195,11 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
   });
 </script>  -->  
 <!--   <script data-ad-client="ca-pub-2072313038095874" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  -->
-<!--   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874" crossorigin="anonymous"></script>
- -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874" crossorigin="anonymous"></script>
 </head>
 
 <body <?php body_class(); ?>>
-	<?php /* include_once("googletagmanager.php")  */?>
+	<?php include_once("googletagmanager.php") ?>
 	
 <?php
   $settings = pods('configuracindelsitio');
