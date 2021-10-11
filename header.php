@@ -166,7 +166,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 	?>
 	<?php wp_head(); ?>
 
-<script type='text/javascript'>
+<!-- <script type='text/javascript'>
   var googletag = googletag || {};
   googletag.cmd = googletag.cmd || [];
   (function() {
@@ -179,7 +179,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
     var node = document.getElementsByTagName('script')[0];
     node.parentNode.insertBefore(gads, node);
   })();
-</script>
+</script> -->
 
 <!-- <script type='text/javascript'>
   googletag.cmd.push(function() {
@@ -198,7 +198,7 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 </head>
 
 <body <?php body_class(); ?>>
-	<?php include_once("googletagmanager.php") ?>
+	<?php /* include_once("googletagmanager.php")  */?>
 	
 <?php
   $settings = pods('configuracindelsitio');
