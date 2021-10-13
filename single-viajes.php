@@ -103,7 +103,7 @@
 					
 					//query subpages
 					$args = array(
-					'post_type' => 'articulos',
+					'post_type' => 'viajes',
 					'orderby' => 'date',
 					'order' => 'desc',
 					'post__not_in' => array(get_the_ID()),
