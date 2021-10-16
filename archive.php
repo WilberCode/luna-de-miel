@@ -31,45 +31,46 @@
 					<h1  class="page-category__title"><?php echo single_cat_title(''); ?></h1>
 					<p><?php echo category_description(); ?></p>
 				</section>
-					<nav class="navbar navbar-default">
-			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand visible-xs-block">Filtros</a>
-			</div> 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav archive-tab">
-					
-					<?php 
-					 if ( get_post_type( get_the_ID() ) == 'promociones') {
-					  $agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>
-					<?php foreach ($agendalist as $promocion) {?>
-						<li>
-							<a href="<?php echo get_term_link($promocion->slug, $taxonomy); ?>"><?php echo $promocion->name; ?>&nbsp;<span class="badge"><?php echo $promocion->count; ?></span>
-							</a>
-						</li>
-					<?php }} ?>	 
-					<?php 
-					 if ( get_post_type( get_the_ID() ) == 'agendasemanal') {
-					  $agendalist = get_terms( 'agenda', array('orderby'=>'count','order'=>'desc') );?>
-					<?php foreach ($agendalist as $agenda) {?>
-						<li>
-							<a href="<?php echo get_term_link($agenda->slug, $taxonomy); ?>"><?php echo $agenda->name; ?>&nbsp;<span class="badge"><?php echo $agenda->count; ?></span>
-							</a>
-						</li>
-					<?php }} ?>	 
-				</ul>
-			</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>	 				
- 
+			<?php 	if ( get_post_type( get_the_ID() ) == 'promociones' || get_post_type( get_the_ID() ) == 'agendasemanal') { ?>
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand visible-xs-block">Filtros</a>
+						</div> 
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav archive-tab">
+								
+								<?php 
+								if ( get_post_type( get_the_ID() ) == 'promociones') {
+								$agendalist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>
+								<?php foreach ($agendalist as $promocion) {?>
+									<li>
+										<a href="<?php echo get_term_link($promocion->slug, $taxonomy); ?>"><?php echo $promocion->name; ?>&nbsp;<span class="badge"><?php echo $promocion->count; ?></span>
+										</a>
+									</li>
+								<?php }} ?>	 
+								<?php 
+								if ( get_post_type( get_the_ID() ) == 'agendasemanal') {
+								$agendalist = get_terms( 'agenda', array('orderby'=>'count','order'=>'desc') );?>
+								<?php foreach ($agendalist as $agenda) {?>
+									<li>
+										<a href="<?php echo get_term_link($agenda->slug, $taxonomy); ?>"><?php echo $agenda->name; ?>&nbsp;<span class="badge"><?php echo $agenda->count; ?></span>
+										</a>
+									</li>
+								<?php }} ?>	 
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>	 				
+			<?php } ?>	 
 			</div>
 			<?php 
 			global $query_string;
@@ -91,8 +92,8 @@
 			endwhile; ?>
 			</div>
 			<?php else : ?>
-				<div class="col-main col-sm-12  ">
-					Por el momento no tenemos promociones. Si deseas contactarnos para enviarnos promociones o deseas anunciar con nosotros puedes <a href="/contacto/" id="contacto">escribirnos aquí</a>.
+				<div class="col-main col-sm-12  " style="font-size:18px; padding:0 3rem" >
+					Por el momento no tenemos Agendas. Si deseas contactarnos para enviarnos promociones o deseas anunciar con nosotros puedes <a href="/contacto/" id="contacto">escribirnos aquí</a>.
 				</div>
 			<?php endif; ?>
 		</div>
