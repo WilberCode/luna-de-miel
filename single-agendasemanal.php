@@ -30,8 +30,8 @@ $number_single = 1;
   	foreach ( $terms as $term ) {$term_link = get_term_link( $term, 'agenda' ); if( is_wp_error( $term_link ) ) continue; ?> <?php if($number_single >1){echo ' & '.$term->description;} else{ echo $term->description;} ?> <?php $number_single++; }?>">
 <!-- 
   <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/bastemp.min.css">
-  <link rel="stylesheet" href="http://www.lunademiel.com.pe/emailing/2019/11-noviembre/agenda/css/styles.min.css"> -->
-   <!-- Owl -->
+  <!-- Owl -->
+  <link rel="stylesheet" href="https://www.lunademiel.com.pe/emailing/css/fonts.css">    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -59,7 +59,7 @@ $number_single = 1;
 				<div class=" mt-6 text-gray-900 sm:mt-12 text-[35px]  sm:text-[50px] lg:text-[88.5px] tracking-wide " style=" font-family:Didot ;"  >
 				#AgendaRomántica
 				</div> 
-				<p  class=" text-[12px]   sm:text-[20px] lg:text-[22.53px]  " >Ideas para romper la rutina y disfrutar toda la semana</p>
+				<p  class=" text-[12px]   sm:text-[20px] lg:text-[22.53px] font-prelo  font-medium " >Ideas para romper la rutina y disfrutar toda la semana</p>
 			</div>
 		</div>
 
@@ -146,7 +146,7 @@ $number_single = 1;
 								 <div class="post-card item"> 
 									<a href="<?=the_permalink(); ?>"  >
 										<img src="<?php echo $imagethumb; ?>" alt="<?php the_title();?>" class="thumbnail"/> 
-										<p>- <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>   
+										<p class="!font-prelo !font-semibold " >- <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -</p>   
 										<h2><?php the_title();?></h2>
 							 		</a> 
 								 </div> 
