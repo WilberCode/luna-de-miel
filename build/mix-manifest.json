@@ -1,10 +1,14 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/svg/email.svg": "/svg/email.svg",
+    "/svg/email-white.svg": "/svg/email-white.svg",
+    "/svg/facebook-pink.svg": "/svg/facebook-pink.svg",
     "/svg/facebook-white.svg": "/svg/facebook-white.svg",
-    "/svg/facebook.svg": "/svg/facebook.svg",
     "/svg/hand.svg": "/svg/hand.svg",
     "/svg/logo.svg": "/svg/logo.svg",
-    "/svg/search.svg": "/svg/search.svg"
+    "/svg/search.svg": "/svg/search.svg",
+    "/font/Prelo-Bold.eot": "/font/Prelo-Bold.eot",
+    "/font/Prelo-Bold.woff": "/font/Prelo-Bold.woff",
+    "/font/Prelo-Medium.woff": "/font/Prelo-Medium.woff",
+    "/font/Prelo-SemiBold.woff": "/font/Prelo-SemiBold.woff"
 }
